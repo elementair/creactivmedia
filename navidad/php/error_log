@@ -1,0 +1,10 @@
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/creactiv/public_html/navidad/php/contacto.php on line 2
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/creactiv/public_html/navidad/php/contacto.php on line 2
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(): Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home/creactiv/public_html/navidad/php/contacto.php on line 2
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(obtenerIP.php): failed to open stream: No such file or directory in /home/creactiv/public_html/navidad/php/contacto.php on line 3
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(obtenerIP.php): failed to open stream: No such file or directory in /home/creactiv/public_html/navidad/php/contacto.php on line 3
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Warning:  include(): Failed opening 'obtenerIP.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home/creactiv/public_html/navidad/php/contacto.php on line 3
+[14-Dec-2016 19:12:36 America/Mexico_City] PHP Fatal error:  Call to undefined function obtenerIPCliente() in /home/creactiv/public_html/navidad/php/contacto.php on line 166
+[14-Dec-2016 19:15:55 America/Mexico_City] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/creactiv/public_html/navidad/php/class.phpmailer.php on line 1219
+[14-Dec-2016 19:24:25 America/Mexico_City] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/creactiv/public_html/navidad/php/class.phpmailer.php on line 1219
+[14-Dec-2016 19:29:13 America/Mexico_City] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/creactiv/public_html/navidad/php/class.phpmailer.php on line 1219

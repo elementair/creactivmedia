@@ -1,0 +1,1 @@
+[2017-08-18 21:39:54] php_system.INFO: E_ERROR: array (   'type' => 1,   'message' => 'Maximum execution time of 180 seconds exceeded',   'file' => 'C:\\wamp\\www\\desvan\\wp-includes\\wp-db.php',   'line' => 1879, ) [] []

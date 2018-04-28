@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>CreactivMedia</title>
+	
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+
+     <meta name="description" content="Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora">
+    <meta name="keywords" content="Agencia de publicidad, diseño, marketing digital, branding, imagen corporativa, fotografía, multimedia, pantallas interactivas, producción de video, posicionamiento SEO, logotipos">
+    <meta property="og:url" content="http://www.creactivmedia.com.mx" />
+	<meta property="og:title" content="CreActiv Media Diseño, Web, Mkt Digital" />
+	<meta property="og:description" content="Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora." />
+	<meta property="og:image" content="http://www.creactivmedia.com.mx/image/share-index.jpg" />
+
+    <meta name="author" content="Creactiv Media">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/home.css">
+
+
+    	<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-80500677-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+<script type="text/javascript">
+		
+
+		var f = jQuery.noConflict();
+        f(document).ready(function(){
+              f("#enviar").click(function (){
+                    var datos={
+                    	"nombre" : f("#_nombre").val(),
+                        "email" : f("#_email").val(),
+                        "telefono" : f("#_telefono").val(),
+                        "celular" : f("#_celular").val(),
+                        "nombre-empresa" : f("#_nombre-empresa").val(),                  
+                        "direccion-empresa" : f("#_direccion-empresa").val(),
+                        "telefono-empresa" : f("#_telefono-empresa").val(),
+                        "rsocial" : f("#_rsocial").val(),
+                        "rfc" : f("#_rfc").val(),
+                        "sector-empresa" : f("#_sector-empresa").val(),
+                        "empleados" : f("#_empleados").val(),
+                        "antiguedad" : f("#_antiguedad").val(),
+                        "comentario" : f("#_comentario").val(),                    
+                        "web" : f("#_web").prop('checked'),
+                        "marketing" : f("#_marketing").prop('checked'),
+                        "identidad" : f("#_identidad").prop('checked'),
+                        "fotografia" : f("#_fotografia").prop('checked'),
+                        "redes" : f("#_redes").prop('checked'),
+                        "ecommerce" : f("#_ecommerce").val(),
+                        "video" : f("#_video").prop('checked'),
+                        "app" : f("#_app").prop('checked'),
+                        "otro" : f("#_otro").prop('checked'),
+                        "explique" : f("#_explique").val(),
+                        "capacitacion" : f("#_capacitacion").prop('checked'),
+                        "renovacion" : f("#_renovacion").prop('checked'),
+                        "posicionamiento" : f("#_posicionamiento").prop('checked'),
+                        "creacion" : f("#_creacion").prop('checked'),
+                        "seguidores" : f("#_seguidores").prop('checked')
+                      }
+
+                    f.ajax({
+                      type: "POST", 
+                      url: "php/contacto.php", 
+                      data: datos,
+                      contentType: "application/x-www-form-urlencoded",
+                      beforeSend: function() {
+                      f("#status").html("<img src='img/ico/loading.gif' width='60px' height='60px' >"); 
+                      },
+                      dataType: "html",
+                      success: function(data){
+                          f("#status").html(data);  
+                      }
+                    });
+              });
+        });
+
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="col-lg-4 col-md-9 col-xs-12">					
+					<img src="images\creact.png" alt="" class="img-responsive img-rounded" width="300" height="100">	
+			</div>	
+			<div class="col-xs-4">							
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 vertical-center">			
+				
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+	<h2>INFORMACIÓN DEL CLIENTE O CONTACTO</h2>
+	<div class="row">
+	<form role="form"  class="" id="contacto" title="reactiv">
+		
+	
+
+
+	
+	
+			
+				
+				<br>
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="nombre">Nombre:</label>
+						<div class="col-sm-4">
+						<input class="form-control" id="_nombre" name="_nombre" type="text" placeholder="Escribe tu nombre completo" required>
+					    </div>
+					<label class="col-sm-2 control-label" for="email">Correo electronico:</label>
+					    <div class="col-sm-4">
+						<input class="form-control" id="_email" name="email" type="email" placeholder="Escribe un correo electronico válido" required>
+					    </div>
+				</div>
+       </div>
+       <div class="row">
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="oficina">Oficina</label>
+						<div class="col-sm-4">
+						<input class="form-control" name="telefono" id="_telefono" type="text" placeholder="Teléfono de Oficina" required>
+					    </div>
+					
+					<label class="col-sm-2 control-label" for="cel">Tel. / Cel. </label>
+					    <div class="col-sm-4">
+						<input class="form-control" id="_celular" name="celular" type="text" placeholder="Teléfono celular" >	
+					    </div>					
+				</div>
+		</div>
+
+
+
+
+
+
+
+		
+	
+			
+					<h2>INFORMACIÓN DE LA EMPRESA</h2>
+					<br>
+
+				    <div class="row">
+						<div class="form-group">
+							
+							<label class="col-sm-2 control-label" for="oficina">Nombre de la Empresa</label>
+								<div class="col-sm-4">
+								<input class="form-control" id="_nombre-empresa" name="nombre-empresa" type="text" placeholder="Nombre de la Empresa" required>
+							    </div>
+							
+							<label class="col-sm-2 control-label" for="cel">Direcci&oacute;n. </label>
+							    <div class="col-sm-4">
+								<input class="form-control" id="_direccion-empresa" name="direccion-empresa" type="text" placeholder="Dirección" >	
+							    </div>					
+						</div>
+					</div>
+
+
+				    <div class="row">
+						<div class="form-group">
+							
+							<label class="col-sm-2 control-label" for="oficina">Tel&eacute;fono:</label>
+								<div class="col-sm-4">
+								<input class="form-control" id="_telefono-empresa" name="telefono-empresa" type="text" placeholder="Teléfono de Oficina" required>
+							    </div>
+							
+							<label class="col-sm-2 control-label" for="cel">Raz&oacute;n Social:</label>
+							    <div class="col-sm-4">
+								<input class="form-control" id="_rsocial" name="rsocial" type="text" placeholder="Razón Social de la Empresa / Negocio" >	
+							    </div>					
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="form-group">
+							
+							<label class="col-sm-2 control-label" for="oficina">R.F.C:</label>
+								<div class="col-sm-4">
+								<input class="form-control" id="_rfc" name="rfc" type="text" placeholder="Registro Federal de Contribuyentesr" required>
+							    </div>
+							
+							<label class="col-sm-2 control-label" for="cel">Sector:</label>
+							    <div class="col-sm-4">
+								<input class="form-control" id="_sector-empresa" name="sector-empresa" type="text" placeholder="Giro de la empresa" >	
+							    </div>					
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="form-group">
+							
+							<label class="col-sm-2 control-label" for="oficina">Cantidad de Empleados:</label>
+								<div class="col-sm-4">
+								
+								<input type="radio" name="empleados" id="_empleados" value="1 a 5">
+								1-5 Empleados<br/>
+							   
+
+							 
+								<input type="radio" name="empleados" id="_empleados" value="1 a 5">
+								6-10 Empleados<br/>
+							    
+
+							    <input type="radio" name="empleados" id="_empleados" value="1 a 5">
+								11-20 Empleados<br/><br/>
+							</div>
+							
+							<label class="col-sm-2 control-label" for="cel">Antiguedad Empresa:</label>
+							    <div class="col-sm-4">
+								<input class="form-control" id="_antiguedad" name="antiguedad" type="text" placeholder="Años de antiguedad de la empresa" >	
+							    </div>					
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group">
+						        <label class="col-sm-2 control-label" for="cel">Explique brevemente en que consiste su proyecto y ¿Porqué le gustaría participar en esta dinámica?:</label>
+							    <div class="col-sm-10">
+								<textarea name="comentario" id="_comentario" class="form-control" rows="5" required="required"></textarea>	
+							    </div>					
+						</div>
+					</div>
+
+
+
+
+
+<!--
+
+	
+					
+							
+					</div>
+					<div class="col-md-6">
+						<label for="antiEmpresa">Antigüedad de su empresa</label>
+						<input class="form-control" name="antiguedad" id="antiguedad" type="text" placeholder="Años" required>
+					</div>
+					<label for="comentario">Explique brevemente en que consiste su proyecto y porqué le gustaría participar en esta dinámica</label>
+					<textarea class="form-control" name="comentario" rows="5" id="comentario"></textarea>
+				</div>	
+
+		
+			-->
+
+		
+
+		<div class="row">
+			<br/>
+			<div class="col-md-12">
+				<h2>¿EN CÚAL DE NUESTROS SERVICIOS ESTÁ INTERESADO?</h2>
+				<br/>
+				<div class="form-group" >
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="web" id="_web" aria-label="">
+	        				<label for="diseno">Diseño Web</label></p>
+	      				</span>
+
+	      			</div>
+	      			<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="marketing" id="_marketing" aria-label="">
+	        				<label for="marketing">Marketing Digital</label></p>
+	      				</span>	      	
+					</div>		
+	      																				
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="identidad" id="_identidad" aria-label="">
+	        				<label for="identidad">Identidad Corporativa</label></p>
+	      				</span>					
+					</div>														
+				</div>	
+				<div class="form-group" >	
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="fotografia" id="_fotografia" aria-label="">
+	        				<label for="fotografia">Fotografía</label></p>
+	      				</span>						
+					</div>
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="redes" id="_redes" aria-label="">
+	        				<label for="redes">Redes sociales</label></p>
+	      				</span>	      	
+					</div>		
+	      																				
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="ecommerce" id="_ecommerce" aria-label="">
+	        				<label for="web">Web E-commerce</label></p>
+	      				</span>					
+					</div>					
+				</div>			
+				<div class="form-group" >	
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="video" id="_video" aria-label="">
+	        				<label for="video">Video Corporativo</label></p>
+	      				</span>						
+					</div>
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="app" id="_app" aria-label="">
+	        				<label for="desarrollo">Desarrollo de APP</label></p>
+	      				</span>	      	
+					</div>		
+	      																				
+					<div class="col-md-4">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="otro" id="_otro" aria-label="">
+	        				<label for="otro">Otro</label></p>
+	      				</span>					
+					</div>					
+				</div>							
+		
+		    </div>
+		</div>
+
+		<div class="row">
+			<br/>
+			<div class="col-md-12">
+				<h2>¿QUÉ OTROS SERVICIOS NECESITA Y/O CÓMO PODEMOS AYUDARLE?</h2>
+				<br>
+				<div class="form-group" >
+					<label for="explique">Explique</label>
+					<textarea name="explique" id="_explique" class="form-control" rows="2" required="required"></textarea>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-md-12">
+				<h2>¿QUÉ RESULTADOS QUIERE LOGRAR?</h2>
+				<br>
+				<div class="form-group" >
+					<div class="col-xs-12">
+						<span class="input-group-addon" style="background: transparent;">
+							<p                                            class="text-left">
+	        				<input type="checkbox" name="capacitacion" id="_capacitacion" aria-label="">
+	        				<label for="capacitacion">Capacitacion de clientes</label></p>
+	      				</span>
+
+	      			</div>
+	      			<div class="col-xs-12">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="renovacion" id="_renovacion" aria-label="">
+	        				<label for="renovacion">Renovación de Identidad</label></p>
+	      				</span>	      	
+					</div>		
+	      																				
+					<div class="col-xs-12">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="posicionamiento" id="_posicionamiento">
+	        				<label for="posicionamiento">Posicionamiento y Visibilidad Online</label></p>
+	      				</span>		
+	      			</div>	
+	      			<div class="col-xs-12">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="creacion" id="_creacion">
+	        				<label for="creacion">Creación de nuevo negocio</label></p>
+	      				</span>	      	
+					</div>		
+	      																				
+					<div class="col-xs-12">
+						<span class="input-group-addon" style="background: transparent;">
+							<p class="text-left">
+	        				<input type="checkbox" name="seguidores" id="_seguidores" aria-label="">
+	        				<label for="seguidores">Íncrementar Seguidores e Interacción Online</label></p>
+	      				</span>					
+					</div>																
+				</div>											
+		
+		</div>
+		</div>
+			
+		<div class="row">
+
+		<br/><br/><br/>
+		<center>		
+
+		
+
+			<span> </span><input class="btn btn-primary btn-large" type="button" id="enviar" name="enviar" value="Enviar">
+      
+		  	</center>
+		  	<br/><br/><br/>
+	  	</div>
+
+	  </form>
+
+	  <center><div id="status"></div></center>
+	</div>
+</body>
+	<footer>
+	<div class="container ">
+		<h4><span class="terminos">* Al enviar este formulario, usted participa en la dinámica para ganar un premio especial por parte de CreActiv Media, esté pendiente de los resultados en nuestras redes sociales y consulte las bases, términos y condiciones de esta promoción en<a href="http://www.creactivmedia.com.mx/navidad/bases.html" class="btn btn-link">www.creactivmedia.com.mx/bases</a></span></h4>
+	</div>
+	<div class="container-fluid img-responsive">
+		<center>
+		<br/><br/>
+			<img src="images\creact.png" alt="" class="img-responsive img-rounded" width="200" height="75">	
+			<div class="col-lg-12">
+				<br/><br/>
+				<p class="web">www.creactivmedia.com.mx</p>
+			</div>	
+			<br/>		
+	</center>			
+	</div>
+	<br/><br/><br/>
+		
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>

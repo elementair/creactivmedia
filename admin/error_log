@@ -1,0 +1,20 @@
+[01-Sep-2017 10:52:52 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/admin/conexion.php on line 12
+[01-Sep-2017 10:52:53 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 195
+[01-Sep-2017 10:52:53 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 10:52:53 America/Mexico_City] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 201
+[01-Sep-2017 10:53:07 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/admin/conexion.php on line 12
+[01-Sep-2017 10:53:07 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/admin/nuevo-portafolio.php on line 405
+[01-Sep-2017 10:57:02 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/admin/conexion.php on line 12
+[01-Sep-2017 11:14:40 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 11:15:15 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 11:26:31 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 11:53:23 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 11:54:36 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 11:56:41 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 12:00:08 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[01-Sep-2017 12:00:25 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-portafolio.php on line 198
+[08-Nov-2017 18:26:46 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-blog.php on line 144
+[08-Nov-2017 18:26:59 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-blog.php on line 144
+[08-Nov-2017 18:29:55 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-blog.php on line 144
+[09-Nov-2017 09:16:02 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-blog.php on line 144
+[09-Nov-2017 09:21:09 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/admin/procesa-nuevo-blog.php on line 144

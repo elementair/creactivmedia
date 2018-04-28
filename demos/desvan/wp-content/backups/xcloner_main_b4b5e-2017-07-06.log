@@ -1,0 +1,1 @@
+[2017-07-06 23:58:47] php_system.INFO: E_NOTICE: array (   'type' => 8,   'message' => 'Undefined index: fb_link_button',   'file' => 'C:\\wamp\\www\\desvan\\wp-content\\plugins\\nextend-facebook-connect\\nextend-facebook-connect.php',   'line' => 495, ) [] []

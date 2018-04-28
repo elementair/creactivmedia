@@ -1,0 +1,312 @@
+[07-Jul-2016 15:35:08 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:35:08 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:41:43 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:41:43 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:41:48 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:41:48 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:44:15 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:44:15 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:44:36 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:44:36 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:44:37 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:44:37 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:44:38 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:44:38 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:44:38 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:44:38 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:47:39 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:47:39 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:47:40 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:47:40 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:47:41 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:47:41 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:47:41 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:47:41 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:51:27 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'108.179.194.33' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:51:27 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:51:28 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'108.179.194.33' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:51:28 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:51:30 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'108.179.194.33' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:51:30 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:55:37 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'108.179.194.33' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:55:37 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 15:55:38 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'108.179.194.33' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 15:55:38 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:01:57 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'mco10.prodns.mx' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 16:01:57 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:09:37 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'mco10.prodns.mx' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 16:09:37 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:09:38 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'mco10.prodns.mx' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 16:09:38 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:14:59 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 16:14:59 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:25:56 America/Mexico_City] PHP Warning:  mysql_connect(): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 11
+[07-Jul-2016 16:25:56 America/Mexico_City] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/creactiv/public_html/conexion.php on line 12
+[07-Jul-2016 16:46:51 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:46:51 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:46:51 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:53:52 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:53:52 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:53:52 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:57:03 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:57:03 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:57:03 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:57:04 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:57:04 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:57:04 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 24
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/conexion.php on line 25
+[07-Jul-2016 16:57:05 America/Mexico_City] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/creactiv/public_html/conexion.php on line 27
+[07-Jul-2016 17:07:24 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:13:37 America/Mexico_City] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/creactiv/public_html/blog.php on line 174
+[07-Jul-2016 17:21:08 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_public'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:09 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:10 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:10 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:11 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:11 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:11 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:12 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:12 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:25:28 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:28:48 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:28:49 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:31:02 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:31:03 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:31:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'creactiv_pub_cre'@'localhost' (using password: YES) in /home/creactiv/public_html/conexion.php on line 36
+[07-Jul-2016 17:39:44 America/Mexico_City] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/creactiv/public_html/blog.php on line 310
+[07-Jul-2016 17:39:45 America/Mexico_City] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/creactiv/public_html/load_comentarios.php on line 10
+[07-Jul-2016 17:42:25 America/Mexico_City] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/creactiv/public_html/load_comentarios.php on line 10
+[07-Jul-2016 17:46:04 America/Mexico_City] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, object given in /home/creactiv/public_html/load_comentarios.php on line 17
+[28-Nov-2016 00:07:19 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[28-Nov-2016 00:08:08 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[28-Nov-2016 00:09:21 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[28-Nov-2016 00:09:23 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[20-Jun-2017 03:49:49 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[20-Jun-2017 03:52:47 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[01-Aug-2017 11:14:54 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[01-Aug-2017 11:14:54 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[01-Aug-2017 11:14:54 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[01-Aug-2017 11:23:40 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[01-Aug-2017 11:23:40 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[01-Aug-2017 11:23:40 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[16-Aug-2017 11:33:33 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[16-Aug-2017 11:59:25 America/Mexico_City] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[21-Aug-2017 12:43:29 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[21-Aug-2017 12:43:30 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[01-Sep-2017 11:13:27 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[01-Sep-2017 11:13:28 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[01-Sep-2017 11:13:27 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[01-Sep-2017 11:13:28 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[01-Sep-2017 15:08:03 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[01-Sep-2017 15:08:04 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[01-Sep-2017 15:08:04 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 12:53:48 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 12:53:49 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 12:53:49 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 12:55:54 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 12:55:57 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 12:55:57 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:03:27 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:04:10 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:04:18 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:04:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:04:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:04:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:04:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:04:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:04:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:04:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:04:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:04:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:05:25 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:05:25 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:05:25 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:07:27 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:12:19 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:12:19 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:12:19 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:18:34 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:18:34 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[04-Sep-2017 13:18:34 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:18:34 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[04-Sep-2017 13:25:12 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:25:13 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:25:14 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:39:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:41:06 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:41:06 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:41:06 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:42:51 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:42:51 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:42:51 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:46:22 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:46:22 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:46:22 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:46:40 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:46:40 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:46:40 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:48:44 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:48:44 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:48:44 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:48:52 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:48:52 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:48:52 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:49:34 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:49:34 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:49:34 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:49:57 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:49:57 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:49:57 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:50:12 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:51:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:51:17 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:51:17 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:51:32 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:51:32 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:51:32 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:51:43 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:51:43 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:51:43 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:17 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:17 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:24 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:24 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:24 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:36 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:36 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:36 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:38 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:38 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:38 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:39 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:39 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:39 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:52:50 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:52:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:52:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:53:08 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:53:08 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:53:08 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:53:50 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:53:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:53:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:54:14 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:54:14 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:54:14 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:54:49 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:54:49 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:54:49 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:54:50 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:54:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:54:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:54:59 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:54:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:54:59 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:55:02 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:55:02 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:55:02 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:55:03 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:55:03 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:55:03 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:55:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:55:05 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:55:05 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:55:23 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:55:23 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:55:23 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:55:55 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:55:55 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:55:55 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:59:28 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:59:28 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:59:28 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:59:36 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:59:36 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:59:36 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 13:59:58 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 13:59:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 13:59:58 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 14:00:01 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:00:01 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[04-Sep-2017 14:00:01 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:00:01 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[04-Sep-2017 14:01:04 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:01:04 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[04-Sep-2017 14:01:04 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[04-Sep-2017 14:01:05 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:01:05 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[04-Sep-2017 14:01:06 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:01:06 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[04-Sep-2017 14:01:11 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:01:11 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[04-Sep-2017 14:01:11 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[04-Sep-2017 14:01:11 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[05-Sep-2017 14:16:36 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:16:37 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:16:37 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:17:44 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:17:44 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:17:44 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:17:48 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:17:48 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[05-Sep-2017 14:17:48 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:17:48 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[05-Sep-2017 14:18:06 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:18:06 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:18:06 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:18:35 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:18:35 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:18:35 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:19:08 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:19:08 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:19:08 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:19:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:19:20 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[05-Sep-2017 14:19:21 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[05-Sep-2017 14:33:50 America/Mexico_City] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[05-Sep-2017 14:33:50 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[11-Sep-2017 10:37:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[11-Sep-2017 10:37:20 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[11-Sep-2017 10:37:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[11-Sep-2017 10:37:21 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_categorias.php on line 8
+[11-Sep-2017 10:37:17 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/creactiv/public_html/conexion.php on line 36
+[11-Sep-2017 10:37:21 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/load_comentarios.php on line 10
+[11-Sep-2017 10:37:30 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765
+[11-Sep-2017 18:37:31 America/Mexico_City] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/creactiv/public_html/conexion.php on line 36
+[11-Sep-2017 18:37:31 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 490
+[11-Sep-2017 18:37:31 America/Mexico_City] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/creactiv/public_html/blog.php on line 765

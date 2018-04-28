@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Product Designer-Null24.Net\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-11 22:52+0000\n"
+"PO-Revision-Date: 2017-07-11 22:53+0000\n"
+"Last-Translator: admin <alvaro_villarreal@creactivmedia.com.mx>\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es-MX\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+msgid "Fancy Product Designer-Null24.Net"
+msgstr "Diseñar productos fantasticos"
+
+#. Description of the plugin
+msgid ""
+"HTML5 Product Designer for Wordpress and WooCommerce. Create and sell "
+"customizable products."
+msgstr ""
+
+#. URI of the plugin
+msgid "http://fancyproductdesigner.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Rafael Dery | radykal.de"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://fancyproductdesigner.com"
+msgstr ""
