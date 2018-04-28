@@ -31,6 +31,7 @@ if(!isset($_GET["id"])){
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/portafolio.css">
+<link rel="stylesheet" href="css/particulas.css">
 <link rel="stylesheet" href="css/demo.css" type="text/css"/>
 <link rel="stylesheet" href="css/elastislide.css" type="text/css"/>
 <link rel="stylesheet" href="css/custom.css" type="text/css"/>
@@ -192,7 +193,7 @@ if(!isset($_GET["id"])){
 
 
 
-<div id="particle-canvas" class="container-fluid portada-destacado">
+<div class="container-fluid portada-destacado">
 	<div class="row">
 		
 			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
@@ -200,8 +201,8 @@ if(!isset($_GET["id"])){
 			<div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
 			</div>-->
 			
-		<div class="destacado">	
-			<div  class="dest-box">				
+		<div  class="destacado">	
+			<div  id="particles-js" class="dest-box">				
 				<h1>PORTAFOLIO</h1>					
 			</div>
 		</div>
