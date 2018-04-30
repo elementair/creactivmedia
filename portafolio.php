@@ -43,11 +43,12 @@ if(!isset($_GET["id"])){
 <script src="https://code.jquery.com/jquery-3.1.1.js"
 			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 			  crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="js/particle.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
 <script src="js/modernizr.custom.17475.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
-<script type="text/javascript" src="js/particle.js"></script>
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
