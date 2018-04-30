@@ -29,12 +29,19 @@ include("conexion.php");
     
     <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-    <script src="funciones.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
     <!--  <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/cubo.css">
+
+
 
     <!-- 
     <script>
@@ -102,15 +109,15 @@ include("conexion.php");
 </script>
 
 
-
 <header>
+    <!-- MENU RESPONSIVO MOVIL -->
     <nav class="btn-toggle">
         <div class="">
             <a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
         </div>
         <div class="menu-nav">
             <div id="nav">
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a id="btn_nosotros">Nosotros</a></li>
                 <li><a href="#seccion_servicios">Servicios</a></li>
                 <li><a href="portafolio.php">Portafolio</a></li>
                 <li><a href="blog.php">Blog</a></li>
@@ -122,6 +129,7 @@ include("conexion.php");
         </div>
         <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
     </nav>
+    <!-- MENU PANTALLA PC -->
     <section class="seccionToggle">
         <div class="wrap">
             <div class="container-fluid">
@@ -162,7 +170,8 @@ include("conexion.php");
     </section>
 </header>
 
-
+<!-- CARRUSEL INICIO -->
+<div class="sombra_transparente"></div>
 <div id="carousel-slider" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
@@ -171,29 +180,29 @@ include("conexion.php");
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="img/home/slider/001.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/4.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>EJEM</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <!-- <h1>EJEM</h1>
+                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="img/home/slider/002.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/5.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <!-- <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="img/home/slider/003.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/6.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <!-- <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                 </div>
             </div>
         </div>
@@ -201,13 +210,13 @@ include("conexion.php");
     <a class="left carousel-control" href="#carousel-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-<div id="boton_contactanos" class="btn btn-primary my-2 my-sm-0" type="submit"><a href=" contacto.php">contactanos</a></div>
+<div id="boton_contactanos" class="btn btn-primary my-2 my-sm-0" type="submit"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
 
 <svg width="100%" height="100%" class="pol-01" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg>
 
-<div id="nosotros" class=" container-fluid parallax-window" data-parallax="scroll" data-image-src="image/seccion_nosotros.jpg">
+<div id="nosotros" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="image/portada-nosotros3.jpg">
     <div ></div>
     <div class="row title1">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt_nosotros">
@@ -792,9 +801,12 @@ type="text/javascript"></script>
     .setClassToggle("#itBlog", "fadeInUp") // add class toggle  fadeOutUp
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
+    
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/funciones.js"></script>
+
 </body>
 </html>

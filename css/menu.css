@@ -20,15 +20,10 @@ body{
 nav{
   z-index: 9999;
 }
-
 p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-
-
-
-
 footer{
   height: auto;
   background-color: #332f2e;
@@ -39,7 +34,16 @@ footer{
   font-size: 0.9em;
   font-weight: 400;
 }
-
+#btn_nosotros{
+  cursor: pointer;
+}
+.sombra_transparente{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
+  z-index: 1;
+  position: absolute;
+}
 .clearfix{
   height: 15%;
 }
@@ -179,6 +183,7 @@ footer{
 
 .btn-menu{
   position: relative;
+  display: none;
 }
 
 
@@ -1401,7 +1406,7 @@ footer{
 
 
   .btn-toggle {
-    background: #161719a6;
+    background: #16171900;
   }
 
   .seccionToggle {

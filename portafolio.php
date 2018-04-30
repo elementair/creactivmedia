@@ -40,11 +40,11 @@ if(!isset($_GET["id"])){
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+<script src="js/parallax.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.js"
 			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 			  crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/particle.js"></script>
-<script type="text/javascript" src="js/particles.js"></script>
+
 <script src="js/modernizr.custom.17475.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
@@ -193,8 +193,8 @@ if(!isset($_GET["id"])){
 </header>
 
 
-
-<div class="container-fluid portada-destacado">
+<div  class="fodo_transparente_portafolio"></div>
+<div id="seccion_portafolio" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/home/slider/002.jpg">
 	<div class="row">
 		
 			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
@@ -212,7 +212,7 @@ if(!isset($_GET["id"])){
 </div>
 
 <div class="container-fluid">
-	<div class="row entradas"> 		 
+	<div id="contenedor_portafolio" class="row entradas"> 		 
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 blog-cont">			
 			<!--<div id="search" style="display:none;"></div>-->
 			<div class="content">
@@ -432,6 +432,8 @@ if(!isset($_GET["id"])){
 
 
 	<script src="js/menu.js"></script>
+	<!-- <script type="text/javascript" src="js/particle.js"></script> -->
+<!-- <script type="text/javascript" src="js/particles.js"></script> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -439,6 +441,7 @@ if(!isset($_GET["id"])){
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>	
+<script type="text/javascript" src="js/fun_menu_portafolio.js"></script>
 <script type="text/javascript">
 	$("h1").lettering();
       
@@ -450,6 +453,7 @@ $("h1").click(function() {
   el.remove();
 }); 
 </script>
+
 </body>
 </html>
 
