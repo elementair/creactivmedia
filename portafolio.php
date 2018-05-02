@@ -129,30 +129,28 @@ if(!isset($_GET["id"])){
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-
 <header>
+	<nav class="btn-toggle">
+		<div class="">
+			<a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
+		</div>
+		<div class="menu-nav">
+			<ul id="nav">
+				<li><a href="index.php#nosotros">Nosotros</a></li>
+				<li><a href="index.php#seccion_servicios">Servicios</a></li>
+				<li><a href="portafolio.php">Portafolio</a></li>
+				<li><a href="blog.php">Blog</a></li>
+				<li><a href="contacto.php">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="brand-datos">
+			<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
+		</div>
+	     <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
+	</nav>
 
-<nav class="btn-toggle">
-			<div class="">
-				<a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
-			</div>
-			<div class="menu-nav">
-				<ul id="nav">
-					<li><a href="index.php#nosotros">Nosotros</a></li>
-					<li><a href="index.php#seccion_servicios">Servicios</a></li>
-					<li><a href="portafolio.php">Portafolio</a></li>
-					<li><a href="blog.php">Blog</a></li>
-					<li><a href="contacto.php">Contacto</a></li>
-				</ul>
-			</div>
-			<div class="brand-datos">
-				<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
-			</div>
-     <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
-</nav>
 
-
- <section class="seccionToggle">
+ 	<section class="seccionToggle">
         <div class="wrap">
             <div class="container-fluid">
                 <div class="movil">
@@ -186,10 +184,10 @@ if(!isset($_GET["id"])){
                             <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                         </form>
                     </div>
-          </div>
-      </div>
-    </div>
-  </section>
+          		</div>
+      		</div>
+    	</div>
+  	</section>
 </header>
 
 
@@ -273,57 +271,57 @@ if(!isset($_GET["id"])){
 							                </div>          
 									</div>						         
 						          	<!--<div class="modal-body" style="padding:0px 0px;">	-->			          	
-							        <div id="<?php echo 'myCarousel-'.$res['id']; ?>" class="carousel slide" data-ride="carousel">
-    
+								    <div id="<?php echo 'myCarousel-'.$res['id']; ?>" class="carousel slide" data-ride="carousel">
+	    
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+									    <!-- Wrapper for slides -->
+									    <div class="carousel-inner">
 
-      <div class="item active">
-      <?php 
-		echo "<img src='admin/".$res["img1"]."' width='auto' heigth='auto' class='img-responsive'>";
-						        					?>        
-        <div class="carousel-caption">
-          <p style="text-shadow: 1px 1px 2px #000; "><?php 
-													echo ' "'.utf8_encode($res['desclarge']).'" ';
-													 ?> </p>
-        </div>
-      </div>
-		<div class="item">
-	      <?php 
-		echo "<img src='admin/".$res["img2"]."' width='auto' heigth='auto' class='img-responsive'>";
-						        					?>
-	      
-	      </div>
-	      <div class="item">
-	      <?php 
-		echo "<img src='admin/".$res["img3"]."' width='auto' heigth='auto' class='img-responsive'>";
-						        					?>
-	      </div>
+									      <div class="item active">
+									      <?php 
+											echo "<img src='admin/".$res["img1"]."' width='auto' heigth='auto' class='img-responsive'>";
+															        					?>        
+									        <div class="carousel-caption">
+									          <p style="text-shadow: 1px 1px 2px #000; "><?php 
+																						echo ' "'.utf8_encode($res['desclarge']).'" ';
+																						 ?> </p>
+									        </div>
+									      </div>
+											<div class="item">
+										      <?php 
+											echo "<img src='admin/".$res["img2"]."' width='auto' heigth='auto' class='img-responsive'>";
+															        					?>
+										      
+										      </div>
+										      <div class="item">
+										      <?php 
+											echo "<img src='admin/".$res["img3"]."' width='auto' heigth='auto' class='img-responsive'>";
+															        					?>
+										      </div>
 
-      
-  
-    </div>
+									      
+									  
+									    </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>						                
-					               
-							            
-						       		<!--</div>-->
-							        <div class="modal-footer">
-							            <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
-							        </div>
-						   		</div>						   		
+									    <!-- Left and right controls -->
+									    <a class="left carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="prev">
+									      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									      <span class="sr-only">Previous</span>
+									    </a>
+									    <a class="right carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="next">
+									      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									      <span class="sr-only">Next</span>
+									    </a>
+									  </div>						                
+						               
+								            
+							       		<!--</div>-->
+								        <div class="modal-footer">
+								            <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
+								        </div>
+							   	</div>						   		
 							</div>
-						</div>
+					</div>
 											
 				
 				<?php }?>							
@@ -428,23 +426,19 @@ if(!isset($_GET["id"])){
         <!-- Maps API Javascript -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB-M2C9yZRD7FFdjwjSjJfnsotae_Y8Nk"
   type="text/javascript"></script>
-        <script src="js/mapa.js"></script>
-
-
-	<script src="js/menu.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/menu.js"></script>
 	<!-- <script type="text/javascript" src="js/particle.js"></script> -->
 <!-- <script type="text/javascript" src="js/particles.js"></script> -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>	
 <script type="text/javascript" src="js/fun_menu_portafolio.js"></script>
 <script type="text/javascript">
-	$("h1").lettering();
-      
+$("h1").lettering();
+  
 // hack to get animations to run again
 $("h1").click(function() { 
   var el = $(this),  

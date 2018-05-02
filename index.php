@@ -41,6 +41,18 @@ include("conexion.php");
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/cubo.css">
 
+   <!-- PRELOADER -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <!-- FIN PRELOADER -->
+
 
 
     <!-- 
@@ -92,6 +104,18 @@ include("conexion.php");
 </head>
 <body>
 
+    <!-- Elemento muestra preloader  -->
+    <div class="preloader" id="preloader">
+        
+        <img class="logo" src="img/log-creactiv-ft.png">
+       
+        <div class="animationload">
+            <div class="osahanloading"></div>
+        </div>
+        <p class="text-center loadText">cargando . . . </p>
+    </div>
+    <!-- fin de elemento muestra preloader -->
+
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init({
@@ -118,7 +142,7 @@ include("conexion.php");
         <div class="menu-nav">
             <div id="nav">
                 <li><a id="btn_nosotros">Nosotros</a></li>
-                <li><a href="#seccion_servicios">Servicios</a></li>
+                <li><a id="btn_servicio">Servicios</a></li>
                 <li><a href="portafolio.php">Portafolio</a></li>
                 <li><a href="blog.php">Blog</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
@@ -180,7 +204,7 @@ include("conexion.php");
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="img/n_fondo/4.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/1.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>EJEM</h1>
@@ -189,7 +213,7 @@ include("conexion.php");
             </div>
         </div>
         <div class="item">
-            <img src="img/n_fondo/5.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/2.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>Another example headline.</h1>
@@ -198,7 +222,7 @@ include("conexion.php");
             </div>
         </div>
         <div class="item">
-            <img src="img/n_fondo/6.jpg" alt="First slide" class="img-responsive">
+            <img src="img/n_fondo/4.jpg" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>One more for good measure.</h1>
@@ -210,24 +234,71 @@ include("conexion.php");
     <a class="left carousel-control" href="#carousel-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-<div id="boton_contactanos" class="btn btn-primary my-2 my-sm-0" type="submit"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
+<div id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
 
 <svg width="100%" height="100%" class="pol-01" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg>
 
-<div id="nosotros" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="image/portada-nosotros3.jpg">
-    <div ></div>
-    <div class="row title1">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt_nosotros">
-            NOSOTROS
-            <div class="barra_inferior_titulo_verde"></div>
+<div id="nosotros" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row title1">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 txt_nosotros">
+            <h2>NOSOTROS</h2>
+            <!-- <div class="barra_inferior_titulo_verde"></div> -->
             <p>Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora a empresas e instituciones públicas y privadas. Tenemos para ti soluciones innovadoras en Comunicación Gráfica, Medios Audiovisuales, Web y MKT Digital, que contribuyen al crecimiento, competitividad y posicionamiento de tu Empresa, agregando valor a su Identidad Institucional.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 txt_que_ofrecemos" >
+            <div class="container contenedor_que_ofrecemos">
+              <h2>¿QUÉ OFRECEMOS?</h2>
+              <!-- <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class='glyphicon glyphicon-wrench'></span>DIAGNÓSTICO DE IDENTIDAD</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">Damos valor a tu Marca, aprovechamos tus fortalezas y las convertimos en negocio.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class='glyphicon glyphicon-screenshot'></span>IDENTIFICACION DE OPORTUNIDADES</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Para detectar áreas de desarrollo e ir siempre un paso adelante.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class='glyphicon glyphicon-knight'></span>ESTRATEGIAS CREACTIVAS</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Según las necesidades de tu empresa, investigación de mercado, competencias y ofertas de valor.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class='glyphicon glyphicon-plane'></span>DESARROLLO DE PLAN Y EJECUCIÓN</a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">Aplicación, seguimiento y búsqueda de nuevas ideas y proyectos para hacer crecer tu negocio.</div>
+                  </div>
+                </div>
+            </div> 
+        </div>
         </div>
     </div>
 </div>
-<div id="seccion_servicios"></div>
-<svg width="100%" height="100%" class="pol-2">
+
+<svg id="seccion_servicios" width="100%" height="100%" class="pol-2">
   <polygon points="0,0 3500,225 0,225"/>
 </svg>
 <div class="txt_servicios" >
@@ -696,7 +767,7 @@ INCREMENTA TUS SEGUIDORES
 </div>
 
 
-
+<img class="boton_subir_inicio" src="img/button-round-dark-arrow-up-icon.png">
 <footer>
   Visítanos
   <div class="caja-redes">
