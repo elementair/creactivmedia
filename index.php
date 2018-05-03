@@ -204,7 +204,7 @@ include("conexion.php");
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="img/n_fondo/1.jpg" alt="First slide" class="img-responsive">
+            <img style="background-image: url(img/n_fondo/1.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>EJEM</h1>
@@ -213,7 +213,7 @@ include("conexion.php");
             </div>
         </div>
         <div class="item">
-            <img src="img/n_fondo/2.jpg" alt="First slide" class="img-responsive">
+            <img style="background-image: url(img/n_fondo/2.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>Another example headline.</h1>
@@ -222,7 +222,7 @@ include("conexion.php");
             </div>
         </div>
         <div class="item">
-            <img src="img/n_fondo/4.jpg" alt="First slide" class="img-responsive">
+            <img style="background-image: url(img/n_fondo/4.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
                     <!-- <h1>One more for good measure.</h1>

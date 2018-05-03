@@ -10,6 +10,9 @@
         font-family: 'verdana',sans-serif;
         src: url(\fonts) format('ttf');    
        }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .portada{
 	width: 100%;

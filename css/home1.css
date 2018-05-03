@@ -18,7 +18,9 @@
     font-family: "Gotham-Light";
     src: url(../fonts/Gotham-Light.ttf) format("truetype");
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 a:link 
 { 
