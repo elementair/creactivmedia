@@ -44,44 +44,22 @@ include("conexion.php");
    <!-- PRELOADER -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    </head>
     <!-- FIN PRELOADER -->
 
-
-
-    <!-- 
-    <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-80500677-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-    -->
-
-
-	<!--Start of Zopim Live Chat Script
-	<script type="text/javascript">
-	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-	$.src="//v2.zopim.com/?3opI8bRHGhZc4H7VZBgPzdZNdIdPcrE3";z.t=+new Date;$.
-	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>-->
-<!--End of Zopim Live Chat Script-->
+    <link rel="stylesheet" type="text/css" href="css/contador_seguidores.css">
+    <script type="text/javascript" src="js/contador_seguidores.js"></script>
 
 
 <link rel="stylesheet" src="js/jquery.bxslider/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
 
 <script>
     $(document).ready(function(){
@@ -686,9 +664,18 @@ SERVICIOS
 <svg width="100%" height="100%" class="pol-1" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg>
-<div class="txt_nuestros_clientes">
-INCREMENTA TUS SEGUIDORES
-<p> NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
+<div class="nuestros_clientes">
+    <div class="txt_nuestros_clientes">
+        INCREMENTA TUS SEGUIDORES
+    </div>
+    <div class="iconos_redes">
+        <img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg"  class="contador_facebook">
+        <span class="contador"><b>+</b><strong></strong></span>
+        <img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg" class="contador_twitter">
+        <span class="contador"><b>+</b><strong></strong></span>
+    </div>
+
+    <p> NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
  </div>
 <div class="container-fluid">
     <div class="row marcas">

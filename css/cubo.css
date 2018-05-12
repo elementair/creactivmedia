@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url(../fonts/Gotham-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url(../fonts/Gotham-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Gotham-Light";
+    src: url(../fonts/Gotham-Light.ttf) format("truetype");
+}
 
  *, *:before, *:after {
   box-sizing: border-box;
@@ -232,13 +244,15 @@ ul li {
 }
 .cube.blog div:nth-child(6) {
   background: url(../image/demo1.jpg);
+  font-family: "Gotham-Bold";
   color: #FC0000;
-  font-size: 20px;
+  font-size: 22px;
 }
 .cube.blog div:nth-child(6) p {
-  background: url(../image/demo1.jpg);
   color: #AA0303;
-  font-size: 14px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 /*multimedia*/
 .cube.multimedia div:nth-child(1) {
@@ -258,13 +272,17 @@ ul li {
 }
 .cube.multimedia div:nth-child(6) {
   background: url(../image/demo1.jpg);
-  color: #00CC66;
-  font-size: 20px;
+  font-family: "Gotham-Bold";
+  text-shadow: 2px 2px 10px #0808084f;
+  color: #00FF80;
+  font-size: 22px;
 }
 .cube.multimedia div:nth-child(6) p {
-  background: url(../image/demo1.jpg);
-  color: #00AC56;
-  font-size: 14px;
+  color: #014890;
+  font-size: 15px;
+   text-shadow: 1px 1px 10px #0808084f;
+  position: absolute;
+  bottom: 30px;
 }
 /*indentidad*/
 .cube.indentidad div:nth-child(1) {
@@ -284,13 +302,16 @@ ul li {
 }
 .cube.indentidad div:nth-child(6) {
   background: url(../image/demo1.jpg);
+  font-family: "Gotham-Bold";
   color: #E67300;
-  font-size: 20px;
+  text-shadow: 1px 1px 10px #0808084f;
+  font-size: 22px;
 }
 .cube.indentidad div:nth-child(6) p{
-  background: url(../image/demo1.jpg);
   color: #BC5E00;
-  font-size: 14px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 
 /*p_interactiva*/
@@ -311,13 +332,16 @@ ul li {
 }
 .cube.p_interactiva div:nth-child(6) {
   background: url(../image/demo1.jpg);
+  font-family: "Gotham-Bold";
   color: #CC0099;
-  font-size: 20;
+  text-shadow: 1px 1px 10px #0808084f;
+  font-size: 22px;
 }
 .cube.p_interactiva div:nth-child(6) p{
-  background: url(../image/demo1.jpg);
   color: #9E0377;
-  font-size: 14;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 
 /*d_web*/
@@ -338,13 +362,17 @@ ul li {
 }
 .cube.d_web div:nth-child(6) {
   background: url(../image/demo1.jpg);
-  color: #00BCBC;
-  font-size: 20px;
+  font-family: "Gotham-Bold";
+  color: #00FFFF;
+  font-size: 22px;
+  text-shadow: 1px 1px 10px #0808084f;
 }
 .cube.d_web div:nth-child(6) p{
-  background: url(../image/demo1.jpg);
-  color: #009494;
-  font-size: 14px;
+  color: #014890;
+  font-size: 15px;
+  text-shadow: 1px 1px 10px #0808084f;
+  position: absolute;
+  bottom: 30px;
 }
 
 /*editorial*/
@@ -365,39 +393,49 @@ ul li {
 }
 .cube.editorial div:nth-child(6) {
   background: url(../image/demo1.jpg);
+  font-family: "Gotham-Bold";
   color: #5500CC;
-  font-size: 20px;
+  font-size: 22px;
+  text-shadow: 1px 1px 10px #0808084f;
 }
 .cube.editorial div:nth-child(6) p{
-  background: url(../image/demo1.jpg);
   color: #41019A;
-  font-size: 14px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 /*m_digital*/
 .cube.m_digital div:nth-child(1) {
   background: #6498CC;
+  
 }
 .cube.m_digital div:nth-child(2) {
   background: #0C6CCC;
+  
 }
 .cube.m_digital div:nth-child(3) {
   background: #2377CC;
+  
 }
 .cube.m_digital div:nth-child(4) {
   background: #4387CC;
-}
+ }
 .cube.m_digital div:nth-child(5) {
   background: #0066CC;
+
 }
 .cube.m_digital div:nth-child(6) {
   background: url(../image/demo1.jpg);
+  font-family: "Gotham-Bold";
   color: #0066CC;
-  font-size: 20px;
+  font-size: 22px;
+  text-shadow: 1px 1px 10px #0808084f;
 }
 .cube.m_digital div:nth-child(6) p {
-  background: url(../image/demo1.jpg);
   color: #014890;
-  font-size: 14px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 /*portafolio*/
 .cube.portafolio div:nth-child(1) {
@@ -417,12 +455,16 @@ ul li {
 }
 .cube.portafolio div:nth-child(6) {
   background: url(../image/demo1.jpg);
-  color: #CEC100;
-  font-size: 20px;
+  font-family: "Gotham-Bold";
+  text-shadow: 2px 2px 10px #0808084f;
+  color: #FFEF00;
+  font-size: 22px;
 }
 .cube.portafolio div:nth-child(6) p{
-  background: url(../image/demo1.jpg);
-  color: #BFB300;
-  font-size: 14px;
+  text-shadow: 1px 1px 10px #0808084f;
+  color: #BC5E00;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
 }
 

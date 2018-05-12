@@ -266,18 +266,34 @@ if(!isset($_GET["id"])){
     				</div>
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
 
-    					<div class="aside">
-    						<div class="plugin-fb">
-    							<div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
-    						</div>
+    					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <h2>Siguenos en:</h2>
+                          <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
 
-    						<br/><br/>
+                          <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home"><img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg">Facebook</a></li>
+                            <li><a data-toggle="tab" href="#menu1"><img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg">Twitter</a></li>
+                          </ul>
 
-
-    						<a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    						<br/><br/>
-    					</div>
+                          <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                              <h3>Facebook</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <div class="aside">
+                                    <div class="plugin-fb">
+                                        <div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                              <h3>Twitter</h3>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                 <div class="aside">                
+                                    <a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                            </div>
+                          </div>
+                        </div>  
     				</div>
     			</div>
     		</div>

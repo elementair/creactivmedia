@@ -106,11 +106,17 @@ footer{
   background: #656565;
   text-align: right;
 }
+.btn-toggle .opaque{
+
+  background: #650005;
+
+}
 
 
 .btn-toggle:hover {
   text-decoration: none; 
 }
+
 
 
 

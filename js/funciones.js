@@ -25,6 +25,11 @@ $(document).ready(function(){
 	    $(".btn-toggle").css("background", "#16171900");
 	    
 	});
+
+	$(".contador_facebook").hover(function(){
+
+	    $(".contador_facebook").css("transform", "rotate(0deg)");
+	});
 	/***Scroll fijo***/
 	function ScrollHandler(pageId) { 
 	    var page = $('#' + pageId);
@@ -108,7 +113,13 @@ $(document).ready(function(){
 	                $(".btn_open_menu_responsive").css("color", "#fff");
 	            break;
 	        }
-	    }
+	        if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+		    {
+		        $('.btn-toggl').addClass('opaque');
+			    } else {
+			        $('.btn-toggl').removeClass('opaque');
+			    }
+		    }
 
 	    window.addEventListener('wheel', function(event) {
 	       var viewStart = $(window).scrollTop();
@@ -145,4 +156,6 @@ $(document).ready(function(){
 	new ScrollHandler('alianzas_comerciales');
 	new ScrollHandler('nuestros_clientes');
 	new ScrollHandler('footerIndex');
+
+
 });

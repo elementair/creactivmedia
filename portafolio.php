@@ -49,6 +49,8 @@ if(!isset($_GET["id"])){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
 
+<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,7 +73,7 @@ if(!isset($_GET["id"])){
 		var f = jQuery.noConflict();
         f(document).ready(function(){
 
-
+		
               f("#buscar").click(function (){
                     var datos={
                            "search" : f("#_search").val()
@@ -130,7 +132,7 @@ if(!isset($_GET["id"])){
 
 
 <header>
-	<nav class="btn-toggle">
+	<nav id="top" class="btn-toggle">
 		<div class="">
 			<a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
 		</div>
@@ -332,31 +334,34 @@ if(!isset($_GET["id"])){
 			
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			  <h2>Siguenos en:</h2>
+			  <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
 
-			<div class="aside">
+			  <ul class="nav nav-tabs">
+			    <li class="active"><a data-toggle="tab" href="#home"><img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg">Facebook</a></li>
+			    <li><a data-toggle="tab" href="#menu1"><img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg">Twitter</a></li>
+			  </ul>
 
-				<div class="plugin-fb">
-					<div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
-				</div>
-
-					<br/><br/>
-
-				
-        		<a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-	    		<br/><br/>
-	
-
-								<?php
-						/*
-									if ($sql = mysql_query("SELECT COUNT('categoria') AS categoria FROM blog GROUP BY categoria",$con)) {
-											 while($row0 = mysql_fetch_assoc($sql)) {
-											 		echo $row0['categoria'];
-											 }
-									}
-						*/
-									?>
-			</div>
+			  <div class="tab-content">
+			    <div id="home" class="tab-pane fade in active">
+			      <h3>Facebook</h3>
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			      <div class="aside">
+						<div class="plugin-fb">
+							<div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
+						</div>
+					</div>
+			    </div>
+			    <div id="menu1" class="tab-pane fade">
+			      <h3>Twitter</h3>
+			      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			         <div class="aside">				
+			        	<a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+			    </div>
+			  </div>
+			</div>	
 		</div>
 	
 	</div>
@@ -435,7 +440,8 @@ if(!isset($_GET["id"])){
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>	
-<script type="text/javascript" src="js/fun_menu_portafolio.js"></script>
+<!-- <script type="text/javascript" src="js/fun_menu_portafolio.js"></script> -->
+
 <script type="text/javascript">
 $("h1").lettering();
   

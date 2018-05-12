@@ -13,6 +13,22 @@
 ::-webkit-scrollbar {
     display: none;
 }
+.nav-tabs{
+   color: #0CDB99;
+}
+.nav-tabs img {
+    width: 30%;
+    padding-right: 5px;
+   
+}
+
+#scrollUp {
+    bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-image: url(../img/top.png);
+  color: #fff;
+}
 
 .portada{
 	width: 100%;
