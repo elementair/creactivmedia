@@ -49,6 +49,7 @@ if(!isset($_GET["id"])){
 		<script src="js/modernizr.custom.17475.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+        <script src="js/parallax.js"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,16 +186,24 @@ if(!isset($_GET["id"])){
                   </div>
               </div>
             </section>
-    		</header>   
-    		<div class="container-fluid portada-destacado">
-    			<div class="row">
-    				<div class="destacado">	
-    					<div class="dest-box">				
-    						<h1>CONTACTO</h1>					
-    					</div>
-    				</div>
-    			</div>
-    		</div>
+    		</header>
+            <div  class="fodo_transparente_contacto"></div>
+            <div id="seccion_contacto" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg">
+                <div class="row">
+                    
+                        <!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
+                        </div>
+                        <div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
+                        </div>-->
+                        
+                    <div  class="destacado">    
+                        <div  class="dest-box">             
+                            <h1 class="animated fadeInDown">CONTACTO</h1>                 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
     		<div class="container-fluid">
     			<div class="row entradas"> 		 
     				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 blog-cont">		    				

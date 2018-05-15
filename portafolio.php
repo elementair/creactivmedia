@@ -194,7 +194,7 @@ if(!isset($_GET["id"])){
 
 
 <div  class="fodo_transparente_portafolio"></div>
-<div id="seccion_portafolio" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/home/slider/002.jpg">
+<div id="seccion_portafolio" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/home/portafolio_home.jpg">
 	<div class="row">
 		
 			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
@@ -203,8 +203,8 @@ if(!isset($_GET["id"])){
 			</div>-->
 			
 		<div  class="destacado">	
-			<div  id="particles-js" class="dest-box">				
-				<h1>PORTAFOLIO</h1>					
+			<div  class="dest-box">				
+				<h1 class="animated fadeInDown">PORTAFOLIO</h1>					
 			</div>
 		</div>
 

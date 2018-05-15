@@ -43,7 +43,7 @@ footer{
 }
 .sombra_transparente{
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
   z-index: 1;
   position: absolute;

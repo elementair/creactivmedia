@@ -18,9 +18,9 @@
     font-family: "Gotham-Light";
     src: url(../fonts/Gotham-Light.ttf) format("truetype");
 }
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 a:link 
 { 
@@ -66,8 +66,10 @@ text-decoration:none !important;
   
 }*/
 #seccion_servicios{
-	margin-top: -150px;
-	position: absolute;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+
 }
 .carousel, .carousel-inner > .item > img {
   	height: 100vh !important;
@@ -83,8 +85,7 @@ text-decoration:none !important;
 	list-style: none;
 }
 .contenedor_que_ofrecemos{
-	margin-top: 80px !important;
-	width: 80% !important;
+	width: 100% !important;
 }
 .contenedor_que_ofrecemos h2{
 	padding: 50px 0px;
@@ -93,8 +94,9 @@ text-decoration:none !important;
     font-size: 45px;
 }
 .panel-title{
-	font-family: Gotham-Light;
-	font-size: 30px;
+	font-family: Gotham-Medium;
+	font-size: 25px;
+	color: #8d8d8d !important;
 }
 .panel-title span{
 	color: #8d8d8d !important;
@@ -102,8 +104,12 @@ text-decoration:none !important;
 }
 .panel-body{
 	font-family: Gotham-Light;
-	font-size: 18px;
+	font-size: 16px;
 	color: #03977a;
+}
+.panel-group .panel {
+    border-radius: 0px !important;
+    box-shadow: 2px 2px 5px #00000059;
 }
 #boton_contactanos{
 	position: absolute;
@@ -114,56 +120,116 @@ text-decoration:none !important;
     border: 1px solid #fff;
     border-radius: 30px;
     margin-left: 5%;
+    text-align: center;
     text-decoration: none;
     margin-top: -180px;
     padding: 5px 10px;
 }
+.carousel-caption{
+	top: 40% !important;
+	text-align: center;
+    
+	text-shadow: 1px 2px 20px rgba(0,0,0,0.7);
+}
+.carousel-caption h1 {
+	font-size: 45px !important;
+    top: 30% !important;
+    color: #fff;
+    font-family: Gotham-Bold;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.7);
+}
+.carousel-caption h3 {
+	font-family: Gotham-Medium !important;
+	color: #00fff5;portada-destacado
+
+}
+.carousel-caption ul{
+	font-size: 20px;
+    margin-left: 22%;
+    text-align: center;
+    color: #00fff5;
+    font-family: Gotham-Medium;
+}
+.carousel-caption .btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+ }
+ .carousel-caption .btn-transparent:hover{
+
+ 	 background-color: #fff;
+ }
+.carousel-caption .btn-rounded {
+  border-radius: 70px;
+}
+
+.carousel-caption .btn-large {
+  padding: 11px 45px;
+  font-size: 18px;
+}
+
+/**
+ * Change animation duration
+ */
+.carousel-caption .animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.fondo_transparente_seccion_servicios{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(104,143,5,0));
+    width: 100%;
+    height: 40vh;
+    left: 0;
+    position: absolute;
+}
 .txt_servicios{
 	z-index: 5;
-	position: absolute;
+	/*position: absolute;*/
 	font-family: Gotham-Bold;
-	font-size: 45px !important;
+	font-size: 40px !important;
 	color: #fff;
-	margin: 20px;
-	padding-left: 160px;
-	margin-top: -60px;
+	margin-top: 20px;
+	text-shadow: 2px 2px 2px #00000d94;
+}
+/*SECCION NOSOTROS*/
+#nosotros{
+	height: 100vh;
+	background: url(../img/seccion_nosotros.jpg);
+	background-position: center;
+	background-size: cover;
 }
 .txt_nosotros{
 	z-index: 5;
-	
-
-	
-	padding-left: 160px !important;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    padding-bottom: 200px;
+	margin: 40px;
 }
 .txt_nosotros h2{
 	font-family: Gotham-Bold;
     color: #03977a;
     padding-left: 50px;
-    padding-bottom: 30px;
-    font-size: 45px !important;
+    padding-bottom: 20px;
+    font-size: 40px !important;
     text-shadow: -4px 1px 1px #0808084f;
 }
 
 .txt_que_ofrecemos{
-	padding: 50px;
+	padding: 40px;
 }
 .txt_que_ofrecemos h2{
 	font-family: Gotham-Bold;
     color: #03977a;
     padding-left: 50px;
-    font-size: 45px !important;
+    font-size: 40px !important;
     text-shadow: -4px 1px 1px #0808084f;
 }
 .txt_nosotros p{
 	background:#fff;
 	font-family: Gotham-Light;
-	font-size: 20px;
-	color: #03977a;
+	font-size: 16px;
+	color: #8d8d8d;
 	padding: 50px;
-	border-radius: 20px;	
+	border-radius: 0px;
+	box-shadow: 2px 2px 5px #00000059;
+
 }
 .txt_nuestros_clientes{
 	z-index: 5;
@@ -326,6 +392,7 @@ text-decoration:none !important;
 	    margin-top: 140px;
 	    background: #fff;
 	}
+	
 
 
 
@@ -537,13 +604,15 @@ text-decoration:none !important;
 			transition-delay: 0.1s;
 		}
 
-
+		
 		.servicios{
-			padding: 20px 120px;
+			/*padding: 20px 120px;*/
 			text-align: center;
-		    background: linear-gradient( 180deg, #00987b, #021033);
+		    /*background: linear-gradient( 180deg, #00987b, #021033);*/
 		    margin-top: -5px;
 		    height: auto;
+		    background-position: center;
+		    background-size: cover;
 		}  
 
 		.pc{
@@ -700,10 +769,16 @@ text-decoration:none !important;
 		.pda{
 			margin-bottom: 30px;
 		}
-
-		.carousel-caption{
-			top: 60% !important;
+		.maxfront{
+			background: #000;
+			width: 100%;
+			margin: 0;
+			position: absolute;
+			height: 100px;
+			z-index: 5 !important;
+			text-align: center !important;
 		}
+	
 
 		.emoji-01{
 			position: absolute;

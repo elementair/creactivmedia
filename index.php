@@ -9,14 +9,9 @@ include("conexion.php");
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
     <meta name="description" content="Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora">
     <meta name="keywords" content="Agencia de publicidad, diseño, marketing digital, branding, imagen corporativa, fotografía, multimedia, pantallas interactivas, producción de video, posicionamiento SEO, logotipos">
-    <meta property="og:url" content="http://www.creactivmedia.com.mx" />
-    <meta property="og:title" content="CreActiv Media Diseño, Web, Mkt Digital" />
-    <meta property="og:description" content="Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora." />
-    <meta property="og:image" content="http://www.creactivmedia.com.mx/image/share-index.jpg" />
 
     <meta name="author" content="Creactiv Media - Santiago Arenas">
     <title>CreActiv Media Diseño, Web, Mkt Digital</title>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
@@ -38,8 +33,10 @@ include("conexion.php");
     <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
 
     <!--  <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/Slider.css"> -->
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/cubo.css">
+
 
    <!-- PRELOADER -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -54,46 +51,37 @@ include("conexion.php");
 
     <link rel="stylesheet" type="text/css" href="css/contador_seguidores.css">
     <script type="text/javascript" src="js/contador_seguidores.js"></script>
-
-
-<link rel="stylesheet" src="js/jquery.bxslider/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<script src="js/jquery.scrollUp.js"></script>
-
-<script>
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        auto: true,
-        minSlides: 2,
-        maxSlides: 8,
-        slideWidth: 250,
-        slideMargin: 10,
-        pager: false,
-        autoControls: false,
-        hideControlOnEnd: false,
-        infiniteLoop: false,
-        controls: false
-    });
-  });
-</script>
-
-
+    <link rel="stylesheet" src="js/jquery.bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider({
+            auto: true,
+            minSlides: 2,
+            maxSlides: 8,
+            slideWidth: 250,
+            slideMargin: 10,
+            pager: false,
+            autoControls: false,
+            hideControlOnEnd: false,
+            infiniteLoop: false,
+            controls: false
+        });
+      });
+    </script>
 </head>
-<body>
-
+<body id="top">
     <!-- Elemento muestra preloader  -->
-    <div class="preloader" id="preloader">
-        
+    <div class="preloader" id="preloader"> 
         <img class="logo" src="img/log-creactiv-ft.png">
-       
         <div class="animationload">
             <div class="osahanloading"></div>
         </div>
         <p class="text-center loadText">cargando . . . </p>
     </div>
     <!-- fin de elemento muestra preloader -->
-
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init({
@@ -104,13 +92,10 @@ include("conexion.php");
             live:         true        // default
         });
     </script>
-
     <script>
     // init controller
     var controller = new ScrollMagic.Controller();
-</script>
-
-
+    </script>
 <header>
     <!-- MENU RESPONSIVO MOVIL -->
     <nav class="btn-toggle">
@@ -174,6 +159,7 @@ include("conexion.php");
 
 <!-- CARRUSEL INICIO -->
 <div class="sombra_transparente"></div>
+
 <div id="carousel-slider" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
@@ -185,26 +171,37 @@ include("conexion.php");
             <img style="background-image: url(img/n_fondo/1.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
-                    <!-- <h1>EJEM</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
+
+                    <h1 class="animated fadeInDown">CONOCE NUESTROS SERVICIOS</h1>
+                    <ul class="animated fadeInDown">
+                        <li>Identidad</li><br>
+                        <li>Mkt Digital</li>
+                        <li>Multimedia</li>
+                        <li>Editorial</li>
+                        <li>Diseño Web</li>
+                    </ul>
+                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="#servicios">IR A SERVICIOS</a></p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img style="background-image: url(img/n_fondo/2.jpg);" alt="First slide" class="img-responsive">
+            <img style="background-image: url(img/home/blog_home.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
-                <div class="carousel-caption">
-                    <!-- <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+                <div class="carousel-caption" >
+                    <h1 class="animated fadeInDown">VISITA NUESTRO BLOG</h1>
+                    <h3 class="animated fadeInDown">Y ENTERATE DE NUESTRAS NOVEDADES</h3>
+                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="blog.php">VISITAR EL BLOG</a></p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img style="background-image: url(img/n_fondo/4.jpg);" alt="First slide" class="img-responsive">
+            <img style="background-image: url(img/home/portafolio_home.jpg);" alt="First slide" class="img-responsive">
             <div class="container">
                 <div class="carousel-caption">
-                    <!-- <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+
+                    <h1 class="animated fadeInDown">REVISA NUESTRO PORTAFOLIO</h1>
+                    <h3 class="animated fadeInDown">Y CONOCE LA CALIDAD DE NUETROS SERVICIOS</h3>
+                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="portafolio.php">IR AL PORTAFOLIO</a></p>
                 </div>
             </div>
         </div>
@@ -217,15 +214,15 @@ include("conexion.php");
 <svg width="100%" height="100%" class="pol-01" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg>
-
-<div id="nosotros" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg">
+<!-- class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg" -->
+<div id="nosotros">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row title1">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 txt_nosotros">
+        <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 txt_nosotros">
             <h2>NOSOTROS</h2>
             <!-- <div class="barra_inferior_titulo_verde"></div> -->
             <p>Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora a empresas e instituciones públicas y privadas. Tenemos para ti soluciones innovadoras en Comunicación Gráfica, Medios Audiovisuales, Web y MKT Digital, que contribuyen al crecimiento, competitividad y posicionamiento de tu Empresa, agregando valor a su Identidad Institucional.</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 txt_que_ofrecemos" >
+
             <div class="container contenedor_que_ofrecemos">
               <h2>¿QUÉ OFRECEMOS?</h2>
               <!-- <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
@@ -273,27 +270,30 @@ include("conexion.php");
             </div> 
         </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 txt_que_ofrecemos" >
+            
+        </div>
+         <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
     </div>
 </div>
 
-<svg id="seccion_servicios" width="100%" height="100%" class="pol-2">
+<!-- <svg id="seccion_servicios" width="100%" height="100%" class="pol-2">
   <polygon points="0,0 3500,225 0,225"/>
-</svg>
-<div class="txt_servicios" >
-SERVICIOS
-<hr> 
-<p>Diseñamos soluciones a tu medida</p>
-</div>
-<div class="container-fluid">
-    <div class="row pc">
-        <img src="img/home/pc_layout.png" class="img-responsive center-block wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s" alt="">
-    </div>
-</div>
+</svg> -->
 
-<div class="container-fluid ser">
-    <div class="row servicios" >
+
+<div id="seccion_servicios" class="container-fluid ser">
+
+    <div class="row servicios container-fluid parallax-window" data-parallax="scroll" data-image-src="img/home/ser2.jpg" >
+        <div class="fondo_transparente_seccion_servicios"></div>
+        <div class="txt_servicios" >
+            SERVICIOS
+            <p>Diseñamos soluciones a tu medida</p>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
+                <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10">
                     <ul ontouchstart class="col_servicios">
                         <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 columna_servicio'>
                           <li class="servicio_individual">
@@ -473,25 +473,27 @@ SERVICIOS
                             </div>
                           </li>
                       </div>
-                        </ul>
+                    </ul>
 
-                        
-                        <svg class='clips' viewbox='0 0 0 0' xmlns='http://www.w3.org/2000/svg'>
-                          <defs>
-                            <clippath id='clip-right'>
-                              <polygon id='right' points='48 0 48 96 0 48'></polygon>
-                            </clippath>
-                            <clippath id='clip-left'>
-                              <polygon id='left' points='0 0 0 96 48 48'></polygon>
-                            </clippath>
-                            <clippath id='clip-bottom'>
-                              <polygon id='bottom' points='96 48 0 48 48 0'></polygon>
-                            </clippath>
-                            <clippath id='clip-top'>
-                              <polygon id='top' points='0 0 96 0 48 48'></polygon>
-                            </clippath>
-                          </defs>
-                        </svg>
+                    
+                    <svg class='clips' viewbox='0 0 0 0' xmlns='http://www.w3.org/2000/svg'>
+                      <defs>
+                        <clippath id='clip-right'>
+                          <polygon id='right' points='48 0 48 96 0 48'></polygon>
+                        </clippath>
+                        <clippath id='clip-left'>
+                          <polygon id='left' points='0 0 0 96 48 48'></polygon>
+                        </clippath>
+                        <clippath id='clip-bottom'>
+                          <polygon id='bottom' points='96 48 0 48 48 0'></polygon>
+                        </clippath>
+                        <clippath id='clip-top'>
+                          <polygon id='top' points='0 0 96 0 48 48'></polygon>
+                        </clippath>
+                      </defs>
+                    </svg>
+                </div>
+                <div  class='col-xs-0 col-sm-0 col-md-1 col-lg-1'></div>
             </div>
         </div>
     </div>
@@ -752,9 +754,6 @@ SERVICIOS
 
     </div> 
 </div>
-
-
-<img class="boton_subir_inicio" src="img/button-round-dark-arrow-up-icon.png">
 <footer>
   Visítanos
   <div class="caja-redes">
@@ -771,7 +770,23 @@ SERVICIOS
 <br/><br/>
 <p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
 </footer>
+<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <style type="text/css">
+        .to-top{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color:#fff;
+            padding: 9px 12px;
+            border-radius: 50%;
 
+        }
+        .to-top:hover{
+            background: #fff;
+            color:#000;
+        }
+    </style>
 
 
 <!-- 
@@ -861,10 +876,29 @@ type="text/javascript"></script>
     .addTo(controller);
     
 </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var offset = 250;
+        var duration = 500;
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()> offset){
+                $('.to-top').fadeIn(duration);
+                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.8)");
+            }else{
+                $('.to-top').fadeOut(duration);
+                $(".btn-toggle").css("background", "#16171900");
+            }
+        });
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop:0},duration);
+        })
+    });
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/funciones.js"></script>
+<!-- <script src="js/funciones.js"></script> -->
 
 </body>
 </html>
