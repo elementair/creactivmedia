@@ -428,8 +428,8 @@ if(!isset($_GET["id"])){
 <div id="mapa" class="map"></div>
 
 <div class="container-fluid">
-	<div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+	<div class=" row">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 			<br/><br/>
 		    <h4 class="sitemap">Site Map</h4>
 
@@ -441,23 +441,23 @@ if(!isset($_GET["id"])){
 		    	<li><a href="diseno.php">Diseño Web</a></li>
 		    	<li><a href="#">Blog</a></li>
 		    	<li><a href="#">Pantallas Interactivas</a></li>
-		    	<li><a href="portafolio.php">Portafolio</a></li>
+		    	<li><a href="Portafolio.php">Portafolio</a></li>
 		    	<li><a href="#">Contacto</a></li>
 		    </ul>
 
 	    </div>
 
-	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-right">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
 
 		  <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
 
-		  <p class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</p>
+		  
 		
 	    </div>
 	</div>
 	
 </div>
-
+	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
 <script src="js/jquery.min.js"></script>
         <!-- Maps API Javascript -->

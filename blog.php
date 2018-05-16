@@ -100,17 +100,37 @@ if(!isset($_GET["id"])){
 <link rel="stylesheet" src="js/jquery.bxslider/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
 
-
+<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
 
 
 </head>
 
 
-<body>
+<body id="top">
 
 <div id="fb-root"></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var offset = 200;
+        var duration = 500;
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()> offset){
+                $('.to-top').fadeIn(duration);
+                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+            }else{
+                $('.to-top').fadeOut(duration);
+                $(".btn-toggle").css("background", "#16171900");
+            }
+        });
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop:0},duration);
+        })
+    });
+</script>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -166,7 +186,23 @@ if(!isset($_GET["id"])){
 	    });
 	  });
 	</script>
+<style type="text/css">
+    .to-top{
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        background: #000;
+        color:#fff;
+        padding: 12px 12px;
+        border-radius: 50%;
+        z-index: 10;
 
+    }
+    .to-top:hover{
+        background: #fff;
+        color:#000;
+    }
+</style>
 
 <header>
 
@@ -305,7 +341,8 @@ if(!isset($_GET["id"])){
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clearPad">
+		<div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 clearPad">
 
 		<br/><br/>
 <div id="search" style="display:none;"></div>
@@ -1122,6 +1159,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 
 
 <footer>
+
   Visítanos
     <div class="caja-redes">
         <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
@@ -1156,6 +1194,8 @@ type="text/javascript"></script>
   <script src="js/rrssb.min.js"></script>
 
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
 <!-- cierre html -->

@@ -35,6 +35,7 @@ include("conexion.php");
     <!--  <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/Slider.css"> -->
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
     <link rel="stylesheet" href="css/cubo.css">
 
 
@@ -104,8 +105,8 @@ include("conexion.php");
         </div>
         <div class="menu-nav">
             <div id="nav">
-                <li><a id="btn_nosotros">Nosotros</a></li>
-                <li><a id="btn_servicio">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#seccion_servicios" >Servicios</a></li>
                 <li><a href="portafolio.php">Portafolio</a></li>
                 <li><a href="blog.php">Blog</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
@@ -173,13 +174,11 @@ include("conexion.php");
                 <div class="carousel-caption">
 
                     <h1 class="animated fadeInDown">CONOCE NUESTROS SERVICIOS</h1>
-                    <ul class="animated fadeInDown">
-                        <li>Identidad</li><br>
-                        <li>Mkt Digital</li>
-                        <li>Multimedia</li>
-                        <li>Editorial</li>
-                        <li>Diseño Web</li>
-                    </ul>
+                        <h3 class="animated fadeInLeft">&nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;IDENTIDAD
+                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;MKT DIGITAL
+                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;MULTIMEDIA
+                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;EDITORIAL
+                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;DISEÑO WEB</h3>
                     <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="#servicios">IR A SERVICIOS</a></p>
                 </div>
             </div>
@@ -189,7 +188,7 @@ include("conexion.php");
             <div class="container">
                 <div class="carousel-caption" >
                     <h1 class="animated fadeInDown">VISITA NUESTRO BLOG</h1>
-                    <h3 class="animated fadeInDown">Y ENTERATE DE NUESTRAS NOVEDADES</h3>
+                    <h3 class="animated fadeInLeft">Y ENTERATE DE NUESTRAS NOVEDADES</h3>
                     <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="blog.php">VISITAR EL BLOG</a></p>
                 </div>
             </div>
@@ -200,7 +199,7 @@ include("conexion.php");
                 <div class="carousel-caption">
 
                     <h1 class="animated fadeInDown">REVISA NUESTRO PORTAFOLIO</h1>
-                    <h3 class="animated fadeInDown">Y CONOCE LA CALIDAD DE NUETROS SERVICIOS</h3>
+                    <h3 class="animated fadeInLeft">Y CONOCE LA CALIDAD DE NUETROS SERVICIOS</h3>
                     <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="portafolio.php">IR AL PORTAFOLIO</a></p>
                 </div>
             </div>
@@ -209,11 +208,11 @@ include("conexion.php");
     <a class="left carousel-control" href="#carousel-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-<div id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
+<div class="animated fadeInRight" id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
 
-<svg width="100%" height="100%" class="pol-01" >
+<!-- <svg width="100%" height="100%" class="pol-01" >
   <polygon points="0,0 3500,225 0,225"/>
-</svg>
+</svg> -->
 <!-- class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg" -->
 <div id="nosotros">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row title1">
@@ -284,7 +283,7 @@ include("conexion.php");
 
 <div id="seccion_servicios" class="container-fluid ser">
 
-    <div class="row servicios container-fluid parallax-window" data-parallax="scroll" data-image-src="img/home/ser2.jpg" >
+    <div class="row servicios container-fluid parallax-window" data-parallax="scroll" data-image-src="img/fondo_servicios2.jpg" >
         <div class="fondo_transparente_seccion_servicios"></div>
         <div class="txt_servicios" >
             SERVICIOS
@@ -498,10 +497,10 @@ include("conexion.php");
         </div>
     </div>
 </div>
-
+<!-- 
 <svg width="100%" height="100%" class="pol-3">
   <polygon points="0,0 3500,225 0,225"/>
-</svg>
+</svg> -->
 <!-- <a class="btn btn-primary" >Trigger modal</a> -->
 <!-- MODAL CONTENIDO -->
 <div class="modal fade" id="modal_id_1"  data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
@@ -646,7 +645,7 @@ include("conexion.php");
 
 
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row rs">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h3>REDES SOCIALES</h3>
@@ -661,11 +660,10 @@ include("conexion.php");
             <img src="img/home/emoji-006.png" class="emoji-06 animated " id="emoji-06" alt="">
         </div>
     </div>
-</div>
-
-<svg width="100%" height="100%" class="pol-1" >
+</div> -->
+<!-- <svg width="100%" height="100%" class="pol-1" >
   <polygon points="0,0 3500,225 0,225"/>
-</svg>
+</svg> -->
 <div class="nuestros_clientes">
     <div class="txt_nuestros_clientes">
         INCREMENTA TUS SEGUIDORES
@@ -683,7 +681,7 @@ include("conexion.php");
     <div class="row marcas">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="marcas">
             <!-- marcas -->
-            <ul class="bxslider">
+            <ul class="bxslider" id="carrusel_marcas">
               <li><img src="img/clientes/001.png" alt=""></li>
               <li><img src="img/clientes/002.png" alt=""></li>
               <li><img src="img/clientes/003.png" alt=""></li>
@@ -701,7 +699,12 @@ include("conexion.php");
               <li><img src="img/clientes/015.png" alt=""></li>
               <li><img src="img/clientes/016.png" alt=""></li>
           </ul>
+          <a class="left carousel-control" href="#carrusel_marcas" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#carrusel_marcas" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          
       </div>
+
   </div>
 </div>
 
@@ -755,21 +758,66 @@ include("conexion.php");
     </div> 
 </div>
 <footer>
-  Visítanos
-  <div class="caja-redes">
-    <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-    <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-    <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            Vis&iacute;tanos
+            <div class="caja-redes">
+            <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+            <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+            <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+            </div>
+
+            <br/>
+                <address>
+                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
+                </address>
+                <img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
+            <br/><br/>
+        </div>
+
+        
+    </div>
 </div>
 
-<br/>
-<address>
-    Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-</address>
-<img src="img/web-30.png" width="30" height="30" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30" height="30" alt="">info@creactivmedia.com.mx<br/>
-<br/><br/>
-<p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
+
+<div id="mapa" class="map"></div>
+
+<div class="container-fluid">
+    <div class=" row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <br/><br/>
+            <h4 class="sitemap">Site Map</h4>
+
+            <ul class="ft-site">
+                <li><a href="#">Identidad</a></li>
+                <li><a href="digital.php">Mkt Digital</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">Editorial</a></li>
+                <li><a href="diseno.php">Diseño Web</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pantallas Interactivas</a></li>
+                <li><a href="Portafolio.php">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+          <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
+
+          
+        
+        </div>
+    </div>
+    
+</div>
+    <div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
+
+
 <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <style type="text/css">
         .to-top{
@@ -834,7 +882,7 @@ include("conexion.php");
 type="text/javascript"></script>
 <script src="js/mapa-min.js"></script>
 
-<div id="mapa" class="map"></div>
+<!-- <div id="mapa" class="map"></div> -->
 <script src="js/menu.js"></script>
 
 <script>
@@ -884,7 +932,7 @@ type="text/javascript"></script>
         $(window).scroll(function(){
             if($(this).scrollTop()> offset){
                 $('.to-top').fadeIn(duration);
-                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.8)");
+                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
             }else{
                 $('.to-top').fadeOut(duration);
                 $(".btn-toggle").css("background", "#16171900");

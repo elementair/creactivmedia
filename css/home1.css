@@ -66,7 +66,7 @@ text-decoration:none !important;
   
 }*/
 #seccion_servicios{
-	height: 100vh;
+	
 	width: 100%;
 	position: relative;
 
@@ -117,12 +117,12 @@ text-decoration:none !important;
     font-family: Gotham-Bold;
     font-size: 35px;
     background-color: rgba(0, 0, 0, 0.29);
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     border-radius: 30px;
     margin-left: 5%;
     text-align: center;
     text-decoration: none;
-    margin-top: -180px;
+   bottom: 15px;
     padding: 5px 10px;
 }
 .carousel-caption{
@@ -140,15 +140,18 @@ text-decoration:none !important;
 }
 .carousel-caption h3 {
 	font-family: Gotham-Medium !important;
-	color: #00fff5;portada-destacado
+	padding-bottom: 20px;
+	color: #9fd507;
 
 }
-.carousel-caption ul{
-	font-size: 20px;
-    margin-left: 22%;
-    text-align: center;
-    color: #00fff5;
+.carousel-caption h4{
+    
+  	color: #9fd507;
+  	padding: 20px;
     font-family: Gotham-Medium;
+}
+.carousel-caption img{
+	width: 2%;
 }
 .carousel-caption .btn-transparent {
   background: transparent;
@@ -178,7 +181,7 @@ text-decoration:none !important;
 .fondo_transparente_seccion_servicios{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(104,143,5,0));
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     left: 0;
     position: absolute;
 }
@@ -195,7 +198,7 @@ text-decoration:none !important;
 #nosotros{
 	height: 100vh;
 	background: url(../img/seccion_nosotros.jpg);
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 }
 .txt_nosotros{
@@ -204,7 +207,7 @@ text-decoration:none !important;
 }
 .txt_nosotros h2{
 	font-family: Gotham-Bold;
-    color: #03977a;
+    color: #a0d702;
     padding-left: 50px;
     padding-bottom: 20px;
     font-size: 40px !important;
@@ -216,7 +219,7 @@ text-decoration:none !important;
 }
 .txt_que_ofrecemos h2{
 	font-family: Gotham-Bold;
-    color: #03977a;
+    color: #a0d702;
     padding-left: 50px;
     font-size: 40px !important;
     text-shadow: -4px 1px 1px #0808084f;
@@ -257,7 +260,8 @@ text-decoration:none !important;
 }
 .col_servicios{
 	display: inline-table;
-	margin-top: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	
 }
 .columna_servicio{
@@ -609,9 +613,8 @@ text-decoration:none !important;
 			/*padding: 20px 120px;*/
 			text-align: center;
 		    /*background: linear-gradient( 180deg, #00987b, #021033);*/
-		    margin-top: -5px;
 		    height: auto;
-		    background-position: center;
+		    background-position: bottom;
 		    background-size: cover;
 		}  
 
@@ -679,12 +682,14 @@ text-decoration:none !important;
 		.pol-1{
 			fill: #fff;
 			margin-top: -9%;
+			display: none;
 		}
 
 		.pol-2{
 			fill: #00977a;;
 			margin-top: -10%;
 			/*margin-top: 10%;*/
+			display: none;
 		}
 
 		.pol-3{
@@ -698,6 +703,7 @@ text-decoration:none !important;
 			fill: #8080C0;
 			margin-top: -18%;
 			/*margin-top: 10%;*/
+			display: none;
 		}
 
 		.vid{

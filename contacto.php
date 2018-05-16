@@ -110,6 +110,26 @@ if(!isset($_GET["id"])){
     		fbq('track', 'Search');
 
     	</script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var offset = 200;
+                var duration = 500;
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop()> offset){
+                        $('.to-top').fadeIn(duration);
+                        $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+                    }else{
+                        $('.to-top').fadeOut(duration);
+                        $(".btn-toggle").css("background", "#16171900");
+                    }
+                });
+                $('.to-top').click(function(){
+                    $('body').animate({scrollTop:0},duration);
+                })
+            });
+        </script>
+
     	<noscript><img height="1" width="1" style="display:none"
     		src="https://www.facebook.com/tr?id=1092607814149378&ev=PageView&noscript=1"
     		/></noscript>
@@ -118,7 +138,8 @@ if(!isset($_GET["id"])){
     	</head>
 
 
-    	<body>
+
+    	<body id="top">
 
     		<div id="fb-root"></div>
     		<script>(function(d, s, id) {
@@ -206,7 +227,7 @@ if(!isset($_GET["id"])){
             </div>
     		<div class="container-fluid">
     			<div class="row entradas"> 		 
-    				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 blog-cont">		    				
+    				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 blog-cont">		    				
     					<div class="row text-center">
     						<h2>Empieza una nueva aventura con nosotros</h2>	
     						<spam>
@@ -273,7 +294,7 @@ if(!isset($_GET["id"])){
     						<hr>
     					</div><!--/.container-->			
     				</div>
-    				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 
     					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <h2>Siguenos en:</h2>
@@ -323,6 +344,31 @@ if(!isset($_GET["id"])){
                 <br/><br/>
                 <p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
             </footer>
+            <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+            <style type="text/css">
+                 .fodo_transparente_contacto{
+                    width:100%;
+                    height: 40vh;
+                    position: absolute;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
+                    z-index: 1;
+
+                  }
+                .to-top{
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background: #000;
+                    color:#fff;
+                    padding: 12px 12px;
+                    border-radius: 50%;
+
+                }
+                .to-top:hover{
+                    background: #fff;
+                    color:#000;
+                }
+            </style>
     		
     		<script src="js/jquery.min.js"></script>
     		<!-- Maps API Javascript -->

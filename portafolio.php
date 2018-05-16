@@ -119,7 +119,7 @@ if(!isset($_GET["id"])){
 </head>
 
 
-<body>
+<body id="top">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -212,8 +212,9 @@ if(!isset($_GET["id"])){
 </div>
 
 <div class="container-fluid">
-	<div id="contenedor_portafolio" class="row entradas"> 		 
-		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 blog-cont">			
+	<div id="contenedor_portafolio" class="row entradas"> 	
+	<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>	 
+		<div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 blog-cont">			
 			<!--<div id="search" style="display:none;"></div>-->
 			<div class="content">
 			<?php 
@@ -228,7 +229,9 @@ if(!isset($_GET["id"])){
         					?>						
 				<div class="grid">
 					<figure class="effect-marley">
-						<?php 
+
+						<?php
+
 	            			echo '<img src="admin/'.$res["img"].'" class="img-responsive" width="auto" heigth="auto">';
         					?>        			
 						<figcaption>			
@@ -238,10 +241,11 @@ if(!isset($_GET["id"])){
 							<div>
 							<?php 
 							echo '<p> '.utf8_encode($res["descort"]).' </p>';
+
 							 ?>								
 							</div>
 							<a href="#<?php echo 'modal-id-'.$res['id']; ?>" class="" data-toggle="modal" data-target="#<?php echo 'modal-id-'.$res['id']; ?>"></a>
-						</figcaption>			
+						</figcaption>
 					</figure>
 				</div>
 
@@ -333,7 +337,7 @@ if(!isset($_GET["id"])){
 			<!-- cierre htmml -->
 			
 		</div>
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			  <h2>Siguenos en:</h2>
 			  <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
@@ -395,8 +399,8 @@ if(!isset($_GET["id"])){
 <div id="mapa" class="map"></div>
 
 <div class="container-fluid">
-	<div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+	<div class=" row">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 			<br/><br/>
 		    <h4 class="sitemap">Site Map</h4>
 
@@ -414,18 +418,35 @@ if(!isset($_GET["id"])){
 
 	    </div>
 
-	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-right">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
 
 		  <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
 
-		  <p class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</p>
+		  
 		
 	    </div>
 	</div>
 	
 </div>
-
+	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
+<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <style type="text/css">
+        .to-top{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color:#fff;
+            padding: 12px 12px;
+            border-radius: 50%;
+
+        }
+        .to-top:hover{
+            background: #fff;
+            color:#000;
+        }
+    </style>
 <script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>
 <script src="js/jquery.min.js"></script>
         <!-- Maps API Javascript -->
@@ -452,6 +473,26 @@ $("h1").click(function() {
   el.before(newone);
   el.remove();
 }); 
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var offset = 200;
+        var duration = 500;
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()> offset){
+                $('.to-top').fadeIn(duration);
+                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+            }else{
+                $('.to-top').fadeOut(duration);
+                $(".btn-toggle").css("background", "#16171900");
+            }
+        });
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop:0},duration);
+        })
+    });
 </script>
 
 </body>
