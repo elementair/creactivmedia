@@ -48,26 +48,20 @@
 .iconos_redes b{
 	color: #03977a;
 	font-size: 50px;
-	text-shadow: 2px 2px 10px #00000075;
+	text-shadow: 5px 5px 10px #00000075;
 
 }
-.contador_facebook{
-	width: 5%;
+.contador_redes_individual{
+	width: 30%;
 	border-radius:50%;
-    box-shadow: 2px 2px 10px #00000075;
+    box-shadow: 5px 5px 10px #00000075;
 	cursor: pointer;
 	
 
 }
-.contador_facebook:hover, .contador_twitter:hover {
-	width: 5%;
-    border: solid 2px #03977a;
+.contador_redes_individual:hover{
+	opacity: .9;
 	
 	
 
-}
-.contador_twitter{
-	width: 5%;
-	border-radius: 50%;
-    box-shadow: 2px 2px 10px #00000075;
 }

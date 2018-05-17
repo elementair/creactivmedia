@@ -213,7 +213,44 @@ if(!isset($_GET["id"])){
 
 <div class="container-fluid">
 	<div id="contenedor_portafolio" class="row entradas"> 	
-	<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>	 
+	<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2">
+		 <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       TODOS LOS SERVICIOS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">IDENTIDAD GRAFICA</a>
+                </li>
+                <li>
+                    <a href="#">DISEÑO WEB</a>
+                </li>
+                <li>
+                    <a href="#">FOTOGRAFIA</a>
+                </li>
+                <li>
+                    <a href="#">REDISEÑO IMAGEN</a>
+                </li>
+                <li>
+                    <a href="#">VIDEO</a>
+                </li>
+                <li>
+                    <a href="#">MKT DIGITAL</a>
+                </li>
+                <li>
+                    <a href="#">D WEB ECOMMERCE</a>
+                </li>
+                <li>
+                    <a href="#">DESARROLLO DE LOGO</a>
+                </li>
+                <li>
+                    <a href="#">PAPELERIA</a>
+                </li>
+            </ul>
+        </div>
+	</div>	 
 		<div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 blog-cont">			
 			<!--<div id="search" style="display:none;"></div>-->
 			<div class="content">
@@ -337,7 +374,7 @@ if(!isset($_GET["id"])){
 			<!-- cierre htmml -->
 			
 		</div>
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			  <h2>Siguenos en:</h2>
 			  <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
@@ -432,10 +469,59 @@ if(!isset($_GET["id"])){
 </footer>
 <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <style type="text/css">
+	    
+		/* Sidebar Styles */
+
+		.sidebar-nav {
+		  position: absolute;
+		  top: 0;
+		  width: 250px;
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		}
+		.sidebar-nav li {
+		  text-indent: 20px;
+		  line-height: 40px;
+		}
+		.sidebar-nav li a {
+		  display: block;
+		  text-decoration: none;
+		  color: #999999;
+		  margin-left: 0px;
+		}
+		.sidebar-nav li a:hover {
+		  text-decoration: none;
+		  color: #000;
+		  margin-left: 10px;
+		  border-radius: 30px;
+		  background: rgba(244, 244, 244, 0.6);
+
+		}
+
+		.sidebar-nav li a:active, .sidebar-nav li a:focus {
+		  text-decoration: none;
+		}
+
+		.sidebar-nav>.sidebar-brand {
+		  height: 65px;
+		  font-size: 18px;
+		  line-height: 60px;
+		}
+
+		.sidebar-nav>.sidebar-brand a {
+		  color: #999999;
+		}
+
+		.sidebar-nav>.sidebar-brand a:hover {
+		  color: #000;
+		  background: none;
+		}
         .to-top{
             position: fixed;
             bottom: 20px;
             right: 20px;
+            
             background: #000;
             color:#fff;
             padding: 12px 12px;
@@ -444,6 +530,7 @@ if(!isset($_GET["id"])){
         }
         .to-top:hover{
             background: #fff;
+            
             color:#000;
         }
     </style>
@@ -484,9 +571,14 @@ $("h1").click(function() {
             if($(this).scrollTop()> offset){
                 $('.to-top').fadeIn(duration);
                 $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+                $(".btn-toggle").css("border-bottom", "2px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
             }else{
                 $('.to-top').fadeOut(duration);
                 $(".btn-toggle").css("background", "#16171900");
+                $(".btn-toggle").css("border-bottom", "0px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
+
             }
         });
         $('.to-top').click(function(){

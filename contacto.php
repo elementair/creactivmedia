@@ -119,9 +119,13 @@ if(!isset($_GET["id"])){
                     if($(this).scrollTop()> offset){
                         $('.to-top').fadeIn(duration);
                         $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+                        $(".btn-toggle").css("border-bottom", "2px solid");
+                        $(".btn-toggle").css("border-bottom-color", "#fff");
                     }else{
                         $('.to-top').fadeOut(duration);
                         $(".btn-toggle").css("background", "#16171900");
+                        $(".btn-toggle").css("border-bottom", "0px solid");
+                        $(".btn-toggle").css("border-bottom-color", "#fff");
                     }
                 });
                 $('.to-top').click(function(){
@@ -288,7 +292,7 @@ if(!isset($_GET["id"])){
     								</form>
 
 
-                                    <div id="mapa" class="map"></div>
+                                    <!-- <div id="mapa" class="map"></div> -->
     							</div><!--/span-->
     						</div><!--/row-->
     						<hr>
@@ -329,20 +333,63 @@ if(!isset($_GET["id"])){
     		</div>
     		<!-- footer home html -->
             <footer>
-                Visítanos
-                <div class="caja-redes">
-                    <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-                    <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-                    <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            Vis&iacute;tanos
+                            <div class="caja-redes">
+                            <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+                            <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+                            <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+                            </div>
+
+                            <br/>
+                                <address>
+                                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
+                                </address>
+                                <img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
+                            <br/><br/>
+                        </div>
+
+                        
+                    </div>
                 </div>
 
-                <br/>
-                <address>
-                    Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-                </address>
-                <img src="img/web-30.png" width="30" height="30" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30" height="30" alt="">info@creactivmedia.com.mx<br/>
-                <br/><br/>
-                <p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
+
+                <div id="mapa" class="map"></div>
+
+                <div class="container-fluid">
+                    <div class=" row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <br/><br/>
+                            <h4 class="sitemap">Site Map</h4>
+
+                            <ul class="ft-site">
+                                <li><a href="#">Identidad</a></li>
+                                <li><a href="digital.php">Mkt Digital</a></li>
+                                <li><a href="#">Multimedia</a></li>
+                                <li><a href="#">Editorial</a></li>
+                                <li><a href="diseno.php">Diseño Web</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Pantallas Interactivas</a></li>
+                                <li><a href="Portafolio.php">Portafolio</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+                          <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
+
+                          
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                    <div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
             </footer>
             <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
             <style type="text/css">

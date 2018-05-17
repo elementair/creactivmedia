@@ -103,7 +103,31 @@ if(!isset($_GET["id"])){
 <script src="js/jquery.scrollUp.js"></script>
 
 <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+<style type="text/css">
+	.fodo_transparente_blog{
+        width:100%;
+        height: 40%;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
+        z-index: 1;
 
+     }
+    .to-top{
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        background: #000;
+        color:#fff;
+        padding: 12px 12px;
+        border-radius: 50%;
+        z-index: 10;
+
+    }
+    .to-top:hover{
+        background: #fff;
+        color:#000;
+    }
+</style>
 
 
 </head>
@@ -117,13 +141,18 @@ if(!isset($_GET["id"])){
         var offset = 200;
         var duration = 500;
 
-        $(window).scroll(function(){
+      $(window).scroll(function(){
             if($(this).scrollTop()> offset){
                 $('.to-top').fadeIn(duration);
                 $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+                $(".btn-toggle").css("border-bottom", "2px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
             }else{
                 $('.to-top').fadeOut(duration);
                 $(".btn-toggle").css("background", "#16171900");
+                $(".btn-toggle").css("border-bottom", "0px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
+
             }
         });
         $('.to-top').click(function(){
@@ -186,23 +215,7 @@ if(!isset($_GET["id"])){
 	    });
 	  });
 	</script>
-<style type="text/css">
-    .to-top{
-        position: fixed;
-        bottom: 40px;
-        right: 20px;
-        background: #000;
-        color:#fff;
-        padding: 12px 12px;
-        border-radius: 50%;
-        z-index: 10;
 
-    }
-    .to-top:hover{
-        background: #fff;
-        color:#000;
-    }
-</style>
 
 <header>
 
@@ -585,20 +598,63 @@ if(isset($_GET["search"])){
 
 <!-- footer home html -->
 <footer>
-  Visítanos
-                <div class="caja-redes">
-                    <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-                    <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-                    <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-                </div>
 
-                <br/>
-                <address>
-                    Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-                </address>
-                <img src="img/web-30.png" width="30" height="30" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30" height="30" alt="">info@creactivmedia.com.mx<br/>
-                <br/><br/>
-                <p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
+<div class="container-fluid">
+	<div class="row">
+	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        Vis&iacute;tanos
+			<div class="caja-redes">
+			<a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+			<a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+			<a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+			</div>
+
+			<br/>
+				<address>
+				Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
+				</address>
+				<img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
+			<br/><br/>
+		</div>
+
+		
+	</div>
+</div>
+
+
+<div id="mapa" class="map"></div>
+
+<div class="container-fluid">
+	<div class=" row">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<br/><br/>
+		    <h4 class="sitemap">Site Map</h4>
+
+		    <ul class="ft-site">
+		    	<li><a href="#">Identidad</a></li>
+		    	<li><a href="digital.php">Mkt Digital</a></li>
+		    	<li><a href="#">Multimedia</a></li>
+		    	<li><a href="#">Editorial</a></li>
+		    	<li><a href="diseno.php">Diseño Web</a></li>
+		    	<li><a href="#">Blog</a></li>
+		    	<li><a href="#">Pantallas Interactivas</a></li>
+		    	<li><a href="Portafolio.php">Portafolio</a></li>
+		    	<li><a href="#">Contacto</a></li>
+		    </ul>
+
+	    </div>
+
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+		  <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
+
+		  
+		
+	    </div>
+	</div>
+	
+</div>
+	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
 <script src="js/jquery.min.js"></script>
         <!-- Maps API Javascript -->
@@ -723,6 +779,30 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
     }
 
 </style>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        var offset = 200;
+	        var duration = 500;
+
+	      $(window).scroll(function(){
+	            if($(this).scrollTop()> offset){
+	                $('.to-top').fadeIn(duration);
+	                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+	                $(".btn-toggle").css("border-bottom", "2px solid");
+	                $(".btn-toggle").css("border-bottom-color", "#fff");
+	            }else{
+	                $('.to-top').fadeOut(duration);
+	                $(".btn-toggle").css("background", "#16171900");
+	                $(".btn-toggle").css("border-bottom", "0px solid");
+	                $(".btn-toggle").css("border-bottom-color", "#fff");
+
+	            }
+	        });
+	        $('.to-top').click(function(){
+	            $('body').animate({scrollTop:0},duration);
+	        })
+	    });
+	</script>
 
 	<!-- Facebook Pixel Code -->
 	 <script>
@@ -754,7 +834,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
 	<!--End of Zopim Live Chat Script-->
 
 </head>
-<body>
+<body id="top">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -840,6 +920,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
 					LEFT OUTER JOIN `user` AS U ON U.id = B.id_autor WHERE id_entrada='".$_GET["id"]."' AND B.activo=1")) {
 
 					echo "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 portada'>";
+					echo "<div  class='fodo_transparente_blog'></div>";
 					while($row = mysqli_fetch_assoc($sqlDes)) {
 						    	
 					echo "<img src='blog/".$row["id_entrada"].".jpg' class='img-PB' alt=''>";
@@ -1160,22 +1241,89 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 
 <footer>
 
-  Visítanos
-    <div class="caja-redes">
-        <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-        <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-        <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-    </div>
+<div class="container-fluid">
+	<div class="row">
+	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        Vis&iacute;tanos
+			<div class="caja-redes">
+			<a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+			<a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+			<a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+			</div>
 
-    <br/>
-    <address>
-        Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-    </address>
-    <img src="img/web-30.png" width="30" height="30" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30" height="30" alt="">info@creactivmedia.com.mx<br/>
-    <br/><br/>
-    <p class="">© COPYRIGHT CREACTIV 2018, TODOS LOS DERECHOS RESERVADOS.</p>
+			<br/>
+				<address>
+				Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
+				</address>
+				<img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
+			<br/><br/>
+		</div>
+
+		
+	</div>
+</div>
+
+
+<div id="mapa" class="map"></div>
+
+<div class="container-fluid">
+	<div class=" row">
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<br/><br/>
+		    <h4 class="sitemap">Site Map</h4>
+
+		    <ul class="ft-site">
+		    	<li><a href="#">Identidad</a></li>
+		    	<li><a href="digital.php">Mkt Digital</a></li>
+		    	<li><a href="#">Multimedia</a></li>
+		    	<li><a href="#">Editorial</a></li>
+		    	<li><a href="diseno.php">Diseño Web</a></li>
+		    	<li><a href="#">Blog</a></li>
+		    	<li><a href="#">Pantallas Interactivas</a></li>
+		    	<li><a href="Portafolio.php">Portafolio</a></li>
+		    	<li><a href="#">Contacto</a></li>
+		    </ul>
+
+	    </div>
+
+	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+		  <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
+
+		  
+		
+	    </div>
+	</div>
+	
+</div>
+	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
+<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+<style type="text/css">
+	.fodo_transparente_blog{
+        width:100%;
+        height: 30%;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
+        z-index: 1;
 
+     }
+    .to-top{
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        background: #000;
+        color:#fff;
+        padding: 12px 12px;
+        border-radius: 50%;
+        z-index: 10;
+
+    }
+    .to-top:hover{
+        background: #fff;
+        color:#000;
+    }
+</style>
 
 <script src="js/jquery.min.js"></script>
 <!-- Maps API Javascript -->

@@ -37,6 +37,11 @@ if(!isset($_GET["id"])){
 <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" type="text/css" />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans'  type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+			  crossorigin="anonymous"></script>
+
 <script src="js/modernizr.custom.17475.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
@@ -101,7 +106,7 @@ if(!isset($_GET["id"])){
 </head>
 
 
-<body>
+<body id="top">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -224,14 +229,14 @@ if(!isset($_GET["id"])){
 	      <span class="input-group-btn">
 		        <button type="button" class="" id="buscar" acceskey="intro">Buscar</button>
 	      </span>
-</div><!-- /input-group -->
+</div> /input-group -->
 
-<div class="container-fluid portada-destacado">
+<!-- <div class="container-fluid portada-destacado">
 	<div class="row">		
-			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
+			<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
 			</div>
 			<div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
-			</div>-->
+			</div>
 			
 		<div class="destacado">	
 			<div class="dest-box">				
@@ -240,18 +245,36 @@ if(!isset($_GET["id"])){
 		</div>
 
 	</div>
+</div> -->
+
+<div  class="fodo_transparente_diseno"></div>
+<div id="seccion_diseño" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/diseno_web.jpg">
+	<div class="row">
+		
+			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
+			</div>
+			<div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
+			</div>-->
+			
+		<div  class="destacado">	
+			<div  class="dest-box">				
+				<h1 class="animated fadeInDown">DISEÑO WEB</h1>					
+			</div>
+		</div>
+
+	</div>
 </div>
+
+
 
 <div class="container-fluid">
 	<div class="row entradas"> 		 
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 blog-cont">			
-			
-				<div class="intro">
-				<p>
-					Desarrollamos diseño de sitios web totalemente responsivos, pensando en su adaptabilidad con tablets, laptops o smartphones. Buscamos reflejar la personalidad de tu empresa en cada diseño.</p>
-				</div>			
-
-			
+			<div class="intro">
+			<p>
+				Desarrollamos diseño de sitios web totalemente responsivos, pensando en su adaptabilidad con tablets, laptops o smartphones. Buscamos reflejar la personalidad de tu empresa en cada diseño.
+			</p>
+			</div>			
 			<div class="row">
 				<div class="col-md-6 ">
 					<div class="grid">
@@ -459,6 +482,25 @@ if(!isset($_GET["id"])){
 </div>
 	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
+<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <style type="text/css">
+        .to-top{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color:#fff;
+            padding: 12px 12px;
+            border-radius: 50%;
+
+        }
+        .to-top:hover{
+            background: #fff;
+            color:#000;
+        }
+    </style>
+
+
 <script src="js/jquery.min.js"></script>
         <!-- Maps API Javascript -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB-M2C9yZRD7FFdjwjSjJfnsotae_Y8Nk"
@@ -471,6 +513,25 @@ if(!isset($_GET["id"])){
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        var offset = 200;
+        var duration = 500;
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()> offset){
+                $('.to-top').fadeIn(duration);
+                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+            }else{
+                $('.to-top').fadeOut(duration);
+                $(".btn-toggle").css("background", "#16171900");
+            }
+        });
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop:0},duration);
+        })
+    });
+	</script>
 	</body>
 </html>
 

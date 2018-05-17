@@ -234,6 +234,7 @@ text-decoration:none !important;
 	box-shadow: 2px 2px 5px #00000059;
 
 }
+
 .txt_nuestros_clientes{
 	z-index: 5;
     font-family: Gotham-Bold;
@@ -244,15 +245,17 @@ text-decoration:none !important;
     color: #000;
     margin-top: 60px;
     text-shadow: -4px 1px 1px #0808084f;
+
 }
-.nuestros_clientes p{
+.txt_nuestros_clientes_lo{
 	font-family: Gotham-Medium;
     font-size: 30px;
     padding: 50px;
     text-align: center;
     color: #03977a;
     margin-top: 50px;
-    background: #d5dae2;
+    background: #cccc;
+   
 }
 .txt_servicios p{
 	font-family: Gotham-Medium;
@@ -301,8 +304,9 @@ text-decoration:none !important;
 
 
 	.bxslider{
-		z-index: 9;
-		position: absolute;
+		z-index: 0;
+		padding: 20px;
+		position: relative;
 	}
 
 	.grid figure {
@@ -660,9 +664,9 @@ text-decoration:none !important;
 		}
 
 		.marcas{
-			height: 300px;
-			background-color: #fff;
-			padding-top: 50px;
+			/*height: 300px;*/
+			/*background-color: #fff;*/
+			margin-top: 50px;
     		margin-bottom: 50px;
 
 		}

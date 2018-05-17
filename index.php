@@ -174,11 +174,11 @@ include("conexion.php");
                 <div class="carousel-caption">
 
                     <h1 class="animated fadeInDown">CONOCE NUESTROS SERVICIOS</h1>
-                        <h3 class="animated fadeInLeft">&nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;IDENTIDAD
-                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;MKT DIGITAL
-                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;MULTIMEDIA
-                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;EDITORIAL
-                                                        &nbsp;&nbsp;<img src="img/icono_cubo2.png">&nbsp;DISEÑO WEB</h3>
+                        <h3 class="animated fadeInLeft">&nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;IDENTIDAD
+                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;MKT DIGITAL
+                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;MULTIMEDIA
+                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;EDITORIAL
+                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;DISEÑO WEB</h3>
                     <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="#servicios">IR A SERVICIOS</a></p>
                 </div>
             </div>
@@ -208,8 +208,8 @@ include("conexion.php");
     <a class="left carousel-control" href="#carousel-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-<div class="animated fadeInRight" id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
-
+<!-- <div class="animated fadeInRight" id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
+ -->
 <!-- <svg width="100%" height="100%" class="pol-01" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg> -->
@@ -664,19 +664,34 @@ include("conexion.php");
 <!-- <svg width="100%" height="100%" class="pol-1" >
   <polygon points="0,0 3500,225 0,225"/>
 </svg> -->
+<section id="cientes">
 <div class="nuestros_clientes">
     <div class="txt_nuestros_clientes">
         INCREMENTA TUS SEGUIDORES
     </div>
-    <div class="iconos_redes">
-        <img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg"  class="contador_facebook">
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 iconos_redes" >
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img src="img/redes/facebook.png"  class="contador_redes_individual">
         <span class="contador"><b>+</b><strong></strong></span>
-        <img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg" class="contador_twitter">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img src="img/redes/twitter.png" class="contador_redes_individual">
         <span class="contador"><b>+</b><strong></strong></span>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img src="img/redes/instagram.png" class="contador_redes_individual">
+        <span class="contador"><b>+</b><strong></strong></span>
+        </div>
+        </div>
     </div>
-
-    <p> NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
  </div>
+ </section>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt_nuestros_clientes_lo">
+        <p>NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
+</div>
 <div class="container-fluid">
     <div class="row marcas">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="marcas">
@@ -885,7 +900,7 @@ type="text/javascript"></script>
 <!-- <div id="mapa" class="map"></div> -->
 <script src="js/menu.js"></script>
 
-<script>
+<!-- <script>
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 2000}});
     // build scene
     new ScrollMagic.Scene({triggerElement: "#emoji-06"})      
@@ -923,7 +938,7 @@ type="text/javascript"></script>
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
     
-</script>
+</script> -->
 <script type="text/javascript">
     $(document).ready(function(){
         var offset = 250;
@@ -933,9 +948,14 @@ type="text/javascript"></script>
             if($(this).scrollTop()> offset){
                 $('.to-top').fadeIn(duration);
                 $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
+                $(".btn-toggle").css("border-bottom", "2px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
             }else{
                 $('.to-top').fadeOut(duration);
                 $(".btn-toggle").css("background", "#16171900");
+                $(".btn-toggle").css("border-bottom", "0px solid");
+                $(".btn-toggle").css("border-bottom-color", "#fff");
+
             }
         });
         $('.to-top').click(function(){

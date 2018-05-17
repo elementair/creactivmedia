@@ -1,12 +1,12 @@
 $(document).ready(function() {
   $(function(){
-      numero = 0;
+      numero = 5;
       contador = setInterval(function() {
           if (numero == 7689) {
               clearInterval(contador);
           } else {
               $('.contador strong').html(++numero);
           }
-      }, 5);
+      }, 1);
   });
 });
