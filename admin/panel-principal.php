@@ -161,7 +161,7 @@ $year=date("Y");
 
 
     .portada{
-      background-image: url('images/bg003.jpg');
+      background-image: url('images/admin.jpg');
       background-position: top;
       background-repeat: no-repeat;
       background-attachment: fixed;

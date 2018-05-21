@@ -14,14 +14,14 @@ include("conexion.php");
     <title>CreActiv Media Diseño, Web, Mkt Digital</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+      
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   
+ 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/home1.css">
     <link rel="stylesheet" href="css/modal_animate.css">
-    
+   
     <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     
@@ -38,7 +38,7 @@ include("conexion.php");
     <link rel="stylesheet" type="text/css" href="css/map.css">
     <link rel="stylesheet" href="css/cubo.css">
 
-
+ <!-- <link rel="stylesheet" type="text/css" href="css/autoplay_carousel.css"> -->
    <!-- PRELOADER -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
@@ -61,13 +61,13 @@ include("conexion.php");
           $('.bxslider').bxSlider({
             auto: true,
             minSlides: 2,
-            maxSlides: 8,
-            slideWidth: 250,
-            slideMargin: 10,
+            maxSlides: 6,
+            slideWidth: 300,
+            slideMargin: 20,
             pager: false,
             autoControls: false,
-            hideControlOnEnd: false,
-            infiniteLoop: false,
+            hideControlOnEnd: true,
+            infiniteLoop: true,
             controls: false
         });
       });
@@ -131,7 +131,7 @@ include("conexion.php");
                     <div class="cont3">
                         <p class="title-men"><a href="#seccion_servicios">SERVICIOS</a></p>
                     </div>
-                    <div class="cont4">
+                    <div class="cont4"> 
                         <p class="title-men"><a href="portafolio.php">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
@@ -217,7 +217,7 @@ include("conexion.php");
 <div id="nosotros">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row title1">
         <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 txt_nosotros">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 txt_nosotros">
             <h2>NOSOTROS</h2>
             <!-- <div class="barra_inferior_titulo_verde"></div> -->
             <p>Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora a empresas e instituciones públicas y privadas. Tenemos para ti soluciones innovadoras en Comunicación Gráfica, Medios Audiovisuales, Web y MKT Digital, que contribuyen al crecimiento, competitividad y posicionamiento de tu Empresa, agregando valor a su Identidad Institucional.</p>
@@ -269,7 +269,7 @@ include("conexion.php");
             </div> 
         </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 txt_que_ofrecemos" >
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 txt_que_ofrecemos" >
             
         </div>
          <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
@@ -291,8 +291,8 @@ include("conexion.php");
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
-                <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10">
+                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <ul ontouchstart class="col_servicios">
                         <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 columna_servicio'>
                           <li class="servicio_individual">
@@ -492,7 +492,7 @@ include("conexion.php");
                       </defs>
                     </svg>
                 </div>
-                <div  class='col-xs-0 col-sm-0 col-md-1 col-lg-1'></div>
+                <div  class='col-xs-0 col-sm-0 col-md-0 col-lg-1'></div>
             </div>
         </div>
     </div>
@@ -692,11 +692,13 @@ include("conexion.php");
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt_nuestros_clientes_lo">
         <p>NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
 </div>
+
+   
 <div class="container-fluid">
     <div class="row marcas">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="marcas">
             <!-- marcas -->
-            <ul class="bxslider" id="carrusel_marcas">
+            <ul class="bxslider">
               <li><img src="img/clientes/001.png" alt=""></li>
               <li><img src="img/clientes/002.png" alt=""></li>
               <li><img src="img/clientes/003.png" alt=""></li>
@@ -714,14 +716,15 @@ include("conexion.php");
               <li><img src="img/clientes/015.png" alt=""></li>
               <li><img src="img/clientes/016.png" alt=""></li>
           </ul>
-          <a class="left carousel-control" href="#carrusel_marcas" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-          <a class="right carousel-control" href="#carrusel_marcas" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-          
       </div>
-
   </div>
 </div>
+
+
+
+
+
+
 
 
 
@@ -900,7 +903,7 @@ type="text/javascript"></script>
 <!-- <div id="mapa" class="map"></div> -->
 <script src="js/menu.js"></script>
 
-<!-- <script>
+<script>
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 2000}});
     // build scene
     new ScrollMagic.Scene({triggerElement: "#emoji-06"})      
@@ -938,7 +941,7 @@ type="text/javascript"></script>
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
     
-</script> -->
+</script>
 <script type="text/javascript">
     $(document).ready(function(){
         var offset = 250;

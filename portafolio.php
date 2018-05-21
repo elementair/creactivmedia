@@ -156,6 +156,7 @@ if(!isset($_GET["id"])){
         <div class="wrap">
             <div class="container-fluid">
                 <div class="movil">
+                	
                     <div class="cont1">         
                         <p class="title-men"><a href="index.php">INICIO</a></p>
                     </div>
@@ -215,16 +216,49 @@ if(!isset($_GET["id"])){
 	<div id="contenedor_portafolio" class="row entradas"> 	
 	<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2">
 		 <div id="sidebar-wrapper">
+
             <ul class="sidebar-nav">
+
                 <li class="sidebar-brand">
-                    <a href="#">
-                       TODOS LOS SERVICIOS
-                    </a>
+                    <a href="#">PORTAFOLIOS</a>
                 </li>
+                <p>Segun el Servicio:</p>
+
+				<!-- <button data-toggle="collapse" data-target="#demo">Collapsible</button> -->
+
+
+                <?php 
+                // $servicios=mysqli_query($con,"SELECT * from servicios inner join  categoria_servicios on servicios.id_categoria_servicios=categoria_servicios.id");
+                $contador=1;
+				$categoria_servicios=mysqli_query($con,"SELECT * from categoria_servicios where status=1");
+				 
+					 
+				foreach ($categoria_servicios as $categoria){
+					
+
+            	?>
                 <li>
-                    <a href="#">IDENTIDAD GRAFICA</a>
+                    <a data-toggle="collapse" data-target="#demo<?php echo $contador;?>" href="#"><?php echo utf8_encode($categoria['nombre']); ?></a>
+                    
+                    <div id="demo<?php echo $contador;?>" class="collapse">
+					<?php
+				     
+					$consulta_servicios=mysqli_query($con,"SELECT * from categoria_servicios  inner join  servicios on servicios.id_categoria_servicios=categoria_servicios.id where categoria_servicios.id=".$contador."");
+					// print_r($consulta_servicios); 
+					foreach ($consulta_servicios as $servicios){
+					?>
+					<div style="font-size: 12px; margin-left: 10px; padding-left: 40px;  padding-bottom: -10px; padding-left:0px !important; border-bottom: .5px solid #ccc; border-radius: 30px">
+                    	<a style="padding: -20px;" href="#"><?php echo utf8_encode($servicios['nombre']);?></a>
+                	</div>
+
+					
+					<?php
+					 }?>
+                    
+					</div>
                 </li>
-                <li>
+                <?php $contador +=1; } ?>
+               <!--  <li>
                     <a href="#">DISEÑO WEB</a>
                 </li>
                 <li>
@@ -247,7 +281,7 @@ if(!isset($_GET["id"])){
                 </li>
                 <li>
                     <a href="#">PAPELERIA</a>
-                </li>
+                </li> -->
             </ul>
         </div>
 	</div>	 

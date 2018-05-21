@@ -6,8 +6,8 @@
 
 $hostname = "localhost";
 $database = "creactiv_creactivmedia";
-$username = "sag";
-$password = "creactiv";
+$username = "root";
+$password = "";
 
 $con=mysqli_connect($hostname,$username,$password,$database);
 // Check connection
