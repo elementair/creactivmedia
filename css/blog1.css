@@ -2502,7 +2502,7 @@ color: #FFF;
   top: -50px;
   left: 50%;
   margin-left: -200px;
-  z-index: 99;
+  z-index: 4;
   text-align: center;
   color: #FFF;
 
@@ -2530,7 +2530,7 @@ color: #FFF;
   height: 200px;
   position: absolute;
   top: 150px;
-  z-index: 99;
+  z-index: 4;
   text-align: center;
   color: #FFF;
   background-color: rgba(0,0,0,0.5);

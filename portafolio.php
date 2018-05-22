@@ -1,5 +1,29 @@
 <?php
 include("conexion.php");
+
+
+
+
+
+$_GET['portafolio_por_categoria'] == 0;
+ //GRUPO PRODUCTOS( )
+if($_GET['portafolio_por_categoria'] == -1 ){
+   $sql=mysqli_query($con,"SELECT p.id,p.id_entrada,p.title,p.img,p.img1,p.img2,p.img3,p.descort,p.desclarge,p.activo,p.facebook,p.twitter,p.youtube,p.google
+  from (((portafolio as p left outer join portafolio_servicios as o
+  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id) group by p.title order by title ASC");
+}
+else {
+    $sql=mysqli_query($con,"SELECT p.id,p.id_entrada,p.title,p.img,p.img1,p.img2,p.img3,p.descort,p.desclarge,p.activo,p.facebook,p.twitter,p.youtube,p.google
+  from (((portafolio as p left outer join portafolio_servicios as o
+  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id)  where s.id=".$_GET["portafolio_por_categoria"]." group by p.title order by title ASC");
+ }
+
+
+
+
+
+
+
 //si existe variable mostrar home blog
 if(!isset($_GET["id"])){
 
@@ -120,7 +144,7 @@ if(!isset($_GET["id"])){
 
 
 <body id="top">
-
+	
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -134,15 +158,15 @@ if(!isset($_GET["id"])){
 <header>
 	<nav id="top" class="btn-toggle">
 		<div class="">
-			<a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
+			<a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
 		</div>
 		<div class="menu-nav">
 			<ul id="nav">
-				<li><a href="index.php#nosotros">Nosotros</a></li>
-				<li><a href="index.php#seccion_servicios">Servicios</a></li>
-				<li><a href="portafolio.php">Portafolio</a></li>
-				<li><a href="blog.php">Blog</a></li>
-				<li><a href="contacto.php">Contacto</a></li>
+				<li><a href="index#nosotros">Nosotros</a></li>
+				<li><a href="index#seccion_servicios">Servicios</a></li>
+				<li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
+				<li><a href="blog">Blog</a></li>
+				<li><a href="contacto">Contacto</a></li>
 			</ul>
 		</div>
 		<div class="brand-datos">
@@ -158,22 +182,22 @@ if(!isset($_GET["id"])){
                 <div class="movil">
                 	
                     <div class="cont1">         
-                        <p class="title-men"><a href="index.php">INICIO</a></p>
+                        <p class="title-men"><a href="index">INICIO</a></p>
                     </div>
                     <div class="cont2">
-                        <p class="title-men"><a href="#">NOSOTROS</a></p>
+                        <p class="title-men"><a href="index#nosotros">NOSOTROS</a></p>
                     </div>
                     <div class="cont3">
-                        <p class="title-men"><a href="#">SERVICIOS</a></p>
+                        <p class="title-men"><a href="index#seccion_servicios">SERVICIOS</a></p>
                     </div>
                     <div class="cont4">
-                        <p class="title-men"><a href="portafolio.php">PORTAFOLIO</a></p>
+                        <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
-                        <p class="title-men"><a href="blog.php">BLOG</a></p>
+                        <p class="title-men"><a href="blog">BLOG</a></p>
                     </div>
                     <div class="cont7">
-                        <p class="title-men"><a href="contacto.php">CONTACTO</a></p>
+                        <p class="title-men"><a href="contacto">CONTACTO</a></p>
                     </div>
                     <div class="cont8">
                         <p class="cont-icon">
@@ -182,7 +206,7 @@ if(!isset($_GET["id"])){
                         </p>
                     </div>
                     <div class="cont9">
-                        <form action="blog.php" method="get">
+                        <form action="blog" method="get">
                             <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                             <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                         </form>
@@ -220,7 +244,7 @@ if(!isset($_GET["id"])){
             <ul class="sidebar-nav">
 
                 <li class="sidebar-brand">
-                    <a href="#">PORTAFOLIOS</a>
+                    <a href="portafolio?portafolio_por_categoria=-1">TODOS</a>
                 </li>
                 <p>Segun el Servicio:</p>
 
@@ -245,10 +269,14 @@ if(!isset($_GET["id"])){
 				     
 					$consulta_servicios=mysqli_query($con,"SELECT * from categoria_servicios  inner join  servicios on servicios.id_categoria_servicios=categoria_servicios.id where categoria_servicios.id=".$contador."");
 					// print_r($consulta_servicios); 
+					
+
 					foreach ($consulta_servicios as $servicios){
 					?>
-					<div style="font-size: 12px; margin-left: 10px; padding-left: 40px;  padding-bottom: -10px; padding-left:0px !important; border-bottom: .5px solid #ccc; border-radius: 30px">
-                    	<a style="padding: -20px;" href="#"><?php echo utf8_encode($servicios['nombre']);?></a>
+					<div style="font-size: 12px; margin-left: 10px; padding-left: 40px;  padding-bottom: -10px; padding-left:0px !important;">
+
+                    	<a style="padding: -20px;" href="portafolio?portafolio_por_categoria=<?php echo utf8_encode($servicios['id']);?>"><?php echo utf8_encode($servicios['nombre']);?></a>
+                    	
                 	</div>
 
 					
@@ -291,7 +319,7 @@ if(!isset($_GET["id"])){
 			<?php 
 			
 
-				if($sql=mysqli_query($con,"SELECT id,id_entrada,title,img,img1,img2,img3,descort,desclarge,activo,facebook,twitter,youtube,google from portafolio where activo=1")){
+				if($sql){
 						if(mysqli_num_rows($sql) == 0){
 			            echo "<div class='browser_width colelem' id='u2258-bw'>
 			            No existen registros disponibles</div>";
@@ -475,17 +503,17 @@ if(!isset($_GET["id"])){
 			<br/><br/>
 		    <h4 class="sitemap">Site Map</h4>
 
-		    <ul class="ft-site">
-		    	<li><a href="#">Identidad</a></li>
-		    	<li><a href="digital.php">Mkt Digital</a></li>
-		    	<li><a href="#">Multimedia</a></li>
-		    	<li><a href="#">Editorial</a></li>
-		    	<li><a href="diseno.php">Diseño Web</a></li>
-		    	<li><a href="#">Blog</a></li>
-		    	<li><a href="#">Pantallas Interactivas</a></li>
-		    	<li><a href="Portafolio.php">Portafolio</a></li>
-		    	<li><a href="#">Contacto</a></li>
-		    </ul>
+		   <ul class="ft-site">
+                <li><a href="#">Identidad</a></li>
+                <li><a href="#">Mkt Digital</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">Editorial</a></li>
+                <li><a href="#">Diseño Web</a></li>
+                <li><a href="blog_">Blog</a></li>
+                <li><a href="#">Pantallas Interactivas</a></li>
+                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
+                <li><a href="contacto">Contacto</a></li>
+            </ul>
 
 	    </div>
 

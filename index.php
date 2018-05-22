@@ -101,15 +101,15 @@ include("conexion.php");
     <!-- MENU RESPONSIVO MOVIL -->
     <nav class="btn-toggle">
         <div class="">
-            <a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
+            <a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
         </div>
         <div class="menu-nav">
             <div id="nav">
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#seccion_servicios" >Servicios</a></li>
-                <li><a href="portafolio.php">Portafolio</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
+                <li><a href="blog_">Blog</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </div>
         </div>
         <div class="brand-datos">
@@ -123,7 +123,7 @@ include("conexion.php");
             <div class="container-fluid">
                 <div class="movil">
                     <div class="cont1">         
-                        <p class="title-men"><a href="index.php">INICIO</a></p>
+                        <p class="title-men"><a href="index">INICIO</a></p>
                     </div>
                     <div class="cont2">
                         <p class="title-men"><a href="#nosotros">NOSOTROS</a></p>
@@ -132,13 +132,13 @@ include("conexion.php");
                         <p class="title-men"><a href="#seccion_servicios">SERVICIOS</a></p>
                     </div>
                     <div class="cont4"> 
-                        <p class="title-men"><a href="portafolio.php">PORTAFOLIO</a></p>
+                        <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
-                        <p class="title-men"><a href="blog.php">BLOG</a></p>
+                        <p class="title-men"><a href="blog_">BLOG</a></p>
                     </div>
                     <div class="cont7">
-                        <p class="title-men"><a href="contacto.php">CONTACTO</a></p>
+                        <p class="title-men"><a href="contacto">CONTACTO</a></p>
                     </div>
                     <div class="cont8">
                         <p class="cont-icon">
@@ -147,7 +147,7 @@ include("conexion.php");
                         </p>
                     </div>
                     <div class="cont9">
-                        <form action="blog.php" method="get">
+                        <form action="blog_" method="get">
                             <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                         <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                         </form>
@@ -189,7 +189,7 @@ include("conexion.php");
                 <div class="carousel-caption" >
                     <h1 class="animated fadeInDown">VISITA NUESTRO BLOG</h1>
                     <h3 class="animated fadeInLeft">Y ENTERATE DE NUESTRAS NOVEDADES</h3>
-                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="blog.php">VISITAR EL BLOG</a></p>
+                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="blog_">VISITAR EL BLOG</a></p>
                 </div>
             </div>
         </div>
@@ -292,15 +292,15 @@ include("conexion.php");
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
                 <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                     <ul ontouchstart class="col_servicios">
                         <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 columna_servicio'>
                           <li class="servicio_individual">
                             <div class='link'>
-                              <a href='blog.php' target='_blank'></a>
-                              <a href='blog.php' target='_blank'></a>
-                              <a href='blog.php' target='_blank'></a>
-                              <a href='blog.php' target='_blank'></a>
+                              <a href='blog_' target='_blank'></a>
+                              <a href='blog_' target='_blank'></a>
+                              <a href='blog_' target='_blank'></a>
+                              <a href='blog_' target='_blank'></a>
                               <div class='cube blog'>
                                 <div></div>
                                 <div></div>
@@ -808,16 +808,16 @@ include("conexion.php");
             <br/><br/>
             <h4 class="sitemap">Site Map</h4>
 
-            <ul class="ft-site">
+             <ul class="ft-site">
                 <li><a href="#">Identidad</a></li>
-                <li><a href="digital.php">Mkt Digital</a></li>
+                <li><a href="#">Mkt Digital</a></li>
                 <li><a href="#">Multimedia</a></li>
                 <li><a href="#">Editorial</a></li>
-                <li><a href="diseno.php">Diseño Web</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">Diseño Web</a></li>
+                <li><a href="blog_">Blog</a></li>
                 <li><a href="#">Pantallas Interactivas</a></li>
-                <li><a href="Portafolio.php">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </ul>
 
         </div>
@@ -903,7 +903,7 @@ type="text/javascript"></script>
 <!-- <div id="mapa" class="map"></div> -->
 <script src="js/menu.js"></script>
 
-<script>
+<!-- <script>
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 2000}});
     // build scene
     new ScrollMagic.Scene({triggerElement: "#emoji-06"})      
@@ -941,7 +941,7 @@ type="text/javascript"></script>
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
     
-</script>
+</script> -->
 <script type="text/javascript">
     $(document).ready(function(){
         var offset = 250;
