@@ -17,13 +17,6 @@ else {
   from (((portafolio as p left outer join portafolio_servicios as o
   on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id)  where s.id=".$_GET["portafolio_por_categoria"]." group by p.title order by title ASC");
  }
-
-
-
-
-
-
-
 //si existe variable mostrar home blog
 if(!isset($_GET["id"])){
 
@@ -38,7 +31,7 @@ if(!isset($_GET["id"])){
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
 <meta name="description" content="">
 <meta name="keywords" content="">
-<meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio.php" />
+<meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio" />
 <meta property="og:title" content="Blog CreActiv Media - Tus ideas, nuestra pasión." />
 <meta property="og:description" content="Diseño | Marketing Digital | Social Media | Tech" />
 <meta property="og:image" content="http://www.creactivmedia.com.mx/image/share-blog.jpg" />
@@ -135,6 +128,17 @@ if(!isset($_GET["id"])){
 	 fbq('track', 'Search');
 
 	</script>
+
+	    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?3opI8bRHGhZc4H7VZBgPzdZNdIdPcrE3";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
 	 <noscript><img height="1" width="1" style="display:none"
 	 src="https://www.facebook.com/tr?id=1092607814149378&ev=PageView&noscript=1"
 	 /></noscript>
@@ -165,7 +169,7 @@ if(!isset($_GET["id"])){
 				<li><a href="index#nosotros">Nosotros</a></li>
 				<li><a href="index#seccion_servicios">Servicios</a></li>
 				<li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-				<li><a href="blog">Blog</a></li>
+				<li><a href="blog_">Blog</a></li>
 				<li><a href="contacto">Contacto</a></li>
 			</ul>
 		</div>
@@ -194,7 +198,7 @@ if(!isset($_GET["id"])){
                         <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
-                        <p class="title-men"><a href="blog">BLOG</a></p>
+                        <p class="title-men"><a href="blog_">BLOG</a></p>
                     </div>
                     <div class="cont7">
                         <p class="title-men"><a href="contacto">CONTACTO</a></p>
@@ -206,7 +210,7 @@ if(!isset($_GET["id"])){
                         </p>
                     </div>
                     <div class="cont9">
-                        <form action="blog" method="get">
+                        <form action="blog_" method="get">
                             <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                             <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                         </form>
@@ -315,7 +319,21 @@ if(!isset($_GET["id"])){
 	</div>	 
 		<div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 blog-cont">			
 			<!--<div id="search" style="display:none;"></div>-->
-			<div class="content">
+			<div class="content" >
+
+				<div> <?php 
+					
+				 
+					 
+
+					if($_GET['portafolio_por_categoria'] == -1 ){
+						echo '<h3 class="seccion_titulo_portafolio">TODOS LOS PORTAFOLIOS</h3>';
+					}else{
+					$servicios_individuales=mysqli_query($con,"SELECT * from servicios where id=".$_GET["portafolio_por_categoria"]."");
+						foreach ($servicios_individuales as $servicio_name){
+				 			echo '<h3 class="seccion_titulo_portafolio">'.utf8_encode($servicio_name["nombre"]).'</h3>';
+				 	}}?>
+				 </div>
 			<?php 
 			
 
@@ -325,7 +343,8 @@ if(!isset($_GET["id"])){
 			            No existen registros disponibles</div>";
 			            }else{												
 	        				while($res= mysqli_fetch_assoc($sql)){	
-        					?>						
+        					?>	
+        							
 				<div class="grid">
 					<figure class="effect-marley">
 
@@ -339,6 +358,7 @@ if(!isset($_GET["id"])){
 							?>							
 							<div>
 							<?php 
+
 							echo '<p> '.utf8_encode($res["descort"]).' </p>';
 
 							 ?>								
@@ -581,7 +601,7 @@ if(!isset($_GET["id"])){
 		}
         .to-top{
             position: fixed;
-            bottom: 20px;
+            bottom: 40px;
             right: 20px;
             
             background: #000;

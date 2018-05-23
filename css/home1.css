@@ -109,7 +109,7 @@ text-decoration:none !important;
 }
 .panel-group .panel {
     border-radius: 0px !important;
-    box-shadow: 2px 2px 5px #00000059;
+    box-shadow: 3px 3px 5px #0000000d;;
 }
 #boton_contactanos{
 	position: absolute;
@@ -225,13 +225,13 @@ text-decoration:none !important;
     text-shadow: -4px 1px 1px #0808084f;
 }
 .txt_nosotros p{
-	background:#fff;
-	font-family: Gotham-Light;
-	font-size: 16px;
-	color: #8d8d8d;
-	padding: 50px;
-	border-radius: 0px;
-	box-shadow: 2px 2px 5px #00000059;
+	background: #f6f6f6;
+    font-family: Gotham-Light;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 50px;
+    border-radius: 0px;
+    box-shadow: 3px 3px 5px #0000000d;;
 
 }
 
@@ -240,22 +240,22 @@ text-decoration:none !important;
     font-family: Gotham-Bold;
     font-size: 45px;
     margin-top: 90px;
-    padding: 30px 0px;
+    padding: 50px 0px;
     text-align: center;
     color: #000;
-    margin-top: 60px;
-    text-shadow: -4px 1px 1px #0808084f;
+    margin-top: 0px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.31);
 
 }
 .txt_nuestros_clientes_lo{
-	font-family: Gotham-Medium;
+	font-family: Gotham-Bold;
     font-size: 30px;
     padding: 50px;
     text-align: center;
-    color: #03977a;
+    color: #fff;
     margin-top: 50px;
-    background: #cccc;
-   
+    background: #1b1a1a9c;
+    box-shadow: 0px 5px 5px #00000d;
 }
 .txt_servicios p{
 	font-family: Gotham-Medium;
@@ -667,10 +667,9 @@ text-decoration:none !important;
 		.marcas{
 			/*height: 300px;*/
 			
-			box-shadow: 3px 3px 20px #00000d;
-			background: url(../img/color2.jpg);
-			background-position: bottom;
-    		margin-bottom: 50px;
+			/*box-shadow: 3px 3px 20px #00000d;*/
+			background-image: linear-gradient(to left,#30d8cb,#2e847f);
+    		margin-bottom: 150px;
 
 		}
 

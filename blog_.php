@@ -12,7 +12,7 @@ if(!isset($_GET["id"])){
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
 <meta name="description" content="">
 <meta name="keywords" content="">
-<meta property="og:url" content="http://www.creactivmedia.com.mx/blog.php" />
+<meta property="og:url" content="http://www.creactivmedia.com.mx/blog_" />
 <meta property="og:title" content="Blog CreActiv Media - Tus ideas, nuestra pasión." />
 <meta property="og:description" content="Diseño | Marketing Digital | Social Media | Tech" />
 <meta property="og:image" content="http://www.creactivmedia.com.mx/image/share-blog.jpg" />
@@ -227,12 +227,12 @@ if(!isset($_GET["id"])){
 				<li><a href="index#nosotros">Nosotros</a></li>
 				<li><a href="index#seccion_servicios">Servicios</a></li>
 				<li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-				<li><a href="blog">Blog</a></li>
+				<li><a href="blog_">Blog</a></li>
 				<li><a href="contacto">Contacto</a></li>
 			</ul>
 		</div>
 		<div class="brand-datos">
-			<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
+			<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000<img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
 		</div>
 	     <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
 	</nav>
@@ -256,7 +256,7 @@ if(!isset($_GET["id"])){
                         <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
-                        <p class="title-men"><a href="blog">BLOG</a></p>
+                        <p class="title-men"><a href="blog_">BLOG</a></p>
                     </div>
                     <div class="cont7">
                         <p class="title-men"><a href="contacto">CONTACTO</a></p>
@@ -290,7 +290,7 @@ if(!isset($_GET["id"])){
 	<div class="row">
 		
 		<div class="log-movil">
-			<a href="blog.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
+			<a href="blog_"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
 		</div>
 		<div class="slogan-movil">
 			<img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
@@ -313,7 +313,7 @@ if(!isset($_GET["id"])){
 										<div class='dest-titles'>
 											<h3>".$rowD["title"]."</h3>
 											<p><span class='fecha'>".$rowD["fecha"]."</span>  ".$rowD["intro"]."</p>
-											<a href='blog.php?id=".$rowD["id_entrada"]."' class='dest-btn'>Más Información</a>
+											<a href='blog_?id=".$rowD["id_entrada"]."' class='dest-btn'>Más Información</a>
 										</div>";
 								}
 						}
@@ -331,7 +331,7 @@ if(!isset($_GET["id"])){
 				echo "<ul class='bxslider'>";
 				while($row = mysqli_fetch_assoc($sqlU)) {
 					echo "<li>";
-					echo "<a href='blog.php?autor=".$row["id"]."'><img src='image/img-profile/".$row["img"].".jpg' class='img-circle img-autor' width='100px' height='100px' alt=''></a><p class='p-autor'>";
+					echo "<a href='blog_?autor=".$row["id"]."'><img src='image/img-profile/".$row["img"].".jpg' class='img-circle img-autor' width='100px' height='100px' alt=''></a><p class='p-autor'>";
 					echo $row["nombre"];
 					echo "</p></li>";
 				}
@@ -403,9 +403,9 @@ if(isset($_GET["search"])){
 												      		$marcadorIntro=str_replace($search,"<span class='marcador'>".$search."</span>",$row["intro"]);
 
 												      		echo "<div class='item'>
-												      		<a href='blog.php?id=".$row["id_entrada"]."' class='link' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
-												      		<p class='cat'><a href='blog.php?categoria=".$row["idCat"]."' target='_self'>".$row["nombreCat"]."</a> - ".$row["fecha"]." - Escrito por: ".$row["nombre"]."</p>
-												      		<h2><a href='blog.php?id=".$row["id_entrada"]."' class='link' id='' >".$marcadorTitle."</a></h2>
+												      		<a href='blog_?id=".$row["id_entrada"]."' class='link' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
+												      		<p class='cat'><a href='blog_?categoria=".$row["idCat"]."' target='_self'>".$row["nombreCat"]."</a> - ".$row["fecha"]." - Escrito por: ".$row["nombre"]."</p>
+												      		<h2><a href='blog_?id=".$row["id_entrada"]."' class='link' id='' >".$marcadorTitle."</a></h2>
 												      		<p class='desc-corta'> ".$marcadorIntro."</p>
 												      		</div>";   
 												      	}
@@ -461,9 +461,9 @@ if(isset($_GET["search"])){
 
 									while($row = mysqli_fetch_assoc($sql3)) {
 											      		echo "<div class='item'>
-											      		<a href='blog.php?id=".$row["id_entrada"]."' class='link' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
-											      		<p class='cat'><a href='blog.php?categoria=".$row["idCat"]."' target='_self'>".$row["nombreCat"]."</a> - ".$row["fecha"]." - Escrito por: ".$row["nombre"]."</p>
-											      		<h2><a href='blog.php?id=".$row["id_entrada"]."' class='link' id='' >".$row["title"]."</a></h2>
+											      		<a href='blog_?id=".$row["id_entrada"]."' class='link' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
+											      		<p class='cat'><a href='blog_?categoria=".$row["idCat"]."' target='_self'>".$row["nombreCat"]."</a> - ".$row["fecha"]." - Escrito por: ".$row["nombre"]."</p>
+											      		<h2><a href='blog_?id=".$row["id_entrada"]."' class='link' id='' >".$row["title"]."</a></h2>
 											      		<p class='desc-corta'>".$row["intro"]."</p>
 											      		</div>";
 											      	}
@@ -528,9 +528,9 @@ if(isset($_GET["search"])){
 											      		//$marcadorIntro=str_replace($categoria,"<span class='marcador'>".$categoria."</span>",$row["intro"]);
 											      			$post=$row["intro"];
 											      		echo "<div class='item'>
-											      		<a href='blog.php?id=".$row["id_entrada"]."' class='' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
+											      		<a href='blog_?id=".$row["id_entrada"]."' class='' id='' ><img src='blog/".$row["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
 											      		<p class='cat'>".$row["nombreCat"]."  - ".$row["fecha"]." - Escrito por: ".$row["nombre"]."</p>
-											      		<h2><a href='blog.php?id=".$row["id_entrada"]."' class='link' id='' >".$row["title"]."</a></h2>
+											      		<h2><a href='blog_?id=".$row["id_entrada"]."' class='link' id='' >".$row["title"]."</a></h2>
 											      		<p class='desc-corta'>".$post."</p>
 											      		</div>";   
 											      	}
@@ -569,9 +569,9 @@ if(isset($_GET["search"])){
 						                    $post=$row0["intro"];
 						                    echo "<div class='item'>
 						                    		
-													<a href='blog.php?id=".$row0["id_entrada"]."' class='' id='' ><img src='blog/".$row0["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
-													<p class='cat'><a href='blog.php?categoria=".$row0["idCat"]."' target='_self'>".$row0["nombreCat"]."</a> - ".$row0["fecha"]." - Escrito por: ".$row0["nombre"]."</p>
-													<h2><a href='blog.php?id=".$row0["id_entrada"]."' class='link' id='' >".$row0["title"]."</a></h2>
+													<a href='blog_?id=".$row0["id_entrada"]."' class='' id='' ><img src='blog/".$row0["id_entrada"].".jpg' class='img-rounded img-responsive'  alt='' /></a>
+													<p class='cat'><a href='blog_?categoria=".$row0["idCat"]."' target='_self'>".$row0["nombreCat"]."</a> - ".$row0["fecha"]." - Escrito por: ".$row0["nombre"]."</p>
+													<h2><a href='blog_?id=".$row0["id_entrada"]."' class='link' id='' >".$row0["title"]."</a></h2>
 													<p class='desc-corta'>".$post."</p>
 													
 											    </div>";
@@ -693,14 +693,14 @@ echo "<title>".$row["title"]."</title>"."\n";
 echo "<!-- sample fb meta -->"."\n";
 echo "<meta property='og:title' content='".$row["title"]."' />"."\n";
 echo "<meta property='og:type' content='website' />"."\n";
-echo "<meta property='og:url' content='http://www.creactivmedia.com.mx/blog.php?id=".$row["id_entrada"]."' />"."\n";
+echo "<meta property='og:url' content='http://www.creactivmedia.com.mx/blog_?id=".$row["id_entrada"]."' />"."\n";
 echo "<meta property='og:image' content='http://www.creactivmedia.com.mx/blog/".$row["id_entrada"].".jpg' />"."\n";
 echo "<meta property='og:description' content='".$row["intro"].".'/>"."\n";
 
 echo "<!-- sample twitter meta -->"."\n";
 echo "<meta name='twitter:card' content='summary_large_image'>"."\n";
 echo "<meta name='twitter:site' content='@CreActivMedia'>"."\n";
-echo "<meta name='twitter:url' content='http://www.creactivmedia.com.mx/blog.php?id=".$row["id_entrada"]."'>"."\n";
+echo "<meta name='twitter:url' content='http://www.creactivmedia.com.mx/blog_?id=".$row["id_entrada"]."'>"."\n";
 echo "<meta name='twitter:creator' content='@CreActivMedia'>"."\n";
 echo "<meta name='twitter:title' content='".$row["title"]."'>"."\n";
 echo "<meta name='twitter:description' content='".$row["intro"]."'>"."\n";
@@ -854,7 +854,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
 					<li><a href="#">Nosotros</a></li>
 					<li><a href="#">Servicios</a></li>
 					<li><a href="portafolio.php">Portafolio</a></li>
-					<li><a href="blog.php">Blog</a></li>
+					<li><a href="blog_">Blog</a></li>
 					<li><a href="contacto.php">Contacto</a></li>
 				</ul>
 			</div>
@@ -882,7 +882,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
                             <p class="title-men"><a href="portafolio.php">PORTAFOLIO</a></p>
                         </div>
                         <div class="cont5">
-                            <p class="title-men"><a href="blog.php">BLOG</a></p>
+                            <p class="title-men"><a href="blog_">BLOG</a></p>
                         </div>
                         <div class="cont7">
                             <p class="title-men"><a href="contacto.php">CONTACTO</a></p>
@@ -894,7 +894,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
                             </p>
                         </div>
                         <div class="cont9">
-                            <form action="blog.php" method="get">
+                            <form action="blog_" method="get">
                                 <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                                 <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                             </form>
@@ -929,7 +929,7 @@ echo "<title>CreActiv Media Diseño, Web, Mkt Digital</title>";
 						<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 colorBlack'>";
 
 							echo "<div class='user'>";
-								echo "<a href='blog.php?autor=".$row["id_autor"]."'><img src='image/img-profile/".$row["foto"].".jpg' class='img-circle' alt='' width='100px' height='100px'></a>
+								echo "<a href='blog_?autor=".$row["id_autor"]."'><img src='image/img-profile/".$row["foto"].".jpg' class='img-circle' alt='' width='100px' height='100px'></a>
 								<h4>".$row["nombre"]."</h4>
 								<p>".$row["puesto"]."</p>
 								";
@@ -971,7 +971,7 @@ if ($sql2 = mysqli_query($con, "SELECT B.id AS `id`, B.id_entrada AS `id_entrada
 if(mysqli_num_rows($sql2) == 0){
 echo "
 <h1>El item que esta buscando no existe.</h1>
-<p><a href='blog.php'>Regresar a la secci&oacute;n de blog.</a></p>";
+<p><a href='blog_'>Regresar a la secci&oacute;n de blog.</a></p>";
 }else{
 
   $numComent=mysqli_num_rows($sql2);
@@ -1011,7 +1011,7 @@ echo "
 
       <li class="rrssb-email">
         <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
-        <a href="mailto:?subject=<?php echo urldecode($row1["title"]); ?>&amp;body=http://www.creactivmedia.com.mx/blog.php?id=<?php echo $_GET["id"];  ?> ">
+        <a href="mailto:?subject=<?php echo urldecode($row1["title"]); ?>&amp;body=http://www.creactivmedia.com.mx/blog_?id=<?php echo $_GET["id"];  ?> ">
           <span class="rrssb-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"/></svg>
           </span>
@@ -1026,7 +1026,7 @@ echo "
 http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[title]=Conoce+a+Developando&p[images][0]=http://developando.com/images/developandoLogo.jpeg&p[summary]=Desarrollo+web+y+movil
 -->
 
-        <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http://www.creactivmedia.com.mx/blog.php?id=<?php echo $_GET["id"]; ?>&amp;p[title]=<?php echo $row1["title"]; ?>&amp;p[images][0]=http://www.creactivmedia.com.mx/blog/<?php echo $_GET["id"]; ?>.jpg" class="popup">
+        <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http://www.creactivmedia.com.mx/blog_?id=<?php echo $_GET["id"]; ?>&amp;p[title]=<?php echo $row1["title"]; ?>&amp;p[images][0]=http://www.creactivmedia.com.mx/blog/<?php echo $_GET["id"]; ?>.jpg" class="popup">
           <span class="rrssb-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg>
           </span>
@@ -1051,7 +1051,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
       
       <li class="rrssb-googleplus">
         <!-- Replace href with your meta and URL information.  -->
-        <a href="https://plus.google.com/share?url=<?php echo urldecode($row1["id_entrada"]); ?>%20http://www.creactivmedia.com.mx/blog.php?id=<?php echo urldecode($row1["id_entrada"]); ?>" class="popup">
+        <a href="https://plus.google.com/share?url=<?php echo urldecode($row1["id_entrada"]); ?>%20http://www.creactivmedia.com.mx/blog_?id=<?php echo urldecode($row1["id_entrada"]); ?>" class="popup">
           <span class="rrssb-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"/></svg>            </span>
           <span class="rrssb-text">google+</span>
@@ -1071,7 +1071,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
      
 
       <li class="rrssb-whatsapp">
-        <a href="whatsapp://send?text=http://www.creactivmedia.com.mx/blog.php?id=<?php echo urldecode($row1["id_entrada"]); ?>" data-action="share/whatsapp/share">
+        <a href="whatsapp://send?text=http://www.creactivmedia.com.mx/blog_?id=<?php echo urldecode($row1["id_entrada"]); ?>" data-action="share/whatsapp/share">
         	
           <span class="rrssb-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90"><path d="M90 43.84c0 24.214-19.78 43.842-44.182 43.842a44.256 44.256 0 0 1-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 0 1-6.34-22.637C1.635 19.63 21.415 0 45.818 0 70.223 0 90 19.628 90 43.84zM45.818 6.983c-20.484 0-37.146 16.535-37.146 36.86 0 8.064 2.63 15.533 7.076 21.61l-4.64 13.688 14.274-4.537A37.122 37.122 0 0 0 45.82 80.7c20.48 0 37.145-16.533 37.145-36.857S66.3 6.983 45.818 6.983zm22.31 46.956c-.272-.447-.993-.717-2.075-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.36-1.717-.54-2.438.536-.72 1.076-2.797 3.495-3.43 4.212-.632.72-1.263.81-2.347.27-1.082-.536-4.57-1.672-8.708-5.332-3.22-2.848-5.393-6.364-6.025-7.44-.63-1.076-.066-1.657.475-2.192.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.718.182-1.345-.09-1.884-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.793-2.436-1.793-.63 0-1.353-.09-2.075-.09-.722 0-1.896.27-2.89 1.344-.99 1.077-3.788 3.677-3.788 8.964 0 5.288 3.88 10.397 4.422 11.113.54.716 7.49 11.92 18.5 16.223 11.01 4.3 11.01 2.866 12.996 2.686 1.984-.18 6.406-2.6 7.312-5.107.9-2.513.9-4.664.63-5.112z"/></svg>
@@ -1161,7 +1161,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 <div id="comentarios"></div>
 
 <?php
-	   echo "<div class='fb-comments' data-href='http://creactivmedia.com.mx/blog.php?id=".$BlogEntrada."' data-width='100%' data-numposts='10'></div>";
+	   echo "<div class='fb-comments' data-href='http://creactivmedia.com.mx/blog_?id=".$BlogEntrada."' data-width='100%' data-numposts='10'></div>";
 	  }
 	       //mysql_free_result($sql2);
 	}
@@ -1185,7 +1185,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 							GROUP BY nombreCat ORDER BY nombreCat ASC ")) {
 					echo "<ul class='ulCat'>";
 						 while($row = mysqli_fetch_assoc($sql)) {
-						 		echo "<li><a href='blog.php?categoria=".$row['idCat']."'>".$row['nombreCat']."</a></li>";
+						 		echo "<li><a href='blog_?categoria=".$row['idCat']."'>".$row['nombreCat']."</a></li>";
 						 }
 					echo "</ul>";
 				}
@@ -1198,7 +1198,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 				if ($sql3 = mysqli_query($con,"SELECT id, nombre, img AS foto, puesto FROM user")) {
 							echo "<ul class='ulAutor'>";
 							 while($row = mysqli_fetch_assoc($sql3)) {
-									echo "<li><a href='blog.php?autor=".$row["id"]."'><img src='image/img-profile/".$row["foto"].".jpg' width='100px' height='100px' class='img-circle' alt=''></a>
+									echo "<li><a href='blog_?autor=".$row["id"]."'><img src='image/img-profile/".$row["foto"].".jpg' width='100px' height='100px' class='img-circle' alt=''></a>
 													<p><span class='nombre'>".$row["nombre"]."</span>
 													<br/><span class='puesto'>".$row["puesto"]."</span></p>
 													</li>";
@@ -1221,7 +1221,7 @@ http://www.facebook.com/sharer.php?s=100&p[url]=http://developando.com?s=100&p[t
 						$string= $row["tags"];
 						$new_array= explode(',',$string);
 						foreach($new_array as $value){
-						echo "<span class='tags'><a href='blog.php?search=".trim($value)."'>".$value."</a></span>";
+						echo "<span class='tags'><a href='blog_?search=".trim($value)."'>".$value."</a></span>";
 						}
 					}
 

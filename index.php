@@ -34,8 +34,10 @@ include("conexion.php");
 
     <!--  <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/Slider.css"> -->
-    <link rel="stylesheet" href="css/menu.css">
+
     <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/cubo.css">
 
  <!-- <link rel="stylesheet" type="text/css" href="css/autoplay_carousel.css"> -->
@@ -97,6 +99,16 @@ include("conexion.php");
     // init controller
     var controller = new ScrollMagic.Controller();
     </script>
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?3opI8bRHGhZc4H7VZBgPzdZNdIdPcrE3";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
 <header>
     <!-- MENU RESPONSIVO MOVIL -->
     <nav class="btn-toggle">
@@ -291,8 +303,7 @@ include("conexion.php");
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
-                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <ul ontouchstart class="col_servicios">
                         <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 columna_servicio'>
                           <li class="servicio_individual">
@@ -492,7 +503,7 @@ include("conexion.php");
                       </defs>
                     </svg>
                 </div>
-                <div  class='col-xs-0 col-sm-0 col-md-0 col-lg-1'></div>
+               
             </div>
         </div>
     </div>
@@ -598,10 +609,14 @@ include("conexion.php");
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">DISEÑO WEB</h4>
+                
             </div>
+
             <div class="modal-body" >
+                <p>Desarrollamos diseño de sitios web totalemente responsivos, pensando en su adaptabilidad con tablets, laptops o smartphones. Buscamos reflejar la personalidad de tu empresa en cada diseño.</p>
+
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Diseño de sitios<br>
-                   <img class="icono_cubo" src="img/icono_cubo2.png">E-commerce<br>
+                   <img class="icono_cubo" src="img/icono_cubo2.png">E-commerce <a href="portafolio?portafolio_por_categoria=16">ver proyectos en el portafolio</a><br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">Hosting<br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">Posicionamiento<br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">SEM/SEO</p>
@@ -804,11 +819,11 @@ include("conexion.php");
 
 <div class="container-fluid">
     <div class=" row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 site_services">
             <br/><br/>
             <h4 class="sitemap">Site Map</h4>
 
-             <ul class="ft-site">
+            <ul class="ft-site">
                 <li><a href="#">Identidad</a></li>
                 <li><a href="#">Mkt Digital</a></li>
                 <li><a href="#">Multimedia</a></li>
@@ -840,7 +855,7 @@ include("conexion.php");
     <style type="text/css">
         .to-top{
             position: fixed;
-            bottom: 20px;
+            bottom: 40px;
             right: 20px;
             background: #000;
             color:#fff;

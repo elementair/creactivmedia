@@ -1435,6 +1435,7 @@ textarea{
     height: 100px;
     position: absolute;
     top:10%;
+    z-index: 2;
   }
 
   .dest-box h1{

@@ -14,7 +14,7 @@ if(!isset($_GET["id"])){
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio.php" />
+		<meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio" />
 		<meta property="og:title" content="Blog CreActiv Media - Tus ideas, nuestra pasión." />
 		<meta property="og:description" content="Diseño | Marketing Digital | Social Media | Tech" />
 		<meta property="og:image" content="http://www.creactivmedia.com.mx/image/share-blog.jpg" />
@@ -157,15 +157,15 @@ if(!isset($_GET["id"])){
     		<header>
     			<nav class="btn-toggle">
     				<div class="">
-    					<a href="index.php"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
+    					<a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
     				</div>
     				<div class="menu-nav">
     					<ul id="nav">
-    						<li><a href="index.php#nosotros">Nosotros</a></li>
-    						<li><a href="index.php#servicios">Servicios</a></li>
-    						<li><a href="portafolio.php">Portafolio</a></li>
-    						<li><a href="blog.php">Blog</a></li>
-    						<li><a href="contacto.php">Contacto</a></li>
+    						<li><a href="index#nosotros">Nosotros</a></li>
+    						<li><a href="index#servicios">Servicios</a></li>
+    						<li><a href="portafolio">Portafolio</a></li>
+    						<li><a href="blog_">Blog</a></li>
+    						<li><a href="contacto_">Contacto</a></li>
     					</ul>
     				</div>
     				<div class="brand-datos">
@@ -178,22 +178,22 @@ if(!isset($_GET["id"])){
                 <div class="container-fluid">
                     <div class="movil">
                         <div class="cont1">         
-                            <p class="title-men"><a href="index.php">INICIO</a></p>
+                            <p class="title-men"><a href="index">INICIO</a></p>
                         </div>
                         <div class="cont2">
-                            <p class="title-men"><a href="index.php#nosotros">NOSOTROS</a></p>
+                            <p class="title-men"><a href="index#nosotros">NOSOTROS</a></p>
                         </div>
                         <div class="cont3">
-                            <p class="title-men"><a href="index.php#servicios">SERVICIOS</a></p>
+                            <p class="title-men"><a href="index#servicios">SERVICIOS</a></p>
                         </div>
                         <div class="cont4">
-                            <p class="title-men"><a href="portafolio.php">PORTAFOLIO</a></p>
+                            <p class="title-men"><a href="portafolio">PORTAFOLIO</a></p>
                         </div>
                         <div class="cont5">
-                            <p class="title-men"><a href="blog.php">BLOG</a></p>
+                            <p class="title-men"><a href="blog_">BLOG</a></p>
                         </div>
                         <div class="cont7">
-                            <p class="title-men"><a href="contacto.php">CONTACTO</a></p>
+                            <p class="title-men"><a href="contacto">CONTACTO</a></p>
                         </div>
                         <div class="cont8">
                             <p class="cont-icon">
@@ -202,7 +202,7 @@ if(!isset($_GET["id"])){
                             </p>
                         </div>
                         <div class="cont9">
-                            <form action="blog.php" method="get">
+                            <form action="blog_" method="get">
                                 <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                                 <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
                             </form>
@@ -367,13 +367,13 @@ if(!isset($_GET["id"])){
 
                             <ul class="ft-site">
                                 <li><a href="#">Identidad</a></li>
-                                <li><a href="digital.php">Mkt Digital</a></li>
+                                <li><a href="#">Mkt Digital</a></li>
                                 <li><a href="#">Multimedia</a></li>
                                 <li><a href="#">Editorial</a></li>
-                                <li><a href="diseno.php">Diseño Web</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Diseño Web</a></li>
+                                <li><a href="blog_">Blog</a></li>
                                 <li><a href="#">Pantallas Interactivas</a></li>
-                                <li><a href="Portafolio.php">Portafolio</a></li>
+                                <li><a href="Portafolio">Portafolio</a></li>
                                 <li><a href="#">Contacto</a></li>
                             </ul>
 
