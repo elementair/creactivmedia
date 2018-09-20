@@ -22,9 +22,9 @@
     display: none;
 }
 
-a:link 
-{ 
-text-decoration:none !important; 
+a:link
+{
+text-decoration:none !important;
 }
 #seccion_contacto{
 
@@ -138,10 +138,73 @@ textarea{
 .desc-corta{
   text-align: justify;
 }
+.contactoTitle {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 36px;
+}
 
+.highlighted {
+  font-weight: 900;
+  font-family: nexa_bold;
+}
 
+.control-label {
+  font-family: nexa_light;
+  font-size: 18px;
+  padding-left: 11px;
+}
+.map {
+  border-radius: 55px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+}
+.form-control {
+  background-color: #E0E0E0;
+  border:none;
+  box-shadow: none;
+  transition: none;
+}
+
+.btn-captcha {
+  font-family: nexa_light;
+  border-radius: 15px;
+  background-color: #3FA5F1;
+  border: none;
+  margin-left: 15px;
+}
+
+.btn-submit {
+  background-color: #5029D2;
+  border-radius: 15px;
+  font-family: nexa_light;
+  border: none;
+  -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+}
 /*movil 1*/
 @media (max-width: 349px) {
+
+.contactoTitle {
+  margin-top: 15px;
+  font-size: 21px;
+}
+.btn-submit {
+  margin: auto;
+}
+.control-label {
+     display: block;
+     text-align: left;
+}
+
+.entradas {
+  padding: 0;
+}
   .container{
     width: 100%;
     text-align: center;
@@ -285,6 +348,8 @@ textarea{
   .portada-destacado{
     width: 100%;
     height: 40vh;
+    position: relative;
+    top: 70px;
     /*background-image: url("../image/patron-triangulo.png");*/
     background-repeat: repeat;
     background-position: center;
@@ -425,14 +490,22 @@ textarea{
 
 }
 
-
-
-
 /*movil 2*/
 @media (min-width: 350px) and (max-width: 399px) {
   .container{
     width: 100%;
     text-align: center;
+  }
+  .contactoTitle {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  .btn-submit {
+    margin: auto;
+  }
+  .control-label {
+       display: block;
+       text-align: left;
   }
   .modal-dialog{
     position: absolute;
@@ -570,12 +643,14 @@ textarea{
 
   .portada-destacado{
     width: 100%;
-    height: 25vh;
+    height: 40vh;
     /*background-image: url("../image/patron-triangulo.png");*/
     background-repeat: repeat;
     background-position: top;
     /* background: url(../image/bg-destacado.jpg) no-repeat top center fixed;*/
   }
+
+
 
   .destacado{
     width: 100%;
@@ -591,7 +666,7 @@ textarea{
     margin-top:10vh;
     margin-bottom: 30px;
     font-size: 3em;
-    text-align: center;      
+    text-align: center;
     color: #fff;
     font-weight: 700;
     font-family: "Gotham-Medium";
@@ -709,6 +784,7 @@ textarea{
 
 /*tablet 1*/
 @media (min-width: 400px) and (max-width: 767px) {
+
   .modal-dialog{
     position: absolute;
     top: 50px;
@@ -716,6 +792,9 @@ textarea{
     right: 20px;
     bottom: 50px;
     width: 300px;
+  }
+  .container {
+    width: 100%;
   }
   .modal-dialog{
     position: absolute;
@@ -728,8 +807,19 @@ textarea{
   .carousel-caption p{
     visibility: hidden;
   }
+  #captcha {
+    margin: auto;
+    display: block;
+  }
+  .btn-captcha {
+    margin: auto;
+    display: block;
+    width: 60%;
+  }
 
-
+  .btn-submit {
+    margin: auto;
+  }
 
   /*edit profile*/
 
@@ -856,14 +946,13 @@ textarea{
 
   .portada-destacado{
     width: 100%;
-    height: 240vh;
+    height: 40vh;
     /*background-image: url("../image/patron-triangulo.png");*/
     background-repeat: repeat;
     background-position: top;
   }
 
   .destacado{
-
     width: 100%;
     height: 100px;
     position: relative;
@@ -874,14 +963,14 @@ textarea{
     margin: 0 auto;
     width: 100%;
     height: auto;
-    margin-top:10vh;
+    margin-top:5vh;
     margin-bottom: 30px;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
-
     color: #fff;
     font-weight: 700;
     font-family: "Gotham-Medium";
+    z-index: 1;
   }
 
   .dest-img{
@@ -945,7 +1034,7 @@ textarea{
     top:400px;
     z-index: 9;
     position: absolute;
-    left:50%; 
+    left:50%;
     margin-left: -175px;
   }
 */
@@ -989,7 +1078,6 @@ textarea{
     margin-top: 50px;
     padding-right: 10px;
   }
-
 
 }
 
@@ -1144,13 +1232,13 @@ textarea{
 
   .portada-destacado{
     width: 100%;
-    height: 40vh;        
+    height: 40vh;
     /*background-image: url("../image/patron-triangulo.png");*/
     background-repeat: repeat;
     background-position: top;
   }
 
-  .destacado{        
+  .destacado{
     width: 100%;
     height: 100px;
     position: absolute;
@@ -1175,7 +1263,7 @@ textarea{
     width: 600px;
     height: 400px;
     position: absolute;
-    left:50%; 
+    left:50%;
     margin-left: -300px;  /* 50% del ancho de la div en px */
   }
 
@@ -1187,7 +1275,7 @@ textarea{
     text-align: justify;
     position: absolute;
     top:220px;
-    left:50%; 
+    left:50%;
     margin-left: -300px;
     background-color: rgba(0,0,0,0.7);
   }
@@ -1236,8 +1324,8 @@ textarea{
     top:430px;
     z-index: 9;
     position: absolute;
-    left:50%; 
-    margin-left: -175px;  
+    left:50%;
+    margin-left: -175px;
   }
 */
 
@@ -1302,7 +1390,9 @@ textarea{
     width: 800px;
   }
 
-
+ .entradas {
+   padding: 0;
+ }
   .blog{
     width: 70%;
     margin: 0 auto;
@@ -1423,7 +1513,9 @@ textarea{
 
   .portada-destacado{
     width: 100%;
-    height: 40vh;
+    height: 55vh;
+    position: relative;
+    top: 70px;
     /*background-image: url("../image/patron-triangulo.png");*/
     background-repeat: repeat;
     background-position: top;

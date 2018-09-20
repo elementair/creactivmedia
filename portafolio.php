@@ -10,12 +10,12 @@ $_GET['portafolio_por_categoria'] == 0;
 if($_GET['portafolio_por_categoria'] == -1 ){
    $sql=mysqli_query($con,"SELECT p.id,p.id_entrada,p.title,p.img,p.img1,p.img2,p.img3,p.descort,p.desclarge,p.activo,p.facebook,p.twitter,p.youtube,p.google
   from (((portafolio as p left outer join portafolio_servicios as o
-  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id) group by p.title order by title ASC");
+  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id) where p.activo='1' group by p.title order by title ASC");
 }
 else {
     $sql=mysqli_query($con,"SELECT p.id,p.id_entrada,p.title,p.img,p.img1,p.img2,p.img3,p.descort,p.desclarge,p.activo,p.facebook,p.twitter,p.youtube,p.google
   from (((portafolio as p left outer join portafolio_servicios as o
-  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id)  where s.id=".$_GET["portafolio_por_categoria"]." group by p.title order by title ASC");
+  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id)  where p.activo='1' and s.id='".$_GET["portafolio_por_categoria"]."' group by p.title order by title ASC");
  }
 //si existe variable mostrar home blog
 if(!isset($_GET["id"])){
@@ -28,7 +28,7 @@ if(!isset($_GET["id"])){
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio" />
@@ -43,16 +43,18 @@ if(!isset($_GET["id"])){
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600italic,400,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <!-- Bootstrap -->
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >	
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
 <link rel="stylesheet" href="css/map.css" type="text/css">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/portafolio.css">
-<link rel="stylesheet" href="css/particulas.css">
+<link rel="stylesheet" href="css/animate.css">
+<!-- <link rel="stylesheet" href="css/particulas.css">
 <link rel="stylesheet" href="css/demo.css" type="text/css"/>
 <link rel="stylesheet" href="css/elastislide.css" type="text/css"/>
-<link rel="stylesheet" href="css/custom.css" type="text/css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One" > 
+<link rel="stylesheet" href="css/custom.css" type="text/css"/> -->
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One" >
 <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" type="text/css" />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -61,13 +63,13 @@ if(!isset($_GET["id"])){
 <script src="https://code.jquery.com/jquery-3.1.1.js"
 			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 			  crossorigin="anonymous"></script>
-
-<script src="js/modernizr.custom.17475.js"></script>
+<!--
+<script src="js/modernizr.custom.17475.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
 
 <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
+<!-- <script type="text/javascript" src="js/scroll.js"></script> -->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,28 +88,28 @@ if(!isset($_GET["id"])){
 </script>
 
  <!--<script type="text/javascript">
- 
+
 		var f = jQuery.noConflict();
         f(document).ready(function(){
 
-		
+
               f("#buscar").click(function (){
                     var datos={
                            "search" : f("#_search").val()
                       }
 
                     f.ajax({
-                      type: "POST", 
-                      url: "load_busqueda.php", 
+                      type: "POST",
+                      url: "load_busqueda.php",
                       data: datos,
                       contentType: "application/x-www-form-urlencoded",
                       beforeSend: function() {
-                      f("#search").html("<img src='img/ico/loading.gif' width='60px' height='60px' >"); 
+                      f("#search").html("<img src='img/ico/loading.gif' width='60px' height='60px' >");
                       },
                       dataType: "html",
-                      success: function(data){ 
+                      success: function(data){
                           f("#_cont-items").fadeOut("slow");
-                      	 
+
                           f("#search").fadeIn(500).html(data);
                       }
                     });
@@ -148,7 +150,7 @@ if(!isset($_GET["id"])){
 
 
 <body id="top">
-	
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -160,32 +162,33 @@ if(!isset($_GET["id"])){
 
 
 <header>
-	<nav id="top" class="btn-toggle">
-		<div class="">
-			<a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
-		</div>
-		<div class="menu-nav">
-			<ul id="nav">
-				<li><a href="index#nosotros">Nosotros</a></li>
-				<li><a href="index#seccion_servicios">Servicios</a></li>
-				<li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-				<li><a href="blog_">Blog</a></li>
-				<li><a href="contacto">Contacto</a></li>
-			</ul>
-		</div>
-		<div class="brand-datos">
-			<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
-		</div>
-	     <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
-	</nav>
-
-
- 	<section class="seccionToggle">
+    <!-- MENU RESPONSIVO MOVIL -->
+    <nav class="btn-toggle">
+        <div class="brand_container">
+            <a href="index"><img src="img/creactiv_txt_negro.png" alt="Logo Creactiv Media" class="brand"></a>
+        </div>
+        <div class="menu-nav">
+            <div id="nav">
+                <li><a href="index#nosotros">NOSOTROS</a></li>
+                <li><a href="index#seccion_servicios">SERVICIOS</a></li>
+                <li><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></li>
+                <li><a href="blog_">BLOG</a></li>
+                <li><a href="contacto">CONTACTOS</a></li>
+            </div>
+        </div>
+        <div class="brand-datos">
+            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+        </div>
+        <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu_responsivo.png" class="btn-menu" height="34" width="38" alt=""></a>
+    </nav>
+    <!-- MENU PANTALLA PC -->
+    <section class="seccionToggle">
         <div class="wrap">
             <div class="container-fluid">
                 <div class="movil">
-                	
-                    <div class="cont1">         
+                    <div class="cont1">
                         <p class="title-men"><a href="index">INICIO</a></p>
                     </div>
                     <div class="cont2">
@@ -205,405 +208,138 @@ if(!isset($_GET["id"])){
                     </div>
                     <div class="cont8">
                         <p class="cont-icon">
-                            <a href="https://www.facebook.com/CreActivMedia/"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
+                            <a href="https://www.facebook.com/CreActivMedia/" target="_top"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
                             <a href="https://twitter.com/creactivmedia"><img src="img/ico/ico-tw.png" class="ico-nav" alt=""></a>
                         </p>
                     </div>
                     <div class="cont9">
-                        <form action="blog_" method="get">
+
+                        <div class="brand_datos_reponsivo">
+                            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+                            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+                            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+                        </div>
+                       <!--  <form action="blog_" method="get">
                             <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
-                            <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
-                        </form>
+                        <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
+                        </form> -->
                     </div>
-          		</div>
-      		</div>
-    	</div>
-  	</section>
+                </div>
+            </div>
+        </div>
+    </section>
 </header>
 
 
-<div  class="fodo_transparente_portafolio"></div>
-<div id="seccion_portafolio" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/home/portafolio_home.jpg">
+<div  class="fondo_transparente_portafolio"></div>
+<div id="seccion_portafolio" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/n_fondo/6.png">
 	<div class="row">
-		
+
 			<!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
 			</div>
 			<div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
 			</div>-->
-			
-		<div  class="destacado">	
-			<div  class="dest-box">				
-				<h1 class="animated fadeInDown">PORTAFOLIO</h1>					
+
+		<div  class="destacado">
+			<div  class="dest-box">
+				<h1 class="animated fadeInDown">
+          <div id="textTitle">PORTAFOLIO</div>
+        </h1>
 			</div>
 		</div>
 
 	</div>
 </div>
 
-<div class="container-fluid">
-	<div id="contenedor_portafolio" class="row entradas"> 	
-	<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2">
-		 <div id="sidebar-wrapper">
+<div id="contenedor_portafolio" class="container-fluid">
+	<div class="row entradas">
+	<div id="category-wrapper" class="col-xs-12">
+    <div class="title">
+      <span>Todos los <strong>Portafolios</strong></span>
+    </div>
+	</div>
 
-            <ul class="sidebar-nav">
+       <ul class="category-list">
+           <li class="element">
+               <a class="category-link" href="portafolio?portafolio_por_categoria=-1">TODOS</a>
+           </li>
+   <!-- <button data-toggle="collapse" data-target="#demo">Collapsible</button> -->
+           <?php
+           // $servicios=mysqli_query($con,"SELECT * from servicios inner join  categoria_servicios on servicios.id_categoria_servicios=categoria_servicios.id");
+           $contador=1;
+   $categoria_servicios=mysqli_query($con,"SELECT * from categoria_servicios where status=1");
+   foreach ($categoria_servicios as $categoria){
+         ?>
+           <li class="element">
+               <a class="category-link" data-toggle="collapse" data-target="#demo<?php echo $contador;?>" href="#"><?php echo utf8_encode($categoria['nombre']); ?></a>
+               <div id="demo<?php echo $contador;?>" class="collapse">
+           </li>
+           <?php $contador +=1; } ?>
 
-                <li class="sidebar-brand">
-                    <a href="portafolio?portafolio_por_categoria=-1">TODOS</a>
-                </li>
-                <p>Segun el Servicio:</p>
+       </ul>
 
-				<!-- <button data-toggle="collapse" data-target="#demo">Collapsible</button> -->
-
-
-                <?php 
-                // $servicios=mysqli_query($con,"SELECT * from servicios inner join  categoria_servicios on servicios.id_categoria_servicios=categoria_servicios.id");
-                $contador=1;
-				$categoria_servicios=mysqli_query($con,"SELECT * from categoria_servicios where status=1");
-				 
-					 
-				foreach ($categoria_servicios as $categoria){
-					
-
-            	?>
-                <li>
-                    <a data-toggle="collapse" data-target="#demo<?php echo $contador;?>" href="#"><?php echo utf8_encode($categoria['nombre']); ?></a>
-                    
-                    <div id="demo<?php echo $contador;?>" class="collapse">
-					<?php
-				     
-					$consulta_servicios=mysqli_query($con,"SELECT * from categoria_servicios  inner join  servicios on servicios.id_categoria_servicios=categoria_servicios.id where categoria_servicios.id=".$contador."");
-					// print_r($consulta_servicios); 
-					
-
-					foreach ($consulta_servicios as $servicios){
-					?>
-					<div style="font-size: 12px; margin-left: 10px; padding-left: 40px;  padding-bottom: -10px; padding-left:0px !important;">
-
-                    	<a style="padding: -20px;" href="portafolio?portafolio_por_categoria=<?php echo utf8_encode($servicios['id']);?>"><?php echo utf8_encode($servicios['nombre']);?></a>
-                    	
-                	</div>
-
-					
-					<?php
-					 }?>
-                    
-					</div>
-                </li>
-                <?php $contador +=1; } ?>
-               <!--  <li>
-                    <a href="#">DISEÑO WEB</a>
-                </li>
-                <li>
-                    <a href="#">FOTOGRAFIA</a>
-                </li>
-                <li>
-                    <a href="#">REDISEÑO IMAGEN</a>
-                </li>
-                <li>
-                    <a href="#">VIDEO</a>
-                </li>
-                <li>
-                    <a href="#">MKT DIGITAL</a>
-                </li>
-                <li>
-                    <a href="#">D WEB ECOMMERCE</a>
-                </li>
-                <li>
-                    <a href="#">DESARROLLO DE LOGO</a>
-                </li>
-                <li>
-                    <a href="#">PAPELERIA</a>
-                </li> -->
-            </ul>
-        </div>
-	</div>	 
-		<div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 blog-cont">			
-			<!--<div id="search" style="display:none;"></div>-->
-			<div class="content" >
-
-				<div> <?php 
-					
-				 
-					 
-
-					if($_GET['portafolio_por_categoria'] == -1 ){
-						echo '<h3 class="seccion_titulo_portafolio">TODOS LOS PORTAFOLIOS</h3>';
-					}else{
-					$servicios_individuales=mysqli_query($con,"SELECT * from servicios where id=".$_GET["portafolio_por_categoria"]."");
-						foreach ($servicios_individuales as $servicio_name){
-				 			echo '<h3 class="seccion_titulo_portafolio">'.utf8_encode($servicio_name["nombre"]).'</h3>';
-				 	}}?>
-				 </div>
-			<?php 
-			
-
-				if($sql){
-						if(mysqli_num_rows($sql) == 0){
-			            echo "<div class='browser_width colelem' id='u2258-bw'>
-			            No existen registros disponibles</div>";
-			            }else{												
-	        				while($res= mysqli_fetch_assoc($sql)){	
-        					?>	
-        							
-				<div class="grid">
-					<figure class="effect-marley">
-
-						<?php
-
-	            			echo '<img src="admin/'.$res["img"].'" class="img-responsive" width="auto" heigth="auto">';
-        					?>        			
-						<figcaption>			
-							<?php 					  			
-								echo '<h2>'.$res["title"].'</h2>';
-							?>							
-							<div>
-							<?php 
-
-							echo '<p> '.utf8_encode($res["descort"]).' </p>';
-
-							 ?>								
-							</div>
-							<a href="#<?php echo 'modal-id-'.$res['id']; ?>" class="" data-toggle="modal" data-target="#<?php echo 'modal-id-'.$res['id']; ?>"></a>
-						</figcaption>
-					</figure>
-				</div>
-
-					<div class="modal fade " id="<?php echo 'modal-id-'.$res['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="Portafolio" aria-hidden="true" >				
-						    <div class="modal-dialog">
-						        <div class="modal-content">								
-						          	<div class="modal-header"  style="padding:35px 50px;">			            	
-						            	<div class="row">
-							                  <div class="col-lg-12">
-							                 	 <div class="titulo">
-							                      <?php 					  			
-													echo ''.$res["title"].'';
-													 ?>
-													 </div>
-							                  </div>
-							                  <div class="col-md-12">
-								                    <ul class="social-network social-circle"> 
-								                    <?php 
-													echo '<li><a href="'.$res["facebook"].'" class="icoFacebook" title="Facebook">';
-													 echo '<i class="fa fa-facebook"></i><span></span></a></li>';
-													 
-													echo '<li><a href="'.$res["twitter"].'" class="icoTwitter" title="Twitter">';
-													 echo '<i class="fa fa-twitter"></i><span></span></a></li>';
-													 
-													echo '<li><a href="'.$res["google"].'" class="icoGoogle" title="Google +">';
-													echo '<i class="fa fa-google-plus"></i><span></span></a></li>'; ?>							                       
-								                    </ul>				
-												</div>
-							                </div>          
-									</div>						         
-						          	<!--<div class="modal-body" style="padding:0px 0px;">	-->			          	
-								    <div id="<?php echo 'myCarousel-'.$res['id']; ?>" class="carousel slide" data-ride="carousel">
-	    
-
-									    <!-- Wrapper for slides -->
-									    <div class="carousel-inner">
-
-									      <div class="item active">
-									      <?php 
-											echo "<img src='admin/".$res["img1"]."' width='auto' heigth='auto' class='img-responsive'>";
-															        					?>        
-									        <div class="carousel-caption">
-									          <p style="text-shadow: 1px 1px 2px #000; "><?php 
-																						echo ' "'.utf8_encode($res['desclarge']).'" ';
-																						 ?> </p>
-									        </div>
-									      </div>
-											<div class="item">
-										      <?php 
-											echo "<img src='admin/".$res["img2"]."' width='auto' heigth='auto' class='img-responsive'>";
-															        					?>
-										      
-										      </div>
-										      <div class="item">
-										      <?php 
-											echo "<img src='admin/".$res["img3"]."' width='auto' heigth='auto' class='img-responsive'>";
-															        					?>
-										      </div>
-
-									      
-									  
-									    </div>
-
-									    <!-- Left and right controls -->
-									    <a class="left carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="prev">
-									      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									      <span class="sr-only">Previous</span>
-									    </a>
-									    <a class="right carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="next">
-									      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									      <span class="sr-only">Next</span>
-									    </a>
-									  </div>						                
-						               
-								            
-							       		<!--</div>-->
-								        <div class="modal-footer">
-								            <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
-								        </div>
-							   	</div>						   		
-							</div>
-					</div>
-											
-				
-				<?php }?>							
-				<?php }?>
-				<?php }?>	
+			<div class="content row" >
+		      <div class="grid">
+            <?php
+     				if($sql){
+     						if(mysqli_num_rows($sql) == 0){
+     			            echo "<div class='browser_width colelem' id='u2258-bw'>
+     			            No existen registros disponibles</div>";
+     			            }else{
+     	        				while($res= mysqli_fetch_assoc($sql)){
+             					?>
+            <div class="cliente-card">
+              <div class="logo-cliente">
+                <?php
+    	            	echo '<img class="imagen" src="admin/'.$res["img"].'">';
+            		?>
+              </div>
+              <button class="btn-ver-mas" type="button" name="button">Ver más</button>
+            </div>
+          <?php }?>
+          <?php }?>
+        <?php }?>
+          </div>
 			</div>
 			<!-- cierre htmml -->
-			
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			  <h2>Siguenos en:</h2>
-			  <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
 
-			  <ul class="nav nav-tabs">
-			    <li class="active"><a data-toggle="tab" href="#home"><img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg">Facebook</a></li>
-			    <li><a data-toggle="tab" href="#menu1"><img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg">Twitter</a></li>
-			  </ul>
-
-			  <div class="tab-content">
-			    <div id="home" class="tab-pane fade in active">
-			      <h3>Facebook</h3>
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			      <div class="aside">
-						<div class="plugin-fb">
-							<div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
-						</div>
-					</div>
-			    </div>
-			    <div id="menu1" class="tab-pane fade">
-			      <h3>Twitter</h3>
-			      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			         <div class="aside">				
-			        	<a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-			    </div>
-			  </div>
-			</div>	
-		</div>
-	
 	</div>
 </div>
 <!-- footer home html -->
-<footer>
+<footer id="footer">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="text_visitanos">
 
-<div class="container-fluid">
-	<div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	        Vis&iacute;tanos
-			<div class="caja-redes">
-			<a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-			<a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-			<a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-			</div>
+            <h1>Visitanos</h1>
+            <div class="visitanos_redes_sociales">
+                <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+                <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+                <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+            </div><br>
 
-			<br/>
-				<address>
-				Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-				</address>
-				<img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
-			<br/><br/>
-		</div>
-
-		
-	</div>
-</div>
-
-
-<div id="mapa" class="map"></div>
-
-<div class="container-fluid">
-	<div class=" row">
-	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<br/><br/>
-		    <h4 class="sitemap">Site Map</h4>
-
-		   <ul class="ft-site">
-                <li><a href="#">Identidad</a></li>
-                <li><a href="#">Mkt Digital</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Editorial</a></li>
-                <li><a href="#">Diseño Web</a></li>
-                <li><a href="blog_">Blog</a></li>
-                <li><a href="#">Pantallas Interactivas</a></li>
-                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-                <li><a href="contacto">Contacto</a></li>
-            </ul>
-
-	    </div>
-
-	    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-
-		  <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
-
-		  
-		
-	    </div>
-	</div>
-	
-</div>
-	<div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
+             <address class="datos_contacto">
+                (33) 3834 8000<img src="img/iconos/visitanos_numero.png"><br/>
+                info@creactivmedia.com.mx <img src="img/iconos/visitanos_email.png"><br/>
+                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <img src="img/iconos/ubicacion.png"><br/>
+            </address>
+            <div class="logo_visitanos">
+                <img src="img/logo.png">
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
 <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <style type="text/css">
-	    
-		/* Sidebar Styles */
-
-		.sidebar-nav {
-		  position: absolute;
-		  top: 0;
-		  width: 250px;
-		  margin: 0;
-		  padding: 0;
-		  list-style: none;
-		}
-		.sidebar-nav li {
-		  text-indent: 20px;
-		  line-height: 40px;
-		}
-		.sidebar-nav li a {
-		  display: block;
-		  text-decoration: none;
-		  color: #999999;
-		  margin-left: 0px;
-		}
-		.sidebar-nav li a:hover {
-		  text-decoration: none;
-		  color: #000;
-		  margin-left: 10px;
-		  border-radius: 30px;
-		  background: rgba(244, 244, 244, 0.6);
-
-		}
-
-		.sidebar-nav li a:active, .sidebar-nav li a:focus {
-		  text-decoration: none;
-		}
-
-		.sidebar-nav>.sidebar-brand {
-		  height: 65px;
-		  font-size: 18px;
-		  line-height: 60px;
-		}
-
-		.sidebar-nav>.sidebar-brand a {
-		  color: #999999;
-		}
-
-		.sidebar-nav>.sidebar-brand a:hover {
-		  color: #000;
-		  background: none;
-		}
         .to-top{
             position: fixed;
             bottom: 40px;
             right: 20px;
-            
+
             background: #000;
             color:#fff;
             padding: 12px 12px;
@@ -612,7 +348,7 @@ if(!isset($_GET["id"])){
         }
         .to-top:hover{
             background: #fff;
-            
+
             color:#000;
         }
     </style>
@@ -621,7 +357,7 @@ if(!isset($_GET["id"])){
         <!-- Maps API Javascript -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB-M2C9yZRD7FFdjwjSjJfnsotae_Y8Nk"
   type="text/javascript"></script>
-<script src="js/mapa.js"></script>
+<!-- <script src="js/mapa.js"></script> -->
 <script src="js/menu.js"></script>
 	<!-- <script type="text/javascript" src="js/particle.js"></script> -->
 <!-- <script type="text/javascript" src="js/particles.js"></script> -->
@@ -629,44 +365,19 @@ if(!isset($_GET["id"])){
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>	
+<script src='http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js'></script>
 <!-- <script type="text/javascript" src="js/fun_menu_portafolio.js"></script> -->
 
 <script type="text/javascript">
-$("h1").lettering();
-  
+$("#textTitle").lettering();
+
 // hack to get animations to run again
-$("h1").click(function() { 
-  var el = $(this),  
+$("#textTitle").on('click', function() {
+  var el = $(this),
      newone = el.clone();
   el.before(newone);
   el.remove();
-}); 
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        var offset = 200;
-        var duration = 500;
-
-        $(window).scroll(function(){
-            if($(this).scrollTop()> offset){
-                $('.to-top').fadeIn(duration);
-                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
-                $(".btn-toggle").css("border-bottom", "2px solid");
-                $(".btn-toggle").css("border-bottom-color", "#fff");
-            }else{
-                $('.to-top').fadeOut(duration);
-                $(".btn-toggle").css("background", "#16171900");
-                $(".btn-toggle").css("border-bottom", "0px solid");
-                $(".btn-toggle").css("border-bottom-color", "#fff");
-
-            }
-        });
-        $('.to-top').click(function(){
-            $('body').animate({scrollTop:0},duration);
-        })
-    });
+});
 </script>
 
 </body>

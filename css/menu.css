@@ -2,10 +2,19 @@
     font-family: "Gotham-Bold";
     src: url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
+@font-face {
+    font-family: "nexa_bold";
+    src: url(../fonts/nexa_bold.ttf) format("opentype");
+}
+@font-face {
+    font-family :"nexa_light";
+    src: url(../fonts/nexa_light.ttf) format("opentype");
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 
@@ -23,16 +32,6 @@ nav{
 p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-}
-footer{
-  height: auto;
-  background-color: #333333;
-  color: #FFF;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 0.9em;
-  font-weight: 400;
-
 }
 
 #btn_nosotros{
@@ -53,12 +52,13 @@ footer{
 }
 
 .seccionToggle a {
-  color: #FFF;
+  color: #ccc;
+  font-family :"nexa_light";
 }
 
 .wrap {
   width: 100%;
-  margin: auto; 
+  margin: auto;
 }
 
 .main {
@@ -70,22 +70,25 @@ footer{
 .seccionToggle {
   display: none;
   position: fixed;
-  color: #FFF;
+  color: #000;
   width: 100%;
   height: 100%;
   z-index: 9;
-  background: rgba(0,0,0,0.8);
+  background:#fff;
   top: 0px;
   padding-top: 115px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  border-bottom: 6px;
+   font-family :"nexa_light";
+   box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+    text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
 
 
 .btn-menu{
   position: relative;
-  top:3px;
-  right: 7px;
+  top: 10px;
+  right: 10px;
   border: 0px;
   display: none;
 }
@@ -102,10 +105,16 @@ footer{
   line-height: 50px;
   font-size: 12px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   display: block;
   background: #656565;
   text-align: right;
+  font-family :"nexa_light";
+  border-bottom: 6px;
+  -webkit-box-shadow: -2px 10px 24px -10px rgba(0,0,0,0.35);
+  -moz-box-shadow: -2px 10px 24px -10px rgba(0,0,0,0.35);
+  box-shadow: -2px 10px 24px -10px rgba(0,0,0,0.35);
+  text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
 .btn-toggle .opaque{
 
@@ -113,9 +122,17 @@ footer{
 
 }
 
+.brand_datos_reponsivo{
+    display: -webkit-inline-box;
+    position: relative;
+    text-align: center;
+}
+.brand_datos_reponsivo img{
+  margin: 10px
+}
 
 .btn-toggle:hover {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 
@@ -137,23 +154,26 @@ footer{
   font-size: 1.5em;
   margin-top: 0px;
   padding-top:7px;
-  font-family: 'Open Sans', sans-serif;
+ font-family :"nexa_light";
   font-weight: 400;
 }
 
 #nav li a {
- padding: 26px 20px 26px 20px;
- color: #ffffff;
- border: 0px solid #ccc;
- text-decoration: none;
- 
+    padding: 26px 20px;
+    color: #000000;
+    font-family: nexa_bold;
+    letter-spacing: 3px;
+    font-size: 15px;
+    border: 0px solid #ccc;
+    text-decoration: none;
+
 }
 
 #nav li a:hover{
- background-color: #000;
- border-bottom: 2px solid #00FEEF;
- color: #00FEEF;
-} 
+  background-color: #0000;
+  border-bottom: 2px solid #828282;
+  color: #080808;
+}
 
 
 /*Menu Responsive*/
@@ -164,7 +184,23 @@ footer{
   margin-left: 20px;
   margin-top: 5px;
 }
+.brand_container
+{
+ width: 250px;
+ background: #fff;
+ border-bottom-left-radius: 400px 80px;
+ border-bottom-right-radius: 400px 80px;
+ /*border:1px solid #000;*/
+ /*height: 90px;*/
 
+  font-family :"nexa_light";
+  border-bottom: 6px;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.75), inset -2px -2px 6px rgba(0, 0, 0, 0.52), 2px 2px 10px rgba(0, 0, 0, 0.38);
+  text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+}
+.brand_container img{
+  width: 180px;
+}
 
 
 .desktop .tablet .movil{
@@ -313,19 +349,19 @@ footer{
 
 
   .btn-toggle {
-    background: #F37A7A;
+    background: #fff;
   }
 
   .seccionToggle {
     margin-top: 35px;
-    border-bottom: 4px solid #F37A7A;
+    border-bottom: 4px solid #ccc;
     padding-top: 50px;
   }
 
   .btn-menu{
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: 15px;
     display: initial;
   }
 
@@ -514,7 +550,7 @@ footer{
 
   .ft-logo{
     width:217px;
-    height: 83px; 
+    height: 83px;
     position: absolute;
     right: 50%;
     top: 40px;
@@ -554,7 +590,7 @@ footer{
     background-image: url("../img/ico/ico-list.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-top: 0px;
     float: left;
     width: 100%;
@@ -572,14 +608,14 @@ footer{
   .ft-site li a:hover {
     color:#0BD590;
   }
-  
+
 }
 
 
 @media (min-width: 350px) and (max-width: 399px) {
 
   .btn-toggle {
-    background: #6EC180;
+    background: #fff;
   }
 
   .seccionToggle {
@@ -590,7 +626,7 @@ footer{
   .btn-menu{
     position: absolute;
     right: 30px;
-    top: 5px;
+    top: 15px;
     display: initial;
   }
 
@@ -786,12 +822,12 @@ footer{
 
   .ft-logo{
     width:217px;
-    height: 83px; 
+    height: 83px;
     position: absolute;
     right: 50%;
     top: 40px;
     margin-right: -108px;
-    
+
   }
 
   .copy{
@@ -826,7 +862,7 @@ footer{
     background-image: url("../img/ico/ico-list.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-top: 0px;
     float: left;
     width: 100%;
@@ -844,7 +880,7 @@ footer{
   .ft-site li a:hover {
     color:#0BD590;
   }
-  
+
 
 
 }
@@ -853,15 +889,14 @@ footer{
 
 
   .btn-toggle {
-    background: #537ABC;
-    height: 110px;
+    background: #fff;
   }
 
   .btn-menu{
     display: initial;
     position: absolute;
     right: 30px;
-    top: 5px;
+    top: 15px;
   }
 
   .seccionToggle {
@@ -1116,7 +1151,7 @@ footer{
     background-image: url("../img/ico/ico-list.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-top: 0px;
     float: left;
     width: 100%;
@@ -1153,11 +1188,11 @@ footer{
     display: initial;
   }
   .btn-toggle {
-    background: #F28F62;
+    background: #fff;
   }
 
   .seccionToggle {
-    border-bottom: 4px solid #F28F62;
+    border-bottom: 4px solid #ccc;
   }
 
   .title-men{
@@ -1344,7 +1379,7 @@ footer{
 
   .ft-logo{
     width:310px;
-    height: 119px; 
+    height: 119px;
     position: absolute;
     right: 50px;
     top: 50px;
@@ -1381,7 +1416,7 @@ footer{
     background-image: url("../img/ico/ico-list.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-top: 0px;
     float: left;
     width: 28%;
@@ -1405,19 +1440,20 @@ footer{
 
   .menu-nav{
     position: absolute;
-    top:0px;
+
+    top: 0px;
     right: 400px;
-    width: 600px;
-    height: 70px; 
+    width: 800px;
+    height: 70px;
   }
 
 
   .btn-toggle {
-    background: #16171900;
+    background: #fff;
   }
 
   .seccionToggle {
-    border-bottom: 4px solid #FFAE00;
+    border-bottom: 4px solid #ccc;
   }
 
   .brand-datos{
@@ -1609,7 +1645,7 @@ footer{
 
   .ft-logo{
     width:310px;
-    height: 119px; 
+    height: 119px;
     position: absolute;
     right: 50px;
     top: 50px;
@@ -1647,7 +1683,7 @@ footer{
     background-image: url("../img/ico/ico-list.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-top: 0px;
     float: left;
     width: 28%;
@@ -1701,7 +1737,7 @@ footer{
     margin-left: 3%;
     position: absolute;
     z-index: 5;
-   
+
   }
 
 }

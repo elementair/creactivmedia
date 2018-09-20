@@ -11,7 +11,7 @@ if(!isset($_GET["id"])){
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta property="og:url" content="http://www.creactivmedia.com.mx/portafolio" />
@@ -28,16 +28,13 @@ if(!isset($_GET["id"])){
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="assets/vender/intl-tel-input/css/intlTelInput.css">
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >	
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/map.css" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/menu.css">
 		<link rel="stylesheet" href="css/contacto.css">
-		<link rel="stylesheet" href="css/estilo.css">
-		<link rel="stylesheet" href="css/demo.css" type="text/css"/>
-		<link rel="stylesheet" href="css/elastislide.css" type="text/css"/>
-		<link rel="stylesheet" href="css/custom.css" type="text/css"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One" > 
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One" >
 		<link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" type="text/css" />
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans'  type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -46,7 +43,6 @@ if(!isset($_GET["id"])){
 		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 		crossorigin="anonymous"></script>
 
-		<script src="js/modernizr.custom.17475.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
         <script src="js/parallax.js"></script>
@@ -68,7 +64,7 @@ if(!isset($_GET["id"])){
 </script>
 
  <!--<script type="text/javascript">
- 
+
 		var f = jQuery.noConflict();
         f(document).ready(function(){
 
@@ -79,17 +75,17 @@ if(!isset($_GET["id"])){
                       }
 
                     f.ajax({
-                      type: "POST", 
-                      url: "load_busqueda.php", 
+                      type: "POST",
+                      url: "load_busqueda.php",
                       data: datos,
                       contentType: "application/x-www-form-urlencoded",
                       beforeSend: function() {
-                      f("#search").html("<img src='img/ico/loading.gif' width='60px' height='60px' >"); 
+                      f("#search").html("<img src='img/ico/loading.gif' width='60px' height='60px' >");
                       },
                       dataType: "html",
-                      success: function(data){ 
+                      success: function(data){
                           f("#_cont-items").fadeOut("slow");
-                      	 
+
                           f("#search").fadeIn(500).html(data);
                       }
                     });
@@ -112,22 +108,8 @@ if(!isset($_GET["id"])){
     	</script>
         <script type="text/javascript">
             $(document).ready(function(){
-                var offset = 200;
                 var duration = 500;
 
-                $(window).scroll(function(){
-                    if($(this).scrollTop()> offset){
-                        $('.to-top').fadeIn(duration);
-                        $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
-                        $(".btn-toggle").css("border-bottom", "2px solid");
-                        $(".btn-toggle").css("border-bottom-color", "#fff");
-                    }else{
-                        $('.to-top').fadeOut(duration);
-                        $(".btn-toggle").css("background", "#16171900");
-                        $(".btn-toggle").css("border-bottom", "0px solid");
-                        $(".btn-toggle").css("border-bottom-color", "#fff");
-                    }
-                });
                 $('.to-top').click(function(){
                     $('body').animate({scrollTop:0},duration);
                 })
@@ -154,243 +136,199 @@ if(!isset($_GET["id"])){
     			fjs.parentNode.insertBefore(js, fjs);
     		}(document, 'script', 'facebook-jssdk'));</script>
 
-    		<header>
-    			<nav class="btn-toggle">
-    				<div class="">
-    					<a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
-    				</div>
-    				<div class="menu-nav">
-    					<ul id="nav">
-    						<li><a href="index#nosotros">Nosotros</a></li>
-    						<li><a href="index#servicios">Servicios</a></li>
-    						<li><a href="portafolio">Portafolio</a></li>
-    						<li><a href="blog_">Blog</a></li>
-    						<li><a href="contacto_">Contacto</a></li>
-    					</ul>
-    				</div>
-    				<div class="brand-datos">
-    					<img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
-    				</div>
-    				<a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
-    			</nav>
-    			  <section class="seccionToggle">
-            <div class="wrap">
-                <div class="container-fluid">
-                    <div class="movil">
-                        <div class="cont1">         
-                            <p class="title-men"><a href="index">INICIO</a></p>
-                        </div>
-                        <div class="cont2">
-                            <p class="title-men"><a href="index#nosotros">NOSOTROS</a></p>
-                        </div>
-                        <div class="cont3">
-                            <p class="title-men"><a href="index#servicios">SERVICIOS</a></p>
-                        </div>
-                        <div class="cont4">
-                            <p class="title-men"><a href="portafolio">PORTAFOLIO</a></p>
-                        </div>
-                        <div class="cont5">
-                            <p class="title-men"><a href="blog_">BLOG</a></p>
-                        </div>
-                        <div class="cont7">
-                            <p class="title-men"><a href="contacto">CONTACTO</a></p>
-                        </div>
-                        <div class="cont8">
-                            <p class="cont-icon">
-                                <a href="https://www.facebook.com/CreActivMedia/"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
-                                <a href="https://twitter.com/creactivmedia"><img src="img/ico/ico-tw.png" class="ico-nav" alt=""></a>
-                            </p>
-                        </div>
-                        <div class="cont9">
-                            <form action="blog_" method="get">
-                                <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
-                                <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
-                            </form>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-            </section>
-    		</header>
+				<header>
+				    <!-- MENU RESPONSIVO MOVIL -->
+				    <nav class="btn-toggle">
+				        <div class="brand_container">
+				            <a href="index"><img src="img/creactiv_txt_negro.png" alt="Logo Creactiv Media" class="brand"></a>
+				        </div>
+				        <div class="menu-nav">
+				            <div id="nav">
+				                <li><a href="index#nosotros">NOSOTROS</a></li>
+				                <li><a href="index#seccion_servicios" >SERVICIOS</a></li>
+				                <li><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></li>
+				                <li><a href="blog_">BLOG</a></li>
+				                <li><a href="contacto">CONTACTOS</a></li>
+				            </div>
+				        </div>
+				        <div class="brand-datos">
+				            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+				            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+				            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+				        </div>
+				        <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu_responsivo.png" class="btn-menu" height="34" width="38" alt=""></a>
+				    </nav>
+				    <!-- MENU PANTALLA PC -->
+				    <section class="seccionToggle">
+				        <div class="wrap">
+				            <div class="container-fluid">
+				                <div class="movil">
+				                    <div class="cont1">
+				                        <p class="title-men"><a href="index">INICIO</a></p>
+				                    </div>
+				                    <div class="cont2">
+				                        <p class="title-men"><a href="index#nosotros">NOSOTROS</a></p>
+				                    </div>
+				                    <div class="cont3">
+				                        <p class="title-men"><a href="index#seccion_servicios">SERVICIOS</a></p>
+				                    </div>
+				                    <div class="cont4">
+				                        <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
+				                    </div>
+				                    <div class="cont5">
+				                        <p class="title-men"><a href="blog_">BLOG</a></p>
+				                    </div>
+				                    <div class="cont7">
+				                        <p class="title-men"><a href="contacto">CONTACTO</a></p>
+				                    </div>
+				                    <div class="cont8">
+				                        <p class="cont-icon">
+				                            <a href="https://www.facebook.com/CreActivMedia/" target="_top"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
+				                            <a href="https://twitter.com/creactivmedia"><img src="img/ico/ico-tw.png" class="ico-nav" alt=""></a>
+				                        </p>
+				                    </div>
+				                    <div class="cont9">
+
+				                        <div class="brand_datos_reponsivo">
+				                            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+				                            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+				                            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+				                        </div>
+				                       <!--  <form action="blog_" method="get">
+				                            <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
+				                        <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
+				                        </form> -->
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </section>
+				</header>
             <div  class="fodo_transparente_contacto"></div>
             <div id="seccion_contacto" class="container-fluid parallax-window portada-destacado" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg">
                 <div class="row">
-                    
+
                         <!--<div class="log-movil"><a href="portafolio.php"><img src="image/logo-creactivmedia-blog.png" class="logo-blog" alt="CreActiv Media"></a>
                         </div>
                         <div class="slogan-movil"><img src="image/slogan-creactivmedia.png" class="logo-slogan" alt="Tus ideas, nuestra pasión.">
                         </div>-->
-                        
-                    <div  class="destacado">    
-                        <div  class="dest-box">             
-                            <h1 class="animated fadeInDown">CONTACTO</h1>                 
+
+                    <div  class="destacado">
+                        <div  class="dest-box">
+                            <h1 class="animated fadeInDown">
+															<div id="textTitle">CONTACTO</div>
+														</h1>
                         </div>
                     </div>
 
                 </div>
             </div>
     		<div class="container-fluid">
-    			<div class="row entradas"> 		 
-    				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 blog-cont">		    				
+    			<div class="row entradas">
+    				<div class="col-xs-12 blog-cont">
     					<div class="row text-center">
-    						<h2>Empieza una nueva aventura con nosotros</h2>	
-    						<spam>
-    							Rellene el siguiente formulario y uno de nuestro equipo se pondrá en contacto con usted lo antes posible.
-    						</spam>
+    						<h2 class="contactoTitle"><span class="highlighted">Empieza</span> una nueva <span class="highlighted">aventura</span> con <span class="highlighted">nosotros</span></h2>
     						<br>
     					</div>
     					<div class="container">
     						<div id="contact_form" class="row">
-    							<div class="col-md-12">    								
-    								<form role="form" id="feedbackForm">
+    							<div class="col-md-12">
+    							  <form name="inde" action="envio_correo.php" method="POST">
+    									<!-- NOMBRE -->
     									<div class="form-group">
-    										<label class="control-label" for="name">Nombres *</label>
-    										<div class="input-group">
-    											<input type="text" class="form-control" id="name" name="name" placeholder="Introduzca su nombre" />
-    											<span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-    										</div>
-    										<span class="help-block" style="display: none;">Por favor, escriba su nombre.</span>
+    										<label class="control-label" for="name">Nombre y apellido*</label>
+    										<input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Introduzca su nombre y apellidos" />
     									</div>
-
+    									<!-- EMPRESA -->
     									<div class="form-group">
-    										<label class="control-label" for="email">Motivo de Contacto*</label>
-    										<select name="reason" class="form-control">
-    											<option value="Consulta General">Consulta General</option>
-    											<option value="Realizar Pedido">Realizar cotización</option>
-    											<option value="Informe un problema">Informe un problema</option>
-    										</select>
-    										<span class="help-block" style="display: none;">Por favor, introduce una dirección de correo electrónico válida.</span>
+    										<label class="control-label" for="name">Empresa*</label>
+					                        
+					                        <input name="Empresa" class="form-control input-md" id="empresa" placeholder="Introduzca su empresa" type="text">
+					                    </div>
+					                     <!-- TELEFONO -->
+					                    <div class="form-group">
+					                    	<label class="control-label" for="name">Telefono*</label>
+					                        
+					                        <input name="Telefono" class="form-control input-md" id="telefono" placeholder="Introduzca su teléfono fijo" type="tel">
+					                    </div>
+					                     <!-- MOVIL -->
+					                    <div class="form-group">
+					                        <label class="control-label" for="name">Movil*</label> 
+					                       
+					                        <input name="Movil" class="form-control input-md" id="num_movil" placeholder="Introduzca su telefono móvil" type="tel">
+					                    </div>
+										<!--CORREO ELECTRONICO  -->
+					                    <div class="form-group">
+    										<label class="control-label" for="email">Dirección de Correo Electrónico*</label>
+    										<input type="email" class="form-control" id="correo" name="Correo" placeholder="Introduzca su correo electrónico" />
     									</div>
-    									<div class="form-group">
-    										<label class="control-label" for="email">Dirección de Correo Electrónico *</label>
-    										<div class="input-group">
-    											<input type="email" class="form-control" id="email" name="email" placeholder="Introduzca su correo electrónico" />
-    											<span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-    										</div>
-    										<span class="help-block" style="display: none;">Por favor, introduzca una dirección de correo electrónico válida.</span>
+    									
+    									 <!-- ASUNTO -->
+					                    <div class="form-group">
+					                    	<label class="control-label" for="email">Motivo de la consulta*</label>
+					                        <select name="Asunto" id="asunto" class="form-control" required="">
+				                         		<option value="Consulta General">Consulta General</option>
+				    							<option value="Realizar Pedido">Realizar cotización</option>
+				                                <option value="Servicios Web">-Servicios Web</option>
+				                                <option value="Marketing Digital">- Marketing Digital</option>
+				                                <option value="Servicios Multimedia">-Servicios Multimedia</option>
+				                                <option value="Identidad corporativa">-Identidad corporativa</option>
+				                                <option value="Servicios Editoriales">-Servicios Editoriales</option>
+				                                <option value="Redes sociales">-Redes sociales</option>
+				    							<option value="Informe un problema">Informe un problema</option>
+					                        </select>
     									</div>
-    									<div class="form-group">
-    										<label class="control-label" for="message">Mensaje *</label>
-    										<div class="input-group">
-    											<textarea class="form-control" id="message" name="message" placeholder="Introduzca su mensaje" ></textarea>
-    											<span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-    										</div>
-    										<span class="help-block" style="display: none;">Por favor, introduzca un mensaje.</span>
-    									</div>
-    									<img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" />
-    									<a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Mostrar una imagen diferente</a><br/>
-    									<div class="form-group" style="margin-top: 10px;">
-    										<label class="control-label" for="captcha_code">Texto dentro de la Imagen *</label>
-    										<div class="input-group">
-    											<input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="Por razones de seguridad, por favor ingrese el código que aparece en el cuadro." />
-    											<span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-    										</div>
-    										<span class="help-block" style="display: none;">Por favor introduce el código que aparece en la imagen.</span>
-    									</div>
-    									<span class="help-block" style="display: none;">Por favor ingrese el código de la seguridad.</span>
-    									<button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Enviando..." style="display: block; margin-top: 10px;">Enviar comentarios</button>
+    									 <!-- MENSAJE -->
+					                    <div class="form-group">
+					                    	<label class="control-label" for="message">Mensaje*</label>
+					                        <textarea name="Mensaje" class="form-control"  id="mensaje" rows="10" data-rule="required" placeholder="Introduzca su mensaje"></textarea>
+					                    </div>
+					                    <!-- CHECKBOX CAPTCHA -->
+					                    <div class="form-group" >
+					                       <div class="g-recaptcha" data-sitekey="6Le7TXEUAAAAAHbrmJLJGa7Gh420i5Ssqf0QNq8f"></div>
+					                    </div>
+    									<!-- BTN ENVIAR -->
+    									<button type="submit" class="btn btn-primary btn-lg btn-submit"style="display: block; margin-top: 10px;">Enviar</button>
     								</form>
 
+    								<script src="js/contacto_cont.js"></script>
 
-                                    <!-- <div id="mapa" class="map"></div> -->
+
+                    <div id="mapa" class="map"></div>
     							</div><!--/span-->
     						</div><!--/row-->
-    						<hr>
-    					</div><!--/.container-->			
-    				</div>
-    				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-
-    					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                          <h2>Siguenos en:</h2>
-                          <p>Creamos las Página web y diseño de mkt perfecta para que potenciales clientes te encuentren, siguenos en nuestras redes sociales y enterate mas de nuestros servicios.</p>
-
-                          <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home"><img src="img/iconos_seguidores/boton-del-logo-de-facebook.svg">Facebook</a></li>
-                            <li><a data-toggle="tab" href="#menu1"><img src="img/iconos_seguidores/boton-de-logo-del-twitter.svg">Twitter</a></li>
-                          </ul>
-
-                          <div class="tab-content">
-                            <div id="home" class="tab-pane fade in active">
-                              <h3>Facebook</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <div class="aside">
-                                    <div class="plugin-fb">
-                                        <div class="fb-page" data-href="https://www.facebook.com/creactivmedia" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/creactivmedia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/creactivmedia">CreActiv Media</a></blockquote></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="menu1" class="tab-pane fade">
-                              <h3>Twitter</h3>
-                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                 <div class="aside">                
-                                    <a class="twitter-timeline" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CreActivMedia">Tweets by CreActivMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-                            </div>
-                          </div>
-                        </div>  
+    					</div><!--/.container-->
     				</div>
     			</div>
     		</div>
     		<!-- footer home html -->
-            <footer>
+				<footer id="footer">
+				    <div class="container-fluid">
+				    <div class="row">
+				        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				            <div class="text_visitanos">
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            Vis&iacute;tanos
-                            <div class="caja-redes">
-                            <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-                            <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-                            <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-                            </div>
+				            <h1>Visitanos</h1>
+				            <div class="visitanos_redes_sociales">
+				                <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+				                <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+				                <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+				            </div><br>
 
-                            <br/>
-                                <address>
-                                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-                                </address>
-                                <img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
-                            <br/><br/>
-                        </div>
-
-                        
-                    </div>
-                </div>
-
-
-                <div id="mapa" class="map"></div>
-
-                <div class="container-fluid">
-                    <div class=" row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <br/><br/>
-                            <h4 class="sitemap">Site Map</h4>
-
-                            <ul class="ft-site">
-                                <li><a href="#">Identidad</a></li>
-                                <li><a href="#">Mkt Digital</a></li>
-                                <li><a href="#">Multimedia</a></li>
-                                <li><a href="#">Editorial</a></li>
-                                <li><a href="#">Diseño Web</a></li>
-                                <li><a href="blog_">Blog</a></li>
-                                <li><a href="#">Pantallas Interactivas</a></li>
-                                <li><a href="Portafolio">Portafolio</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-
-                          <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
-
-                          
-                        
-                        </div>
-                    </div>
-                    
-                </div>
-                    <div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
-            </footer>
+				             <address class="datos_contacto">
+				                <img src="img/iconos/visitanos_numero.png"><br/> (33) 3834 8000
+				                <img src="img/iconos/visitanos_email.png"><br/> info@creactivmedia.com.mx
+				                <img src="img/iconos/ubicacion.png"><br/> Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134
+				            </address>
+				            <div class="logo_visitanos">
+				                <img src="img/logo.png">
+				            </div>
+				            </div>
+				        </div>
+				    </div>
+				    </div>
+				    <div class="copyright">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
+				</footer>
             <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
             <style type="text/css">
                  .fodo_transparente_contacto{
@@ -398,7 +336,7 @@ if(!isset($_GET["id"])){
                     height: 40vh;
                     position: absolute;
                     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(104,143,5,0));
-                    z-index: 1;
+                    z-index: 0;
 
                   }
                 .to-top{
@@ -416,23 +354,25 @@ if(!isset($_GET["id"])){
                     color:#000;
                 }
             </style>
-    		
+
     		<script src="js/jquery.min.js"></script>
     		<!-- Maps API Javascript -->
     		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB-M2C9yZRD7FFdjwjSjJfnsotae_Y8Nk"
     		type="text/javascript"></script>
+    		<script src='https://www.google.com/recaptcha/api.js'></script>
     		<script src="js/mapa.js"></script>
     		<script src="js/menu.js"></script>
     		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     		<!-- Include all compiled plugins (below), or include individual files as needed -->
     		<script src="bootstrap/js/bootstrap.min.js"></script>
-    		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jq<uery.min.js'></script>
     		<!-- <======= UP TO HERE -->
     		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     		<script src="assets/vender/intl-tel-input/js/intlTelInput.min.js"></script>
-    		<script src="assets/js/contact-form.js"></script>
-    		<script>
+    		
+    		<!-- <script src="assets/js/contact-form.js"></script> -->
+    		<!-- <script>
     			$(document).ready(function(){
     				$("#Formulario").submit(function( event ){
     					event.preventDefault();
@@ -452,7 +392,7 @@ if(!isset($_GET["id"])){
     					return false;
     				});
     			});
-    		</script>
+    		</script> -->
     	</body>
     	</html>
 

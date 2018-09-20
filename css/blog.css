@@ -22,7 +22,7 @@
 .blog-cont{
 	background-color: #FFF;
 	height: 100%;
-	
+
 	position: relative;
 	height: auto;
 }
@@ -77,8 +77,8 @@
       float: left;
       display: block;
     }
- 
-    
+
+
     /*comentarios*/
 
       .nombre{
@@ -100,20 +100,18 @@
       background-color: #FFFD6C;
       font-weight: bold;
     }
-
     /*item*/
     .item-servicios{
       float: right;
       margin: 10px;
     }
-
     .desc-corta{
       text-align: justify;
     }
 
 
 /*movil 1*/
-    @media (max-width: 349px) {
+    @media (max-width: 449px) {
 
       .item{
         margin-bottom: 60px;
@@ -263,9 +261,9 @@
         height: auto;
         margin-top:15px;
       }
-      
+
       .dest-img{
-        
+
         height: auto;
         position: absolute;
       }
@@ -367,15 +365,10 @@
         margin-top: 50px;
         padding-right: 10px;
       }
-
-
 }
 
-
-
-
 /*movil 2*/
-    @media (min-width: 350px) and (max-width: 399px) {
+    /* @media (min-width: 350px) and (max-width: 399px) {
 
       .item{
         margin-bottom: 60px;
@@ -384,7 +377,7 @@
 
 
       /*edit profile*/
-      .perfil{
+      /* .perfil{
         margin-top: 30px;
         margin-bottom: 15px;
         width: 100%;
@@ -413,10 +406,10 @@
         text-align: left;
         color: #015DA4;
         font-size: 1.5em;
-      }
+      } */
       /*End profile*/
 
-        .plugin-fb{
+        /* .plugin-fb{
         width: 90%;
         position: relative;
         display: inline-block;
@@ -439,10 +432,10 @@
         width: 98%;
         height: 27px;
         margin: 0 auto;
-      }
+      } */
 
      /*load categorias*/
-
+/*
       .cont-categoria{
         float: left;
         width: 100%;
@@ -483,7 +476,7 @@
         display: inline-block;
 
       }
-      
+
       .logo-blog{
         width: 222px;
         height: 85px;
@@ -500,141 +493,16 @@
         position: absolute;
         left: 50%;
         margin-left: -103px;
-      }
-      /*item destacado*/
-
-      .portada-destacado{
-        width: 100%;
-        height: 820px;
-        background: url(../image/bg-destacado.jpg) no-repeat top center fixed;
-      }
-
-      .destacado{
-        background-color: rgba(0,0,0,0.5);
-        width: 100%;
-        height: 450px;
-        position: absolute;
-        top:240px;
-      }
-
-      .dest-box{
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        margin-top:15px;
-      }
-      
-      .dest-img{
-        
-        height: auto;
-        position: absolute;
-      }
-
-      .dest-titles{
-        width: 100%;
-        height: 196px;
-        color: #FFF;
-        padding: 15px;
-        text-align: justify;
-        position: absolute;
-        top:200px;
-        background-color: rgba(0,0,0,0.5);
-      }
-
-      .dest-titles h3{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 1.2em;
-      }
-
-      .dest-titles p{
-        margin-top: 15px;
-        margin-bottom: 30px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-         font-size: 1em;
-      }
-
-      .dest-btn {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0px;
-        font-family: Arial;
-        color: #ffffff;
-        font-size: 18px;
-        background: #11997e;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-        float: right;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-
-      }
-
-      .dest-btn:hover {
-        background: #4a9e7e;
-        text-decoration: none;
-        color: #FFF;
-      }
-
-      .btn-search-blog{
-        width: 100%;
-        height: 50px;
-        top:700px;
-        z-index: 9;
-        position: absolute;
-        padding: 15px;
-
-      }
-
-      .btn-search-blog input{
-        float: left;
-        width: 100%;
-        border-radius: 11px 11px 11px 11px;
-        -moz-border-radius: 11px 11px 11px 11px;
-        -webkit-border-radius: 11px 11px 11px 11px;
-        border: 0px solid #000000;
-        height: 30px;
-        margin-bottom: 15px;
-      }
-
-      .btn-search-blog button{
-        float: right;
-        width: 100%;
-        border-radius: 11px 11px 11px 11px;
-        -moz-border-radius: 11px 11px 11px 11px;
-        -webkit-border-radius: 11px 11px 11px 11px;
-        border: 0px solid #000000;
-        height: 30px;
-        display: block;
-        color: #FFF;
-        background-color: #F8701E;
-        font-size: 18px;
-      }
-
-      .btn-search-blog button:hover{
-        text-decoration: none;
-        background-color: #F08B08;
-        color: #FFF;
-      }
-
-      .aside{
-        margin-top: 50px;
-        padding-right: 10px;
-      }
-
-      .asideB{
-        margin-top: 50px;
-        padding-right: 10px;
-      }
+      } */
+      /*item destacado*
 
 
 
-}
+} */
 
 
 /*tablet 1*/
-    @media (min-width: 400px) and (max-width: 767px) {
+    @media (min-width: 450px) and (max-width: 767px) {
 
       .item{
         margin-bottom: 60px;
@@ -644,7 +512,7 @@
 
 
       /*edit profile*/
-    
+
       .perfil{
         margin-top: 30px;
         margin-bottom: 15px;
@@ -786,9 +654,9 @@
         height: auto;
         margin-top:15px;
       }
-      
+
       .dest-img{
-        
+
         height: auto;
         position: absolute;
       }
@@ -846,7 +714,7 @@
         top:740px;
         z-index: 9;
         position: absolute;
-        left:50%; 
+        left:50%;
         margin-left: -175px;  /* 50% del ancho de la div en px */
       }
 
@@ -1058,12 +926,12 @@
         height: 305px;
         margin-top:15px;
       }
-      
+
       .dest-img{
         width: 500px;
         height: 250px;
         position: absolute;
-        left:50%; 
+        left:50%;
         margin-left: -250px;  /* 50% del ancho de la div en px */
       }
 
@@ -1075,7 +943,7 @@
         text-align: justify;
         position: absolute;
         top:220px;
-        left:50%; 
+        left:50%;
         margin-left: -300px;
         background-color: rgba(0,0,0,0.7);
       }
@@ -1084,7 +952,7 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 1.2em;
-        
+
       }
 
       .dest-titles p{
@@ -1123,7 +991,7 @@
         top:690px;
         z-index: 9;
         position: absolute;
-        left:50%; 
+        left:50%;
         margin-left: -175px;  /* 50% del ancho de la div en px */
       }
 
@@ -1181,7 +1049,7 @@
 /*Desktop*/
     @media (min-width: 1200px) {
 
-      
+
       .item{
         float: left;
         display: block;
@@ -1199,7 +1067,7 @@
 
 
       /*edit profile*/
-  
+
       .perfil{
         margin-top: 30px;
         margin-bottom: 15px;
@@ -1263,7 +1131,7 @@
         right: 50px;
       }
 
-      
+
       /*load categorias*/
 
       .cont-categoria{
@@ -1329,7 +1197,7 @@
         height: 305px;
         margin-top:15px;
       }
-      
+
       .dest-img{
         width: 500px;
         height: 250px;
@@ -1347,7 +1215,7 @@
       .dest-titles h3{
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        
+
       }
 
       .dest-titles p{

@@ -1,38 +1,41 @@
 
 <?php
 include("conexion.php");
+$sql=mysqli_query($con,"SELECT p.id,p.id_entrada,p.title,p.img,p.img1,p.img2,p.img3,p.descort,p.desclarge,p.activo,p.facebook,p.twitter,p.youtube,p.google
+  from (((portafolio as p left outer join portafolio_servicios as o
+  on id_portafolio=p.id) left outer join servicios as s on o.id_servicios=s.id) left outer join categoria_servicios as c on s.id_categoria_servicios=c.id) where p.activo=1 group by p.title  order by title ASC LIMIT 4" );
 ?>
 <!DOCTYPE html>
 <html lang="es-Mx">
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora">
     <meta name="keywords" content="Agencia de publicidad, diseño, marketing digital, branding, imagen corporativa, fotografía, multimedia, pantallas interactivas, producción de video, posicionamiento SEO, logotipos">
-
-    <meta name="author" content="Creactiv Media - Santiago Arenas">
-    <title>CreActiv Media Diseño, Web, Mkt Digital</title>
+    <meta name="author" content="Creactiv Media">
+    <title>CreActiv Media</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-      
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/home1.css">
+    <link rel="stylesheet" href="css/carousel_portafolio_inicio.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/modal_animate.css">
-   
-    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script src="scrollmagic/minified/ScrollMagic.min.js"></script> -->
+    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script> -->
     <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
 
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
 
-    <!--  <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
+    <!--<script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/Slider.css"> -->
 
     <link rel="stylesheet" type="text/css" href="css/map.css">
@@ -44,10 +47,13 @@ include("conexion.php");
    <!-- PRELOADER -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
+    <link rel="stylesheet" type="text/css" href="css/flexel/style.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
+    
+
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- FIN PRELOADER -->
@@ -77,7 +83,7 @@ include("conexion.php");
 </head>
 <body id="top">
     <!-- Elemento muestra preloader  -->
-    <div class="preloader" id="preloader"> 
+    <div class="preloader" id="preloader">
         <img class="logo" src="img/log-creactiv-ft.png">
         <div class="animationload">
             <div class="osahanloading"></div>
@@ -86,7 +92,7 @@ include("conexion.php");
     </div>
     <!-- fin de elemento muestra preloader -->
     <script src="js/wow.min.js"></script>
-    <script>
+   <!--  <script>
         new WOW().init({
             boxClass:     'wow',      // default
             animateClass: 'animated', // default
@@ -94,7 +100,7 @@ include("conexion.php");
             mobile:       true,       // default
             live:         true        // default
         });
-    </script>
+    </script> -->
     <script>
     // init controller
     var controller = new ScrollMagic.Controller();
@@ -112,38 +118,40 @@ include("conexion.php");
 <header>
     <!-- MENU RESPONSIVO MOVIL -->
     <nav class="btn-toggle">
-        <div class="">
-            <a href="index"><img src="img/creactiv-logo-brand.png" alt="Logo Creactiv Media" class="brand"></a>
+        <div class="brand_container">
+            <a href="index"><img src="img/creactiv_txt_negro.png" alt="Logo Creactiv Media" class="brand"></a>
         </div>
         <div class="menu-nav">
             <div id="nav">
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#seccion_servicios" >Servicios</a></li>
-                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-                <li><a href="blog_">Blog</a></li>
-                <li><a href="contacto">Contacto</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#seccion_servicios" >SERVICIOS</a></li>
+                <li><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></li>
+                <li><a href="blog_">BLOG</a></li>
+                <li><a href="contacto">CONTACTOS</a></li>
             </div>
         </div>
         <div class="brand-datos">
-            <img src="img/web-30.png" alt="" width="31" height="31">(33) 3834 8000  <img src="img/web-31.png" alt="" width="31" height="31">info@creactivmedia.com.mx
+            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
         </div>
-        <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu.png" class="btn-menu" height="64" width="64" alt=""></a>
+        <a href="#" onclick="return false" id="btn-toggle"><img src="img/menu_responsivo.png" class="btn-menu" height="34" width="38" alt=""></a>
     </nav>
     <!-- MENU PANTALLA PC -->
     <section class="seccionToggle">
         <div class="wrap">
             <div class="container-fluid">
                 <div class="movil">
-                    <div class="cont1">         
+                    <div class="cont1">
                         <p class="title-men"><a href="index">INICIO</a></p>
                     </div>
                     <div class="cont2">
-                        <p class="title-men"><a href="#nosotros">NOSOTROS</a></p>
+                        <p class="title-men"><a href="index#nosotros">NOSOTROS</a></p>
                     </div>
                     <div class="cont3">
-                        <p class="title-men"><a href="#seccion_servicios">SERVICIOS</a></p>
+                        <p class="title-men"><a href="index#seccion_servicios">SERVICIOS</a></p>
                     </div>
-                    <div class="cont4"> 
+                    <div class="cont4">
                         <p class="title-men"><a href="portafolio?portafolio_por_categoria=-1">PORTAFOLIO</a></p>
                     </div>
                     <div class="cont5">
@@ -154,15 +162,21 @@ include("conexion.php");
                     </div>
                     <div class="cont8">
                         <p class="cont-icon">
-                            <a href="https://www.facebook.com/CreActivMedia/"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
+                            <a href="https://www.facebook.com/CreActivMedia/" target="_top"><img src="img/ico/ico-fb.png" class="ico-nav" alt=""></a>
                             <a href="https://twitter.com/creactivmedia"><img src="img/ico/ico-tw.png" class="ico-nav" alt=""></a>
                         </p>
                     </div>
                     <div class="cont9">
-                        <form action="blog_" method="get">
+
+                        <div class="brand_datos_reponsivo">
+                            <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+                            <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+                            <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+                        </div>
+                       <!--  <form action="blog_" method="get">
                             <input type="text" class="search-nav" name="search" id="_search" placeholder=" Buscar un artículo en el blog...">
                         <button type="submit" class="btn-search" id="" acceskey="intro">Buscar</button>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
@@ -171,355 +185,70 @@ include("conexion.php");
 </header>
 
 <!-- CARRUSEL INICIO -->
-<div class="sombra_transparente"></div>
+<!-- <div class="sombra_transparente"></div> -->
+<section class="seccion_inicio">
+   <!--  <video class="video_inicio center-block fondocss"  loop="loop" autoplay="autoplay">
+        <source src="video/fondo_inicio.mp4" type="video/mp4">
+    </video> -->
 
-<div id="carousel-slider" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-slider" data-slide-to="2" class=""></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <img style="background-image: url(img/n_fondo/1.jpg);" alt="First slide" class="img-responsive">
-            <div class="container">
-                <div class="carousel-caption">
+    <video class="video_inicio center-block fondocss" autoplay="" muted="" loop="" id="myVideo">
+            <source src="video/fondo_inicio.mp4" type="video/mp4">
+        </video>
+</section>
 
-                    <h1 class="animated fadeInDown">CONOCE NUESTROS SERVICIOS</h1>
-                        <h3 class="animated fadeInLeft">&nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;IDENTIDAD
-                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;MKT DIGITAL
-                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;MULTIMEDIA
-                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;EDITORIAL
-                                                        &nbsp;&nbsp;<img src="img/cubo_icono3.svg">&nbsp;DISEÑO WEB</h3>
-                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="#servicios">IR A SERVICIOS</a></p>
-                </div>
+
+<section id="seccion_servicios" >
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titulo" >
+        <b>NUESTROS</b> SERVICIOS
+        <br><br><br>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+            <div class="contendor_servicios_gris">
+            <div class="contenedor_servicio-w col-xs-12 col-sm-12 col-md-6 col-lg-2">
+                <a data-toggle="modal" href='#modal_id_5'><img src="img/servicios/DW.png">
+                <p><font color="black"><strong>DISEÑO WEB</strong></font></p></a>
             </div>
-        </div>
-        <div class="item">
-            <img style="background-image: url(img/home/blog_home.jpg);" alt="First slide" class="img-responsive">
-            <div class="container">
-                <div class="carousel-caption" >
-                    <h1 class="animated fadeInDown">VISITA NUESTRO BLOG</h1>
-                    <h3 class="animated fadeInLeft">Y ENTERATE DE NUESTRAS NOVEDADES</h3>
-                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="blog_">VISITAR EL BLOG</a></p>
-                </div>
+            <div class="contenedor_servicio-w col-xs-12 col-sm-12 col-md-6 col-lg-2">
+                <a data-toggle="modal" href='#modal_id_2'><img src="img/servicios/MD.png">
+                <p><font color="black"><strong>MARKETING DIGITAL</strong></font></p></a>
             </div>
-        </div>
-        <div class="item">
-            <img style="background-image: url(img/home/portafolio_home.jpg);" alt="First slide" class="img-responsive">
-            <div class="container">
-                <div class="carousel-caption">
-
-                    <h1 class="animated fadeInDown">REVISA NUESTRO PORTAFOLIO</h1>
-                    <h3 class="animated fadeInLeft">Y CONOCE LA CALIDAD DE NUETROS SERVICIOS</h3>
-                    <p class="animated fadeInRight"><a class="btn btn-transparent btn-rounded btn-large" href="portafolio.php">IR AL PORTAFOLIO</a></p>
-                </div>
+            <div class="contenedor_servicio-w col-xs-12 col-sm-12 col-md-6 col-lg-2">
+                <a data-toggle="modal" href='#modal_id_1'><img src="img/servicios/M.png">
+                <p><font color="black"><strong>MULTIMEDIA</strong></font></p></a>
+            </div>
+            <div class="contenedor_servicio col-xs-12 col-sm-12 col-md-6 col-lg-2">
+                <a data-toggle="modal" href='#modal_id_3'><img src="img/servicios/IC.png">
+                <p><font color="black"><strong>IDENTIDAD CORPORATIVA</strong></font></p></a>
+            </div>
+            <div class="contenedor_servicio col-xs-12 col-sm-12 col-md-6 col-lg-2">
+                <a data-toggle="modal" href='#modal_id_6'><img src="img/servicios/E.png">
+                <p><font color="black"><strong>EDITORIAL</strong></font></p></a>
+            </div>
             </div>
         </div>
     </div>
-    <a class="left carousel-control" href="#carousel-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#carousel-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-<!-- <div class="animated fadeInRight" id="boton_contactanos"><a href=" contacto.php"><font color="white">contactanos</font></a></div>
- -->
-<!-- <svg width="100%" height="100%" class="pol-01" >
-  <polygon points="0,0 3500,225 0,225"/>
-</svg> -->
-<!-- class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/n_fondo/3.jpg" -->
-<div id="nosotros">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row title1">
-        <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
-        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 txt_nosotros">
-            <h2>NOSOTROS</h2>
-            <!-- <div class="barra_inferior_titulo_verde"></div> -->
-            <p>Somos una empresa mexicana especializada en brindar servicios de Diseño Gráfico, Imagen, Publicidad y MKT Digital, de una forma creativa e innovadora a empresas e instituciones públicas y privadas. Tenemos para ti soluciones innovadoras en Comunicación Gráfica, Medios Audiovisuales, Web y MKT Digital, que contribuyen al crecimiento, competitividad y posicionamiento de tu Empresa, agregando valor a su Identidad Institucional.</p>
-
-            <div class="container contenedor_que_ofrecemos">
-              <h2>¿QUÉ OFRECEMOS?</h2>
-              <!-- <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class='glyphicon glyphicon-wrench'></span>DIAGNÓSTICO DE IDENTIDAD</a>
-                    </h4>
-                  </div>
-                  <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body">Damos valor a tu Marca, aprovechamos tus fortalezas y las convertimos en negocio.</div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class='glyphicon glyphicon-screenshot'></span>IDENTIFICACION DE OPORTUNIDADES</a>
-                    </h4>
-                  </div>
-                  <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">Para detectar áreas de desarrollo e ir siempre un paso adelante.</div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class='glyphicon glyphicon-knight'></span>ESTRATEGIAS CREACTIVAS</a>
-                    </h4>
-                  </div>
-                  <div id="collapse3" class="panel-collapse collapse">
-                    <div class="panel-body">Según las necesidades de tu empresa, investigación de mercado, competencias y ofertas de valor.</div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class='glyphicon glyphicon-plane'></span>DESARROLLO DE PLAN Y EJECUCIÓN</a>
-                    </h4>
-                  </div>
-                  <div id="collapse4" class="panel-collapse collapse">
-                    <div class="panel-body">Aplicación, seguimiento y búsqueda de nuevas ideas y proyectos para hacer crecer tu negocio.</div>
-                  </div>
-                </div>
-            </div> 
-        </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 txt_que_ofrecemos" >
-            
-        </div>
-         <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1" ></div>
+</section>
+<section id="servicio_destacado">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titulo" >
+        <b>SERVICIO</b> DESTACADO
     </div>
-</div>
-
-<!-- <svg id="seccion_servicios" width="100%" height="100%" class="pol-2">
-  <polygon points="0,0 3500,225 0,225"/>
-</svg> -->
-
-
-<div id="seccion_servicios" class="container-fluid ser">
-
-    <div class="row servicios container-fluid parallax-window" data-parallax="scroll" data-image-src="img/fondo_servicios2.jpg" >
-        <div class="fondo_transparente_seccion_servicios"></div>
-        <div class="txt_servicios" >
-            SERVICIOS
-            <p>Diseñamos soluciones a tu medida</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <ul ontouchstart class="col_servicios">
-                        <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 columna_servicio'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a href='blog_' target='_blank'></a>
-                              <a href='blog_' target='_blank'></a>
-                              <a href='blog_' target='_blank'></a>
-                              <a href='blog_' target='_blank'></a>
-                              <div class='cube blog'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                  <img src="img/servicios/blog.svg">
-                                </div>
-                                <div>BLOG 
-                                    <p>Sigue nuestro blog y recibe contenido especialmente para ti.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                      </div>
-                      <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_1'></a>
-                              <a data-toggle="modal" href='#modal_id_1'></a>
-                              <a data-toggle="modal" href='#modal_id_1'></a>
-                              <a data-toggle="modal" href='#modal_id_1'></a>
-                              <div class='cube multimedia'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                    <img src="img/servicios/multimedia.svg">
-                                </div>
-                                <div>MULTIMEDIA
-                                    <p>Damos vida a tu marca a través de fotografía, audiovisuales y animación impactante.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                      </div>
-                      <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_2'></a>
-                              <a data-toggle="modal" href='#modal_id_2'></a>
-                              <a data-toggle="modal" href='#modal_id_2'></a>
-                              <a data-toggle="modal" href='#modal_id_2'></a>
-                              <div class='cube m_digital'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                    <img src="img/servicios/marketing_digital.svg">
-                                </div>
-                                <div>MARKETING DIGITAL
-                                    <p>Lleva tu marca al mundo digital, te ayudamos a llegar a más personas.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          </div>
-                        
-                        <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a href='portafolio.php' target='_blank'></a>
-                              <a href='portafolio.php' target='_blank'></a>
-                              <a href='portafolio.php' target='_blank'></a>
-                              <a href='portafolio.php' target='_blank'></a>
-                              <div class='cube portafolio'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                 <img src="img/servicios/potafolio.svg">
-                                </div>
-                                <div>PORTAFOLIO
-                                    <p>Nuestros clientes y sus proyectos. Su confianza nos respalda.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                      </div>
-                      <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_3'></a>
-                              <a data-toggle="modal" href='#modal_id_3'></a>
-                              <a data-toggle="modal" href='#modal_id_3'></a>
-                              <a data-toggle="modal" href='#modal_id_3'></a>
-                              <div class='cube indentidad'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                  <img src="img/servicios/identidad.svg">
-                                </div>
-                                <div>IDENTIDAD<br>
-                                    <P>Hacemos que tu marca impacte desde la primera impresión.</P>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                      </div>
-                      <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_4'></a>
-                              <a data-toggle="modal" href='#modal_id_4'></a>
-                              <a data-toggle="modal" href='#modal_id_4'></a>
-                              <a data-toggle="modal" href='#modal_id_4'></a>
-                              <div class='cube p_interactiva'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                   <img src="img/servicios/pantallas_interactivas.svg">
-                                </div>
-                                <div>PANTALLAS INTERACTIVAS
-                                    <p>Contenido multimedia, móvil y dinámico al alcance de tus manos.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          </div>
-                       
-                        <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_5'></a>
-                              <a data-toggle="modal" href='#modal_id_5'></a>
-                              <a data-toggle="modal" href='#modal_id_5'></a>
-                              <a data-toggle="modal" href='#modal_id_5'></a>
-                              <div class='cube d_web'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                 <img src="img/servicios/diseno_web.svg">
-                                </div>
-                                <div>DISEÑO WEB
-                                    <p>A tu medida, Posicionamos tu sitio y lo llevamos al siguiente nivel.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li class="servicio_individual">
-                      </div>
-                      <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-                          <li class="servicio_individual">
-                            <div class='link'>
-                              <a data-toggle="modal" href='#modal_id_6'></a>
-                              <a data-toggle="modal" href='#modal_id_6'></a>
-                              <a data-toggle="modal" href='#modal_id_6'></a>
-                              <a data-toggle="modal" href='#modal_id_6'></a>
-                              <div class='cube editorial'>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                 <img src="img/servicios/editorial.svg">
-                                </div>
-                                <div>EDITORIAL
-                                    <p>Hacemos que tus proyectos tomen cuerpo y forma de manera impresa.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                      </div>
-                    </ul>
-
-                    
-                    <svg class='clips' viewbox='0 0 0 0' xmlns='http://www.w3.org/2000/svg'>
-                      <defs>
-                        <clippath id='clip-right'>
-                          <polygon id='right' points='48 0 48 96 0 48'></polygon>
-                        </clippath>
-                        <clippath id='clip-left'>
-                          <polygon id='left' points='0 0 0 96 48 48'></polygon>
-                        </clippath>
-                        <clippath id='clip-bottom'>
-                          <polygon id='bottom' points='96 48 0 48 48 0'></polygon>
-                        </clippath>
-                        <clippath id='clip-top'>
-                          <polygon id='top' points='0 0 96 0 48 48'></polygon>
-                        </clippath>
-                      </defs>
-                    </svg>
-                </div>
-               
-            </div>
-        </div>
+    <div class="contenedor_servicio_destacado col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <img src="img/servicios/REDES SOCIALES.png">
+        <p>REDES <strong>SOCIALES</strong></p>
     </div>
-</div>
-<!-- 
-<svg width="100%" height="100%" class="pol-3">
-  <polygon points="0,0 3500,225 0,225"/>
-</svg> -->
-<!-- <a class="btn btn-primary" >Trigger modal</a> -->
+</section>
+
 <!-- MODAL CONTENIDO -->
 <div class="modal fade" id="modal_id_1"  data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">MULTIMEDIA</h4>
+                
+                <center><h4 class="modal-title">MULTIMEDIA</h4>
+                <img src="img/servicios/M.png"></center>
+
             </div>
             <div class="modal-body" >
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Producción y edición de video<br>
@@ -529,8 +258,8 @@ include("conexion.php");
                 <h3>¿Tienes dudas de este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a class="btn btn-primary" href="contacto.php">Contactanos</a>
+                <a class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</a>
+                <a class="btn btn-info btn-sm" href="contacto.php">Contactanos</a>
             </div>
         </div>
     </div>
@@ -540,7 +269,9 @@ include("conexion.php");
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">MARKETING DIGITAL</h4>
+                 <center><h4 class="modal-title">MARKETING DIGITAL</h4></h4>
+                <img src="img/servicios/MD.png"></center>
+
             </div>
             <div class="modal-body" >
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Estrategias de posicionamiento<br>
@@ -553,8 +284,8 @@ include("conexion.php");
                 <h3>¿Tienes dudas de este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a class="btn btn-primary" href="contacto.php">Contactanos</a>
+                <a class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</a>
+                <a class="btn btn-info btn-sm" href="contacto.php">Contactanos</a>
             </div>
         </div>
     </div>
@@ -564,7 +295,11 @@ include("conexion.php");
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">IDENTIDAD</h4>
+                
+                <center><h4 class="modal-title">IDENTIDAD</h4>
+                <img src="img/servicios/IC.png"></center>
+
+
             </div>
             <div class="modal-body" >
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Marca<br>
@@ -576,8 +311,8 @@ include("conexion.php");
                 <h3>¿Tienes dudas de este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a class="btn btn-primary" href="contacto.php">Contactanos</a>
+                <a class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</a>
+                <a class="btn btn-info btn-sm" href="contacto.php">Contactanos</a>
             </div>
         </div>
     </div>
@@ -591,12 +326,12 @@ include("conexion.php");
             </div>
             <div class="modal-body" >
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Tecnología que despierta el interes del consumidor en tu producto o servicio.</p>
-                   
+
 
                 <h3>¿Tienes dudas de este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 <a class="btn btn-primary" href="contacto.php">Contactanos</a>
             </div>
         </div>
@@ -608,8 +343,9 @@ include("conexion.php");
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">DISEÑO WEB</h4>
-                
+                <center><h4 class="modal-title">DISEÑO WEB</h4>
+                <img src="img/servicios/DW.png"></center>
+
             </div>
 
             <div class="modal-body" >
@@ -620,13 +356,13 @@ include("conexion.php");
                    <img class="icono_cubo" src="img/icono_cubo2.png">Hosting<br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">Posicionamiento<br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">SEM/SEO</p>
-                   
 
-                <h3>¿Tienes dudas de este servicio?</h3>
+
+                <h3>¿Te interesa este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a class="btn btn-primary" href="contacto.php">Contactanos</a>
+                <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-info btn-sm" href="contacto.php">Contactanos</a>
             </div>
         </div>
     </div>
@@ -637,7 +373,10 @@ include("conexion.php");
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">EDITORIAL</h4>
+                
+                <center><h4 class="modal-title">EDITORIAL</h4>
+                <img src="img/servicios/E.png"></center>
+
             </div>
             <div class="modal-body" >
                 <p><img class="icono_cubo" src="img/icono_cubo2.png">Catálogos<br>
@@ -646,217 +385,290 @@ include("conexion.php");
                    <img class="icono_cubo" src="img/icono_cubo2.png">Periódico<br>
                    <img class="icono_cubo" src="img/icono_cubo2.png">Boletines</p>
                    <img class="icono_cubo" src="img/icono_cubo2.png">Manuales</p>
-                   
+
 
                 <h3>¿Tienes dudas de este servicio?</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a class="btn btn-primary" href="contacto.php">Contactanos</a>
+                <a class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</a>
+                <a class="btn btn-info btn-sm" href="contacto.php">Contactanos</a>
             </div>
         </div>
     </div>
 </div>
 
+<section id="seccion_portafolio">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titulo" >
+        <b>PORTAFOLIO</b>
+    </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!--<div id="search" style="display:none;"></div>-->
+            <div class="contenedor_portafolio_indidual">
+            <div style="display: inherit;" class="content" >
+
+                <div> <?php
+                   $servicios_individuales=mysqli_query($con,"SELECT * from servicios");
+                        foreach ($servicios_individuales as $servicio_name){
+                    }?>
+                 </div>
+            <?php
+
+                if($sql){
+                        if(mysqli_num_rows($sql) == 0){
+                        echo "<div class='browser_width colelem' id='u2258-bw'>
+                        No existen registros disponibles</div>";
+                        }else{
+                            while($res= mysqli_fetch_assoc($sql)){
+                            ?>
+
+                <div  class="grid">
+                    <figure class="effect-marley">
+
+                        <?php
+
+                            echo '<img src="admin/'.$res["img1"].'" class="img-responsive" width="auto" heigth="auto">';
+                            ?>
+                       <!--  <figcaption>
+                            <?php
+                                // echo '<h2>'.$res["title"].'</h2>';
+                            ?>
+                            <div>
+                            <?php
+
+                            // echo '<p> '.utf8_encode($res["descort"]).' </p>';
+
+                             ?>
+                            </div>
+                            <a href="#<?php echo 'modal-id-'.$res['id']; ?>" class="" data-toggle="modal" data-target="#<?php echo 'modal-id-'.$res['id']; ?>"></a>
+                        </figcaption> -->
+                    </figure>
+                </div>
+
+                    <div class="modal fade" id="<?php echo 'modal-id-'.$res['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="Portafolio" aria-hidden="true">
+                            <div class="modal-dialog"  data-dismiss="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header"  style="padding:35px 50px;">
+                                        <div class="row">
+                                              <div class="col-lg-12">
+                                                 <div class="titulo">
+                                                  <?php
+                                                    echo ''.$res["title"].'';
+                                                     ?>
+                                                     </div>
+                                              </div>
+                                              <div class="col-md-12">
+                                                    <ul class="social-network social-circle">
+                                                    <?php
+                                                    echo '<li><a href="'.$res["facebook"].'" class="icoFacebook" title="Facebook">';
+                                                     echo '<i class="fa fa-facebook"></i><span></span></a></li>';
+
+                                                    echo '<li><a href="'.$res["twitter"].'" class="icoTwitter" title="Twitter">';
+                                                     echo '<i class="fa fa-twitter"></i><span></span></a></li>';
+
+                                                    echo '<li><a href="'.$res["google"].'" class="icoGoogle" title="Google +">';
+                                                    echo '<i class="fa fa-google-plus"></i><span></span></a></li>'; ?>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <!--<div class="modal-body" style="padding:0px 0px;">   -->
+                                    <div id="<?php echo 'myCarousel-'.$res['id']; ?>" class="carousel slide" data-ride="carousel">
 
 
-<!-- <div class="container-fluid">
-    <div class="row rs">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>REDES SOCIALES</h3>
-            <div class="barra_inferior_titulo_blanco"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis et ex eget pretium. Maecenas et ligula nibh. Pellentesque sit amet convallis erat. Nullam congue augue sit amet mi iaculis bibendum.</p>
-            <img src="img/home/movil.png" id="movil" class="img-responsive wow slideInLeft"  data-wow-duration="1s" data-wow-delay="1s"' alt="">
-            <img src="img/home/emoji-001.png" class="emoji-01 animated " id="emoji-01" alt="">
-            <img src="img/home/emoji-002.png" class="emoji-02 animated " id="emoji-02" alt="">
-            <img src="img/home/emoji-003.png" class="emoji-03 animated " id="emoji-03" alt="">
-            <img src="img/home/emoji-004.png" class="emoji-04 animated " id="emoji-04" alt="">
-            <img src="img/home/emoji-005.png" class="emoji-05 animated " id="emoji-05" alt="">
-            <img src="img/home/emoji-006.png" class="emoji-06 animated " id="emoji-06" alt="">
-        </div>
-    </div>
-</div> -->
-<!-- <svg width="100%" height="100%" class="pol-1" >
-  <polygon points="0,0 3500,225 0,225"/>
-</svg> -->
-<section id="cientes">
-<div class="nuestros_clientes">
-    <div class="txt_nuestros_clientes">
-        INCREMENTA TUS SEGUIDORES
-    </div>
-    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
-    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 iconos_redes" >
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <img src="img/redes/facebook.png"  class="contador_redes_individual">
-        <span class="contador"><b>+</b><strong></strong></span>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <img src="img/redes/twitter.png" class="contador_redes_individual">
-        <span class="contador"><b>+</b><strong></strong></span>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <img src="img/redes/instagram.png" class="contador_redes_individual">
-        <span class="contador"><b>+</b><strong></strong></span>
-        </div>
-        </div>
-    </div>
-    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
- </div>
- </section>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt_nuestros_clientes_lo">
-        <p>NUESTROS CLIENTES YA LO HAN COMPROBADO</p>
-</div>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
 
-   
-<div class="container-fluid">
-    <div class="row marcas">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="marcas">
-            <!-- marcas -->
-            <ul class="bxslider">
-              <li><img src="img/clientes/001.png" alt=""></li>
-              <li><img src="img/clientes/002.png" alt=""></li>
-              <li><img src="img/clientes/003.png" alt=""></li>
-              <li><img src="img/clientes/004.png" alt=""></li>
-              <li><img src="img/clientes/005.png" alt=""></li>
-              <li><img src="img/clientes/006.png" alt=""></li>
-              <li><img src="img/clientes/007.png" alt=""></li>
-              <li><img src="img/clientes/008.png" alt=""></li>
-              <li><img src="img/clientes/009.png" alt=""></li>
-              <li><img src="img/clientes/010.png" alt=""></li>
-              <li><img src="img/clientes/011.png" alt=""></li>
-              <li><img src="img/clientes/012.png" alt=""></li>
-              <li><img src="img/clientes/013.png" alt=""></li>
-              <li><img src="img/clientes/014.png" alt=""></li>
-              <li><img src="img/clientes/015.png" alt=""></li>
-              <li><img src="img/clientes/016.png" alt=""></li>
-          </ul>
+                                          <div class="item active">
+                                          <?php
+                                            echo "<img src='admin/".$res["img1"]."' width='auto' heigth='auto' class='img-responsive'>";
+                                                                                        ?>
+                                            <div class="carousel-caption">
+                                              <p style="text-shadow: 1px 1px 2px #000; "><?php
+                                                                                        echo ' "'.utf8_encode($res['desclarge']).'" ';
+                                                                                         ?> </p>
+                                            </div>
+                                          </div>
+                                            <div class="item">
+                                              <?php
+                                            echo "<img src='admin/".$res["img2"]."' width='auto' heigth='auto' class='img-responsive'>";
+                                                                                        ?>
+
+                                              </div>
+                                              <div class="item">
+                                              <?php
+                                            echo "<img src='admin/".$res["img3"]."' width='auto' heigth='auto' class='img-responsive'>";
+                                                                                        ?>
+                                              </div>
+
+
+
+                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="prev">
+                                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#<?php echo 'myCarousel-'.$res['id']; ?>" role="button" data-slide="next">
+                                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </div>
+
+
+                                        <!--</div>-->
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+
+                <?php }?>
+                <?php }?>
+                <?php }?>
+            </div>
+    </div>  
+  
+</section>
+
+<section id="Clientes">
+    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 titulo" >
+        <b>CLIENTES</b> SATISFECHOS
+    </div>
+    <div class="container-fluid">
+        <div class="row marcas">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="marcas">
+                <!-- marcas -->
+                <ul class="bxslider">
+                  <li><img src="img/clientes/001.png" alt=""></li>
+                  <li><img src="img/clientes/002.png" alt=""></li>
+                  <li><img src="img/clientes/003.png" alt=""></li>
+                  <li><img src="img/clientes/004.png" alt=""></li>
+                  <li><img src="img/clientes/005.png" alt=""></li>
+                  <li><img src="img/clientes/006.png" alt=""></li>
+                  <li><img src="img/clientes/007.png" alt=""></li>
+                  <li><img src="img/clientes/008.png" alt=""></li>
+                  <li><img src="img/clientes/009.png" alt=""></li>
+                  <li><img src="img/clientes/010.png" alt=""></li>
+                  <li><img src="img/clientes/011.png" alt=""></li>
+                  <li><img src="img/clientes/012.png" alt=""></li>
+                  <li><img src="img/clientes/013.png" alt=""></li>
+                  <li><img src="img/clientes/014.png" alt=""></li>
+                  <li><img src="img/clientes/015.png" alt=""></li>
+                  <li><img src="img/clientes/016.png" alt=""></li>
+              </ul>
+          </div>
       </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="container-fluid">
-    <div class="row blog-items" >    
-        <?php
-
-
-
-        if ($sqld = mysqli_query($con, "SELECT B.id, B.id_entrada, B.title, B.intro, B.fecha, B.categoria, B.activo, U.nombre, U.id AS id_autor, C.id AS idCat, U.nombre AS usuario, C.nombre AS nombreCat FROM blog AS B 
-            LEFT OUTER JOIN user AS U ON B.id_autor=U.id
-            JOIN categorias AS C ON B.id_categoria=C.id
-            WHERE B.activo=1 ORDER BY B.fecha DESC LIMIT 0,3")) {
-
-            if(mysqli_num_rows($sqld) == 0){
-                echo "No existen registros disponibles";
-            }else{
-
-                while($rowD = mysqli_fetch_assoc($sqld)) {
-
-                    // echo "
-                    // <div class='col-xs-12 col-sm-12 col-md-4 col-lg-4 animated' id='itBlog'>
-                    // <a href='blog.php?id=".$rowD["id_entrada"]."'><img src='blog/".$rowD["id_entrada"].".jpg' class='img-rounded img-responsive' alt='".$rowD["title"]."'></a>
-                    // <div class='row'>
-                    // <div class='col-xs-4 col-sm-4 col-md-4 col-lg-2'>
-                    // <br/>
-                    // <span class='autor'><img src='image/img-profile/".$rowD["id_autor"].".jpg' class='center-block img-responsive img-circle' /></span>
-                    // </div>
-                    // <div class='col-xs-8 col-sm-8 col-md-8 col-lg-10'>
-                    // <h3><a href='blog.php?id=".$rowD["id_entrada"]."'>".$rowD["title"]."</a></h3>
-                    // <p><span class='intro'>".$rowD["intro"]."</span></p>
-
-                    // <span class='fecha'>".$rowD["fecha"]."</span> -
-                    // <span class='categoria'></span> ".$rowD["categoria"]."<br/> - 
-                    // <span class='autor'> Escrito por: ".$rowD["usuario"]."</span>
-
-
-                    // </div>
-                    // </div>
-                    // ";
-                    // echo "</div>";
-                }
-            }
-               //mysql_free_result($sql);
-        }
-        ?>
-
-    </div> 
-</div>
-<footer>
-
-<div class="container-fluid">
+    </div>
+</section>
+<footer id="footer">
+    <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            Vis&iacute;tanos
-            <div class="caja-redes">
-            <a href="https://twitter.com/CreActivMedia" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-            <a href="https://www.facebook.com/CreActivMedia/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-            <a href="https://plus.google.com/100131094567274417996" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+        <div class="titulo_footer">
+        <h1>¡Hola!</h1>
+        <h3>Déjanos Ayudarte.</h3>
+        </div>
+
+        <!--============================
+                     FORMULARIO
+        =============================== -->
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 formulario_cantactos">
+            <div class="form">
+            <form name="index" action="envio_correo.php" method="POST">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 primer_form">
+                     <!-- NOMBRE -->
+                    <div class="form-group col-md-12 input_individual">
+                        <div class="contedor_img"><img src="img/iconos/nombre.png"></div>
+                        <input name="Nombre" class="form-control input-md" id="nombre" placeholder="Nombre/Apellidos" type="text">
+                    </div>
+                     <!-- EMPRESA -->
+                    <div class="form-group col-md-12 input_individual">
+                        <div class="contedor_img"><img src="img/iconos/empresa.png"></div>
+                        <input name="Empresa" class="form-control input-md" id="empresa" placeholder="Empresa" type="text">
+                    </div>
+                     <!-- TELEFONO -->
+                    <div class="form-group col-md-12 input_individual">
+                        <div class="contedor_img"><img src="img/iconos/telefono.png"></div>
+                        <input name="Telefono" class="form-control input-md" id="telefono" placeholder="Teléfono fijo" type="tel">
+                    </div>
+                     <!-- MOVIL -->
+                    <div class="form-group col-md-12 input_individual">
+                        <div class="contedor_img"><img src="img/iconos/movil.png"></div>
+                        <input name="Movil" class="form-control input-md" id="num_movil" placeholder="Móvil" type="tel">
+                    </div>
+                    <!-- CORREO -->
+                    <div class="form-group col-md-12 input_individual">
+                        <div class="contedor_img"><img src="img/iconos/email.png"></div>
+                        <input name="Correo" class="form-control input-md"  id="correo" placeholder="Email" type="email">
+                    </div>
+                </div>
+                <div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6  segundo_form">
+                    <!-- MENSAJE -->
+                    <div class="form-group col-md-12">
+                        <textarea name="Mensaje" class="form-control input-md"  id="mensaje" rows="3" data-rule="required" placeholder="Mensaje"></textarea>
+                    </div>
+                       <!-- ASUNTO -->
+                    <div class="form-group col-md-12">
+                        <select name="Asunto" id="asunto" class="form-control input-md" required="">
+                          <option ><strong>Estoy Interesado en contratar:</strong></option>
+                                <option value="Servicios Web">-Servicios Web</option>
+                                <option value="Marketing Digital">- Marketing Digital</option>
+                                <option value="Servicios Multimedia">-Servicios Multimedia</option>
+                                <option value="Identidad corporativa">-Identidad corporativa</option>
+                                <option value="Servicios Editoriales">-Servicios Editoriales</option>
+                                <option value="Redes sociales">-Redes sociales</option>
+                        </select>
+                    </div>
+                    <!-- CHECKBOX CAPTCHA -->
+                    <div class="form-group col-md-12" >
+                       <div class="g-recaptcha" data-sitekey="6Le7TXEUAAAAAHbrmJLJGa7Gh420i5Ssqf0QNq8f"></div>
+                    </div>
+                     <!-- BTN ENVIAR -->
+                    <div class="col-md-4 col-md-offset-4">
+                    <button type="submit" class="btn btn-default boton-contacto"><strong>Enviar</strong></button>
+                    </div>
+                </div>
+            </form>
             </div>
-
-            <br/>
-                <address>
-                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <br/>
-                </address>
-                <img src="img/web-30.png" width="30px" height="30px" alt="">(33) 3834 8000 | <img src="img/web-31.png" width="30px" height="30px" alt="">info@creactivmedia.com.mx<br/>
-            <br/><br/>
+            <script src="js/contacto.js"></script>
         </div>
 
-        
-    </div>
-</div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="text_visitanos">
 
+            <h1>Visitanos</h1>
+            <div class="visitanos_redes_sociales">
+                <a href="https://www.facebook.com/CreActivMedia/" target="_blank"><img src="img/redes_sociales/facebook.png"></a>
+                <a href="https://www.instagram.com/creactivmedia/" target="_blank"><img src="img/redes_sociales/instagram.png"></a>
+                <a href="https://twitter.com/creactivmedia" target="_blank"><img src="img/redes_sociales/twitter.png"></a>
+            </div><br>
 
-<div id="mapa" class="map"></div>
-
-<div class="container-fluid">
-    <div class=" row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 site_services">
-            <br/><br/>
-            <h4 class="sitemap">Site Map</h4>
-
-            <ul class="ft-site">
-                <li><a href="#">Identidad</a></li>
-                <li><a href="#">Mkt Digital</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Editorial</a></li>
-                <li><a href="#">Diseño Web</a></li>
-                <li><a href="blog_">Blog</a></li>
-                <li><a href="#">Pantallas Interactivas</a></li>
-                <li><a href="portafolio?portafolio_por_categoria=-1">Portafolio</a></li>
-                <li><a href="contacto">Contacto</a></li>
-            </ul>
-
-        </div>
-
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-
-          <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
-
-          
-        
+             <address class="datos_contacto">
+                (33) 3834 8000<img src="img/iconos/visitanos_numero.png"><br/>
+                info@creactivmedia.com.mx <img src="img/iconos/visitanos_email.png"><br/>
+                Av. Ángel Leaño # 401 - 3C Col. Los Robles, Zapopan, Jal. M&eacute;xico C.P. 45134 <img src="img/iconos/ubicacion.png"><br/>
+            </address>
+            <div class="logo_visitanos">
+                <img src="img/logo.png">
+            </div>
+            </div>
         </div>
     </div>
-    
-</div>
-    <div class="copy">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
+    </div>
+    <div class="copyright">© COPYRIGHT CREACTIV 2016, TODOS LOS DERECHOS RESERVADOS.</div>
 </footer>
 
 
 <a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <style type="text/css">
+
         .to-top{
             position: fixed;
             bottom: 40px;
             right: 20px;
+            z-index: 4px;
             background: #000;
             color:#fff;
             padding: 9px 12px;
@@ -869,94 +681,17 @@ include("conexion.php");
         }
     </style>
 
-
-<!-- 
-<footer>
-    <div class="container-fluid footer">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                
-
-                
-            </div>
-
-        <div class="row">
-                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <br/><br/>
-                    <h4 class="sitemap">Site Map</h4>
-
-                    <ul class="ft-site">
-                        <li><a href="index.php">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="portafolio.php">Portafolio</a></li>
-                        <li><a href="blog.php">Blog</a></li>
-                        <li><a href="contacto.php">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                      <img src="img/log-creactiv-ft.png" class="ft-logo" alt="">
-                      
-                </div>
-        </div>
-
-    </div>
-</footer>
--->
-
-
-
-
 <script src="js/jquery.min.js"></script>
+<script src="js/flexisel.js" ></script>
 
 <!-- Maps API Javascript -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB-M2C9yZRD7FFdjwjSjJfnsotae_Y8Nk"
 type="text/javascript"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="js/mapa-min.js"></script>
 
 <!-- <div id="mapa" class="map"></div> -->
 <script src="js/menu.js"></script>
-
-<!-- <script>
-    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 2000}});
-    // build scene
-    new ScrollMagic.Scene({triggerElement: "#emoji-06"})      
-    .setClassToggle("#emoji-01", "bounceIn") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#movil"})      
-    .setClassToggle("#emoji-02", "fadeOutUp") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#emoji-06"})
-    .setClassToggle("#emoji-03", "bounceInUp") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#d1"})
-    .setClassToggle("#emoji-04", "fadeOutUp") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#emoji-04"})
-    .setClassToggle("#emoji-05", "zoomIn") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#emoji-01"}) 
-    .setClassToggle("#emoji-06", "bounceIn") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#marcas"}) 
-    .setClassToggle("#itBlog", "fadeInUp") // add class toggle  fadeOutUp
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-    
-</script> -->
 <script type="text/javascript">
     $(document).ready(function(){
         var offset = 250;
@@ -965,26 +700,46 @@ type="text/javascript"></script>
         $(window).scroll(function(){
             if($(this).scrollTop()> offset){
                 $('.to-top').fadeIn(duration);
-                $(".btn-toggle").css("background", "rgba(0, 0, 0, 0.9)");
-                $(".btn-toggle").css("border-bottom", "2px solid");
-                $(".btn-toggle").css("border-bottom-color", "#fff");
             }else{
                 $('.to-top').fadeOut(duration);
-                $(".btn-toggle").css("background", "#16171900");
-                $(".btn-toggle").css("border-bottom", "0px solid");
-                $(".btn-toggle").css("border-bottom-color", "#fff");
 
             }
         });
         $('.to-top').click(function(){
             $('body').animate({scrollTop:0},duration);
         })
-    });
+  
+
+
+    // CASOUSEL PORTAFOLIOS
+  $('#CarouselPortafolio').carousel({
+  interval: 10000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+      });
+
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/flexisel.js" ></script>
+<script src="js/jquery.flexisel.js "></script>
 <!-- <script src="js/funciones.js"></script> -->
 
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

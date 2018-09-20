@@ -60,11 +60,17 @@ text-decoration:none !important;
   	height: 100%;
  	margin-bottom: 0; /* ¿por qué, carousel, por qué? */
 }
-/*.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-   
-    height: 100vh !important;
-  
-}*/
+.contenedor_portafolio_indidual{
+	display: inline-flex !important;
+
+}
+.contenedor_portafolio_indidual .grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 1em;
+	max-width: 1000px;
+	list-style: none;
+}
 #seccion_servicios{
 	
 	width: 100%;
@@ -668,8 +674,8 @@ text-decoration:none !important;
 			/*height: 300px;*/
 			
 			/*box-shadow: 3px 3px 20px #00000d;*/
-			background-image: linear-gradient(to left,#30d8cb,#2e847f);
-    		margin-bottom: 150px;
+			/*background-image: linear-gradient(to left,#30d8cb,#2e847f);*/
+    		/*margin-bottom: 150px;*/
 
 		}
 
